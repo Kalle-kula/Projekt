@@ -1,17 +1,89 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<SequenceDesignerModel xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm4="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm5="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/ModelStore" xmlns:dm9="http://schemas.microsoft.com/dsltools/SimpleShapesModel" xmlns:dm10="http://schemas.microsoft.com/dsltools/UseCaseModel" xmlns:dm11="http://schemas.microsoft.com/dsltools/LogicalClassDesigner" dslVersion="1.0.0.0" Id="e033511a-30e1-4c6d-b9a6-c0da84c20573" name="Sequence1" linkedPackageId="10c8ac0f-3cec-4f77-a50b-71d88f9cd3ea" xmlns="http://schemas.microsoft.com/VisualStudio/TeamArchitect/SequenceDesigner">
+<SequenceDesignerModel xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm4="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm5="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/ModelStore" xmlns:dm9="http://schemas.microsoft.com/dsltools/LogicalClassDesigner" xmlns:dm10="http://schemas.microsoft.com/dsltools/SimpleShapesModel" xmlns:dm11="http://schemas.microsoft.com/dsltools/UseCaseModel" dslVersion="1.0.0.0" Id="e033511a-30e1-4c6d-b9a6-c0da84c20573" name="Sequence1" linkedPackageId="10c8ac0f-3cec-4f77-a50b-71d88f9cd3ea" xmlns="http://schemas.microsoft.com/VisualStudio/TeamArchitect/SequenceDesigner">
+  <appliedStereotypesInternal>
+    <stereotypeInstance Id="617392b4-bb32-4ad8-9444-8d9c96c66d83" name="namespace" profile="CSharpProfile">
+      <elementDefinition Id="be8f18cd-29ef-4f09-8642-93d20e26fee0" />
+      <propertyInstances>
+        <stereotypeInstanceHasPropertyInstances Id="4b53f708-f78d-492c-945a-f3ce56db0b41">
+          <propertyInstance Id="ffea064b-9d49-4f7e-86ae-b493a251378a" name="BaseName">
+            <elementDefinition Id="7345c6d1-f24b-408e-9b0c-09e82b146744" />
+          </propertyInstance>
+          <elementDefinition Id="8746db75-c78f-4f26-a5cd-fe6addbe7aa5" />
+        </stereotypeInstanceHasPropertyInstances>
+        <stereotypeInstanceHasPropertyInstances Id="0931a589-6672-42c2-a123-dd813906645a">
+          <propertyInstance Id="48bb0287-2373-4ef5-954a-bb7464405515" name="ClrAttributes">
+            <elementDefinition Id="cb851478-f7d6-4e17-ae22-25d729534a3e" />
+          </propertyInstance>
+          <elementDefinition Id="89c7b012-7b98-41cf-9129-b62ba108a63e" />
+        </stereotypeInstanceHasPropertyInstances>
+        <stereotypeInstanceHasPropertyInstances Id="17fc577f-1509-4c60-9be4-23034a03d13e">
+          <propertyInstance Id="a4311176-e4ff-4e66-a608-fe6cd0015af4" name="Usings">
+            <elementDefinition Id="cf3aff1c-b16c-46a2-9af1-5ddb1e1f086c" />
+          </propertyInstance>
+          <elementDefinition Id="816f703e-1608-4338-ac67-61874d033550" />
+        </stereotypeInstanceHasPropertyInstances>
+      </propertyInstances>
+    </stereotypeInstance>
+    <stereotypeInstance Id="29b8dec2-3ee9-4d73-8aa9-67d867433064" name="TextTemplateBindings" profile="TextTemplateBindings">
+      <elementDefinition Id="796cf00c-7f9f-4a2f-9116-c295bca5c5eb" />
+      <propertyInstances>
+        <stereotypeInstanceHasPropertyInstances Id="08f892d3-4d8e-4591-9c98-d6c42469e0ae">
+          <propertyInstance Id="993e0f72-46d9-4881-954d-aba5813439df" name="Alias" value="ClassTemplate|EnumTemplate|InterfaceTemplate|StructTemplate">
+            <elementDefinition Id="50219d36-fb3a-4bd0-b2ab-d53b9ad34022" />
+          </propertyInstance>
+          <elementDefinition Id="f3f000b8-7ed7-4e65-858d-2066d3a346b9" />
+        </stereotypeInstanceHasPropertyInstances>
+        <stereotypeInstanceHasPropertyInstances Id="87f13eff-9394-4f06-8d92-bf05aece8fab">
+          <propertyInstance Id="9b236b4c-eb30-4e5a-a183-ae2bf4c75ca8" name="TemplateFilePath" value="ClassTemplate=C:\PROGRAM FILES (X86)\MICROSOFT VISUAL STUDIO 14.0\COMMON7\IDE\EXTENSIONS\MICROSOFT\ARCHITECTURE TOOLS\EXTENSIBILITY\Templates\Text\ClassTemplate.t4|EnumTemplate=C:\PROGRAM FILES (X86)\MICROSOFT VISUAL STUDIO 14.0\COMMON7\IDE\EXTENSIONS\MICROSOFT\ARCHITECTURE TOOLS\EXTENSIBILITY\Templates\Text\EnumTemplate.t4|InterfaceTemplate=C:\PROGRAM FILES (X86)\MICROSOFT VISUAL STUDIO 14.0\COMMON7\IDE\EXTENSIONS\MICROSOFT\ARCHITECTURE TOOLS\EXTENSIBILITY\Templates\Text\InterfaceTemplate.t4|StructTemplate=C:\PROGRAM FILES (X86)\MICROSOFT VISUAL STUDIO 14.0\COMMON7\IDE\EXTENSIONS\MICROSOFT\ARCHITECTURE TOOLS\EXTENSIBILITY\Templates\Text\StructTemplate.t4">
+            <elementDefinition Id="9d6b36e9-a183-4c25-8bcc-580f064c2c90" />
+          </propertyInstance>
+          <elementDefinition Id="058463b2-c54b-4595-909f-fed33bc79842" />
+        </stereotypeInstanceHasPropertyInstances>
+        <stereotypeInstanceHasPropertyInstances Id="d9aebe24-ab1e-4018-b3f3-aa4889b028e2">
+          <propertyInstance Id="2bc44a74-bba9-4072-82ed-521c684604f8" name="ProjectPath" value="ClassTemplate=..\Övningsuppgift Lektion 3 OOADLib\Övningsuppgift Lektion 3 OOADLib.csproj|EnumTemplate=..\Övningsuppgift Lektion 3 OOADLib\Övningsuppgift Lektion 3 OOADLib.csproj|InterfaceTemplate=..\Övningsuppgift Lektion 3 OOADLib\Övningsuppgift Lektion 3 OOADLib.csproj|StructTemplate=..\Övningsuppgift Lektion 3 OOADLib\Övningsuppgift Lektion 3 OOADLib.csproj">
+            <elementDefinition Id="dcd156ac-3036-4cab-a851-5b17388b4504" />
+          </propertyInstance>
+          <elementDefinition Id="81e58813-b49c-438e-901d-2f6108df7242" />
+        </stereotypeInstanceHasPropertyInstances>
+        <stereotypeInstanceHasPropertyInstances Id="265c07b7-643f-475f-80f8-3996e5511f33">
+          <propertyInstance Id="1709e70c-8869-49ab-93ad-736ad71296d1" name="TargetDirectory" value="ClassTemplate=GeneratedCode\{PackageStructure}|EnumTemplate=GeneratedCode\{PackageStructure}|InterfaceTemplate=GeneratedCode\{PackageStructure}|StructTemplate=GeneratedCode\{PackageStructure}">
+            <elementDefinition Id="a35e7078-09ba-42af-b7f0-3cc1f11bf4a0" />
+          </propertyInstance>
+          <elementDefinition Id="4b2dbdf2-a9ee-458b-b6ba-bc0e43d98a46" />
+        </stereotypeInstanceHasPropertyInstances>
+        <stereotypeInstanceHasPropertyInstances Id="a79d8d24-fb28-4928-a0c5-5a73ddde5586">
+          <propertyInstance Id="b2fb7801-3e5e-46c7-a53e-8830260d46d5" name="TargetName" value="ClassTemplate={Name}|EnumTemplate={Name}|InterfaceTemplate={Name}|StructTemplate={Name}">
+            <elementDefinition Id="3e9647ed-ca32-4be4-ab74-8837d95a7bb4" />
+          </propertyInstance>
+          <elementDefinition Id="4e9d6235-d2f6-451b-a4fa-d125a0a0e7c6" />
+        </stereotypeInstanceHasPropertyInstances>
+        <stereotypeInstanceHasPropertyInstances Id="43758bec-ab50-4e5d-b04b-18868acb5a9a">
+          <propertyInstance Id="89cd2143-1269-4702-a12c-9e7e1037b97d" name="Overwrite" value="ClassTemplate=True|EnumTemplate=True|InterfaceTemplate=True|StructTemplate=True">
+            <elementDefinition Id="220610c9-4410-4bd2-80e2-7b2209ca9048" />
+          </propertyInstance>
+          <elementDefinition Id="79e45b8f-ba16-45ca-9a08-5d627605ea07" />
+        </stereotypeInstanceHasPropertyInstances>
+        <stereotypeInstanceHasPropertyInstances Id="f89ed05f-33e4-4a5d-8b93-a5461ca5e286">
+          <propertyInstance Id="eeaac84b-49a2-43a2-94d3-32f1614794ad" name="Parameters">
+            <elementDefinition Id="82861c06-cbc7-44a2-9c94-29cb79396724" />
+          </propertyInstance>
+          <elementDefinition Id="ecc74452-33f2-48ca-a502-d3e9062487d8" />
+        </stereotypeInstanceHasPropertyInstances>
+      </propertyInstances>
+    </stereotypeInstance>
+  </appliedStereotypesInternal>
   <profileInstances>
-    <packageHasProfileInstances Id="13f1605d-e33c-42ac-b507-3784d41319a1">
-      <profileInstance Id="d695a472-7286-4e52-876d-a1e34c3f2dce" name="StandardProfileL2">
-        <elementDefinition Id="e34d544e-0fea-4ed6-ac5e-1b74119ac791" />
+    <packageHasProfileInstances Id="0cda6a70-2c3e-49bc-b885-c7bc89564c6a">
+      <profileInstance Id="1fbed42a-821d-4c4a-8f34-9a1b9076e9bb" name="CSharpProfile">
+        <elementDefinition Id="d374cff0-0fbf-4880-b77f-d42d909081fc" />
       </profileInstance>
-      <elementDefinition Id="0caec977-1f8c-4ba3-a7db-8cc9ad9cc73b" />
+      <elementDefinition Id="9fd282e6-55e7-4f13-a5be-074b222f2327" />
     </packageHasProfileInstances>
-    <packageHasProfileInstances Id="183763fb-b7f7-475d-bf73-d0021b625d2c">
-      <profileInstance Id="d953d013-cdc5-4283-9fc7-d3b4c572bb96" name="StandardProfileL3">
-        <elementDefinition Id="532ea607-fb19-44b8-8502-3351b05452be" />
+    <packageHasProfileInstances Id="f558b58d-d687-45e4-bee1-a41874ec26df">
+      <profileInstance Id="b1c8b94d-1333-4a7d-b577-be5d5bfc6b5c" name="TextTemplateBindings">
+        <elementDefinition Id="51c62386-ba8a-4df7-bf85-8e08b67aa789" />
       </profileInstance>
-      <elementDefinition Id="29349502-908c-4fda-9054-c48619c59ed0" />
+      <elementDefinition Id="c21d38a8-1d2d-40c3-9709-da3dcc7947b4" />
     </packageHasProfileInstances>
   </profileInstances>
   <packagedElements>
@@ -97,16 +169,16 @@
               <lifelineMoniker Id="04939323-f63b-4f95-ba3b-3d6324e1d815" LastKnownName="Auction End" />
             </covered>
           </messageOccurrenceSpecification>
-          <messageOccurrenceSpecification Id="476abdd7-f25b-4c8a-99a4-75a29cf65632" name="MessageOccurrenceSpecification31">
-            <elementDefinition Id="6654e244-3b53-46cc-b487-18416554aa02" />
-            <covered>
-              <lifelineMoniker Id="44479429-4b3b-43fb-b5b6-fa37c7b9a8a0" LastKnownName="Bid Product" />
-            </covered>
-          </messageOccurrenceSpecification>
           <messageOccurrenceSpecification Id="dc89fe41-426c-4939-857a-a073e9132ca8" name="MessageOccurrenceSpecification32">
             <elementDefinition Id="80f70cb8-f76a-4279-9b84-33428a337fce" />
             <covered>
               <lifelineMoniker Id="0f2df621-4826-4a1e-92d7-5d8c916511d2" LastKnownName="Customer" />
+            </covered>
+          </messageOccurrenceSpecification>
+          <messageOccurrenceSpecification Id="476abdd7-f25b-4c8a-99a4-75a29cf65632" name="MessageOccurrenceSpecification31">
+            <elementDefinition Id="6654e244-3b53-46cc-b487-18416554aa02" />
+            <covered>
+              <lifelineMoniker Id="44479429-4b3b-43fb-b5b6-fa37c7b9a8a0" LastKnownName="Bid Product" />
             </covered>
           </messageOccurrenceSpecification>
           <executionOccurrenceSpecification Id="1921ccbc-5f5b-4b2e-b18f-cc3c27927758" name="ExecutionOccurrenceSpecification22">
@@ -196,16 +268,16 @@
               <lifelineMoniker Id="04939323-f63b-4f95-ba3b-3d6324e1d815" LastKnownName="Auction End" />
             </covered>
           </executionOccurrenceSpecification>
-          <messageOccurrenceSpecification Id="8c1aa87f-6405-4117-bd42-cc92c89069b4" name="MessageOccurrenceSpecification37">
-            <elementDefinition Id="d7ebfc14-ac04-4b5e-9623-b6b4b453ccf1" />
-            <covered>
-              <lifelineMoniker Id="75c4ff53-2e4b-4533-8dec-3fd5d302166a" LastKnownName="Buyout Product" />
-            </covered>
-          </messageOccurrenceSpecification>
           <messageOccurrenceSpecification Id="478a6a46-c2e1-4845-8ea5-f231794c5979" name="MessageOccurrenceSpecification38">
             <elementDefinition Id="be3f7a9b-b3d9-4a09-8cf0-2f853b8b1418" />
             <covered>
               <lifelineMoniker Id="04939323-f63b-4f95-ba3b-3d6324e1d815" LastKnownName="Auction End" />
+            </covered>
+          </messageOccurrenceSpecification>
+          <messageOccurrenceSpecification Id="8c1aa87f-6405-4117-bd42-cc92c89069b4" name="MessageOccurrenceSpecification37">
+            <elementDefinition Id="d7ebfc14-ac04-4b5e-9623-b6b4b453ccf1" />
+            <covered>
+              <lifelineMoniker Id="75c4ff53-2e4b-4533-8dec-3fd5d302166a" LastKnownName="Buyout Product" />
             </covered>
           </messageOccurrenceSpecification>
           <executionOccurrenceSpecification Id="38e2ef21-8ceb-4343-b2c6-150743f043cb" name="ExecutionOccurrenceSpecification24">
@@ -296,16 +368,16 @@
               <lifelineMoniker Id="71179a2b-67e5-4565-966c-aad32b665e49" LastKnownName="Supplier" />
             </covered>
           </executionOccurrenceSpecification>
-          <messageOccurrenceSpecification Id="f9bde0d5-259f-4a03-bcd9-f09a59230f2d" name="MessageOccurrenceSpecification52">
-            <elementDefinition Id="3e7890f5-3e39-431a-895a-16206a622ca0" />
-            <covered>
-              <lifelineMoniker Id="5e6b5fd2-de1f-4a68-8e61-deb9e8525ebb" LastKnownName="Nackademiska Auktions-främjandet" />
-            </covered>
-          </messageOccurrenceSpecification>
           <messageOccurrenceSpecification Id="302df78f-a897-4275-8ca1-97cece25b6e7" name="MessageOccurrenceSpecification53">
             <elementDefinition Id="feb355fa-6ece-4591-a1d8-01f14f19cf70" />
             <covered>
               <lifelineMoniker Id="71179a2b-67e5-4565-966c-aad32b665e49" LastKnownName="Supplier" />
+            </covered>
+          </messageOccurrenceSpecification>
+          <messageOccurrenceSpecification Id="f9bde0d5-259f-4a03-bcd9-f09a59230f2d" name="MessageOccurrenceSpecification52">
+            <elementDefinition Id="3e7890f5-3e39-431a-895a-16206a622ca0" />
+            <covered>
+              <lifelineMoniker Id="5e6b5fd2-de1f-4a68-8e61-deb9e8525ebb" LastKnownName="Nackademiska Auktions-främjandet" />
             </covered>
           </messageOccurrenceSpecification>
           <behaviorExecutionSpecification Id="6116dd97-88d7-4da1-a575-9c821d74bd8b" name="BehaviorExecutionSpecification18">
@@ -662,5 +734,19 @@
   </packagedElements>
   <package Id="10c8ac0f-3cec-4f77-a50b-71d88f9cd3ea" name="Övningsuppgift Lektion 3 OOAD">
     <elementDefinition Id="33624387-e923-41c2-86c3-13e8018dbe63" />
+    <profileInstances>
+      <packageHasProfileInstances Id="13f1605d-e33c-42ac-b507-3784d41319a1">
+        <profileInstance Id="d695a472-7286-4e52-876d-a1e34c3f2dce" name="StandardProfileL2">
+          <elementDefinition Id="e34d544e-0fea-4ed6-ac5e-1b74119ac791" />
+        </profileInstance>
+        <elementDefinition Id="0caec977-1f8c-4ba3-a7db-8cc9ad9cc73b" />
+      </packageHasProfileInstances>
+      <packageHasProfileInstances Id="183763fb-b7f7-475d-bf73-d0021b625d2c">
+        <profileInstance Id="d953d013-cdc5-4283-9fc7-d3b4c572bb96" name="StandardProfileL3">
+          <elementDefinition Id="532ea607-fb19-44b8-8502-3351b05452be" />
+        </profileInstance>
+        <elementDefinition Id="29349502-908c-4fda-9054-c48619c59ed0" />
+      </packageHasProfileInstances>
+    </profileInstances>
   </package>
 </SequenceDesignerModel>
