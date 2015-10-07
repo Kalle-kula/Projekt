@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<modelStoreModel xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm4="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm5="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/LogicalClassDesigner" xmlns:dm9="http://schemas.microsoft.com/VisualStudio/TeamArchitect/SequenceDesigner"
+<modelStoreModel xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm4="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm5="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/LogicalClassDesigner" xmlns:dm9="http://schemas.microsoft.com/VisualStudio/TeamArchitect/SequenceDesigner" xmlns:dm10="http://schemas.microsoft.com/dsltools/SimpleShapesModel" xmlns:dm11="http://schemas.microsoft.com/dsltools/UseCaseModel"
   dslVersion="1.0.0.0"
   Id="33624387-e923-41c2-86c3-13e8018dbe63"
   name="Övningsuppgift Lektion 3 OOAD" xmlns="http://schemas.microsoft.com/dsltools/ModelStore">
@@ -844,7 +844,7 @@
     <packageHasNamedElement>
       <class
         Id="933d5b16-2773-468c-b03a-26ee02d80ea6"
-        name="ProductBase"
+        name="Product"
         isAbstract="false"
         isLeaf="false"
         isActiveClass="false">
@@ -891,82 +891,26 @@
             </propertyInstances>
           </stereotypeInstance>
         </appliedStereotypesInternal>
+        <suppliersInternal>
+          <dependency
+            Id="f57fb408-4d62-4328-9006-e69fe15eda09">
+            <classMoniker
+              Id="3aefb253-c3f6-4bb5-8a1d-c71891cb8b09"
+              LastKnownName="User"
+              LastKnownLocation="Övningsuppgift Lektion 3 OOAD.uml" />
+          </dependency>
+        </suppliersInternal>
+        <generalsInternal>
+          <generalization
+            Id="7294fda2-875a-465d-8ea6-4c6dc53cfa79"
+            isSubstitutable="false">
+            <classMoniker
+              Id="8f7a3090-6e09-4efb-9e0a-f6bd657fde95"
+              LastKnownName="EntityBase"
+              LastKnownLocation="Övningsuppgift Lektion 3 OOAD.uml" />
+          </generalization>
+        </generalsInternal>
         <ownedAttributesInternal>
-          <property
-            Id="c9ab364a-035a-43e4-b5fd-c5da1bb346fb"
-            name="Name"
-            isLeaf="false"
-            isStatic="false"
-            isReadOnly="false"
-            isUnique="false"
-            isDerived="false"
-            isDerivedUnion="false"
-            aggregation="None"
-            isComposite="false">
-            <appliedStereotypesInternal>
-              <stereotypeInstance
-                Id="62cffa0c-e7a2-4ac9-b098-90de34b5b05f"
-                name="property"
-                profile="CSharpProfile">
-                <propertyInstances>
-                  <stereotypeInstanceHasPropertyInstances
-                    Id="0e7930e5-9ca0-4c61-b46f-1a42afd3a61b">
-                    <propertyInstance
-                      Id="f2a1ed69-f686-4d04-9030-17e59ba119fd"
-                      name="ClrAttributes" />
-                  </stereotypeInstanceHasPropertyInstances>
-                  <stereotypeInstanceHasPropertyInstances
-                    Id="309cf73e-09ae-4d29-ad7b-3e8dc3bd9d62">
-                    <propertyInstance
-                      Id="88d95a45-7355-4388-a6f5-ec234d82eeab"
-                      name="Get"
-                      value="none" />
-                  </stereotypeInstanceHasPropertyInstances>
-                  <stereotypeInstanceHasPropertyInstances
-                    Id="47b97de4-fe41-49b9-b777-fdddf44be49b">
-                    <propertyInstance
-                      Id="9ab53f9d-db0c-4b8c-8d46-8aaca3998cb2"
-                      name="HasBody"
-                      value="false" />
-                  </stereotypeInstanceHasPropertyInstances>
-                  <stereotypeInstanceHasPropertyInstances
-                    Id="54429d7e-9a42-4857-b505-527f589d0e09">
-                    <propertyInstance
-                      Id="39fcad4c-24fa-4c33-9574-6b1b5a7d1f8a"
-                      name="IsUnsafe"
-                      value="false" />
-                  </stereotypeInstanceHasPropertyInstances>
-                  <stereotypeInstanceHasPropertyInstances
-                    Id="43edd3f9-3ef3-43c1-a39f-861083e1afa0">
-                    <propertyInstance
-                      Id="205aaefc-7f88-4383-bf96-0b11a7a4fdde"
-                      name="Inheritance"
-                      value="none" />
-                  </stereotypeInstanceHasPropertyInstances>
-                  <stereotypeInstanceHasPropertyInstances
-                    Id="daf57bda-ecc0-4274-9732-a9a744fa3d57">
-                    <propertyInstance
-                      Id="566ad19c-24a2-4eff-b37e-c3fed0bea9e5"
-                      name="PackageVisibility"
-                      value="internal" />
-                  </stereotypeInstanceHasPropertyInstances>
-                  <stereotypeInstanceHasPropertyInstances
-                    Id="9feaf98c-57bd-4e5a-8896-3d59f9b3ab6d">
-                    <propertyInstance
-                      Id="eba8d3b3-2d47-4fc5-833b-78f25b70425c"
-                      name="Set"
-                      value="none" />
-                  </stereotypeInstanceHasPropertyInstances>
-                </propertyInstances>
-              </stereotypeInstance>
-            </appliedStereotypesInternal>
-            <type_NamedElement>
-              <primitiveTypeMoniker
-                Id="59259974-6d55-42c6-b7bd-763d77ac8ef9"
-                LastKnownName="String"
-                LastKnownLocation="Övningsuppgift Lektion 3 OOAD.uml" />
-            </type_NamedElement>
-          </property>
           <property
             Id="26c9aa02-fd52-45b7-8941-42c725d5f076"
             name="StartPrice"
@@ -1039,81 +983,6 @@
               <undefinedTypeMoniker
                 Id="98db60ff-d2a7-4a3c-9036-274854840344"
                 LastKnownName="Decimal"
-                LastKnownLocation="Övningsuppgift Lektion 3 OOAD.uml" />
-            </type_NamedElement>
-          </property>
-          <property
-            Id="027efde0-b0fb-473d-9838-06a1d277489e"
-            name="Id"
-            isLeaf="false"
-            isStatic="false"
-            isReadOnly="false"
-            isUnique="false"
-            isDerived="false"
-            isDerivedUnion="false"
-            aggregation="None"
-            isComposite="false">
-            <appliedStereotypesInternal>
-              <stereotypeInstance
-                Id="6bf1b327-c52a-4749-a299-4ad4e1ee6c04"
-                name="property"
-                profile="CSharpProfile">
-                <propertyInstances>
-                  <stereotypeInstanceHasPropertyInstances
-                    Id="e57d9d97-a97a-4b8b-9ee7-9369992b9ffa">
-                    <propertyInstance
-                      Id="9650b603-e3cb-4245-a232-5c9bd9d9d1e2"
-                      name="ClrAttributes" />
-                  </stereotypeInstanceHasPropertyInstances>
-                  <stereotypeInstanceHasPropertyInstances
-                    Id="870b7541-5ebc-47e5-9ee0-86a930e17c5e">
-                    <propertyInstance
-                      Id="222953e5-e9f2-4ffc-a9f5-529b8da75035"
-                      name="Get"
-                      value="none" />
-                  </stereotypeInstanceHasPropertyInstances>
-                  <stereotypeInstanceHasPropertyInstances
-                    Id="60f0b4dd-eada-4c0d-9e06-014a1a6b193c">
-                    <propertyInstance
-                      Id="9897843c-6453-4fd5-b572-00bd54dce92e"
-                      name="HasBody"
-                      value="false" />
-                  </stereotypeInstanceHasPropertyInstances>
-                  <stereotypeInstanceHasPropertyInstances
-                    Id="53343cda-35f1-4e55-ac10-2442b67aa754">
-                    <propertyInstance
-                      Id="f9e8a156-169b-4957-a9fc-ede3837c2279"
-                      name="IsUnsafe"
-                      value="false" />
-                  </stereotypeInstanceHasPropertyInstances>
-                  <stereotypeInstanceHasPropertyInstances
-                    Id="276bcd05-7c83-47f5-9c49-60e8ff7ccbc5">
-                    <propertyInstance
-                      Id="bc49dc6c-3096-4579-93fc-32f06d1f3d5a"
-                      name="Inheritance"
-                      value="none" />
-                  </stereotypeInstanceHasPropertyInstances>
-                  <stereotypeInstanceHasPropertyInstances
-                    Id="a2235c7a-5dd8-4e79-b4f5-d967f1d7388a">
-                    <propertyInstance
-                      Id="b7ca8f0e-5c14-40b6-bae8-26af399faa57"
-                      name="PackageVisibility"
-                      value="internal" />
-                  </stereotypeInstanceHasPropertyInstances>
-                  <stereotypeInstanceHasPropertyInstances
-                    Id="0d448271-dc65-48cb-91a2-a37038fd9ee4">
-                    <propertyInstance
-                      Id="29b8333c-c4b2-4fb7-b4b8-7a05d420a522"
-                      name="Set"
-                      value="none" />
-                  </stereotypeInstanceHasPropertyInstances>
-                </propertyInstances>
-              </stereotypeInstance>
-            </appliedStereotypesInternal>
-            <type_NamedElement>
-              <primitiveTypeMoniker
-                Id="220a3521-e091-4221-bae9-3ef9018e845c"
-                LastKnownName="Integer"
                 LastKnownLocation="Övningsuppgift Lektion 3 OOAD.uml" />
             </type_NamedElement>
           </property>
@@ -1484,6 +1353,60 @@
                   </stereotypeInstanceHasPropertyInstances>
                 </propertyInstances>
               </stereotypeInstance>
+              <stereotypeInstance
+                Id="0f5cfd6b-0043-4f66-a3b0-851978249816"
+                name="TextTemplateBindings"
+                profile="TextTemplateBindings">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="7e2b857f-37c6-4510-9483-7dfa01864aa0">
+                    <propertyInstance
+                      Id="dbff181e-1a06-4705-ac05-2eb7b9d91217"
+                      name="Alias"
+                      value="MassProduced|Antique|Modern" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="3bff29d6-5a9d-485c-b312-54829f7bfea3">
+                    <propertyInstance
+                      Id="2caafb91-be0d-4114-8a45-feb4b609c348"
+                      name="TemplateFilePath" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="a6709d91-2ed6-435b-b462-eb72dea14f40">
+                    <propertyInstance
+                      Id="f5d42858-f2ca-4a15-bc06-87e73f666866"
+                      name="ProjectPath"
+                      value="MassProduced=..\Övningsuppgift Lektion 3 OOADLib\Övningsuppgift Lektion 3 OOADLib.csproj|Antique=..\Övningsuppgift Lektion 3 OOADLib\Övningsuppgift Lektion 3 OOADLib.csproj|Modern=..\Övningsuppgift Lektion 3 OOADLib\Övningsuppgift Lektion 3 OOADLib.csproj" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="9da4d29f-b24c-446e-9645-35eead1933fa">
+                    <propertyInstance
+                      Id="5c85035b-1f6d-4f1f-8390-19acda4bd507"
+                      name="TargetDirectory"
+                      value="MassProduced=GeneratedCode\{PackageStructure}|Antique=GeneratedCode\{PackageStructure}|Modern=GeneratedCode\{PackageStructure}" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="60a9040d-94ce-4a68-a1e3-fe01c2f1f914">
+                    <propertyInstance
+                      Id="835f2e05-8e5d-45d6-b55a-e33c5382acc9"
+                      name="TargetName"
+                      value="MassProduced={Name}|Antique={Name}|Modern={Name}" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="49994398-abbd-4a5a-ae50-7506a8969a41">
+                    <propertyInstance
+                      Id="da7c809e-2f43-48ce-9b10-c4fb3fd4ee3d"
+                      name="Overwrite"
+                      value="MassProduced=True|Antique=True|Modern=True" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="87df1d62-847b-40a7-8a35-b3998084c2e0">
+                    <propertyInstance
+                      Id="8301b409-3879-4d15-9536-f03d6257860f"
+                      name="Parameters" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
             </appliedStereotypesInternal>
             <type_NamedElement>
               <undefinedTypeMoniker
@@ -1508,7 +1431,7 @@
             isSubstitutable="false">
             <classMoniker
               Id="933d5b16-2773-468c-b03a-26ee02d80ea6"
-              LastKnownName="ProductBase"
+              LastKnownName="Product"
               LastKnownLocation="Övningsuppgift Lektion 3 OOAD.uml" />
           </generalization>
         </generalsInternal>
@@ -1540,7 +1463,7 @@
             isSubstitutable="false">
             <classMoniker
               Id="933d5b16-2773-468c-b03a-26ee02d80ea6"
-              LastKnownName="ProductBase"
+              LastKnownName="Product"
               LastKnownLocation="Övningsuppgift Lektion 3 OOAD.uml" />
           </generalization>
         </generalsInternal>
@@ -1572,7 +1495,7 @@
             isSubstitutable="false">
             <classMoniker
               Id="933d5b16-2773-468c-b03a-26ee02d80ea6"
-              LastKnownName="ProductBase"
+              LastKnownName="Product"
               LastKnownLocation="Övningsuppgift Lektion 3 OOAD.uml" />
           </generalization>
         </generalsInternal>
@@ -2715,6 +2638,476 @@
       <undefinedType
         Id="3db22191-34ba-4deb-a868-182e387dc719"
         name="DateTime" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <class
+        Id="3aefb253-c3f6-4bb5-8a1d-c71891cb8b09"
+        name="User"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false">
+        <generalsInternal>
+          <generalization
+            Id="88e3962d-ca80-4b67-99de-e76b1aec7bbf"
+            isSubstitutable="false">
+            <classMoniker
+              Id="8f7a3090-6e09-4efb-9e0a-f6bd657fde95"
+              LastKnownName="EntityBase"
+              LastKnownLocation="Övningsuppgift Lektion 3 OOAD.uml" />
+          </generalization>
+        </generalsInternal>
+        <targetEnds>
+          <association
+            Id="5daefa35-1682-43b1-86df-c2f0900fff57"
+            isDerived="false"
+            sourceEndRoleName="User"
+            targetEndRoleName="Bank"
+            isLeaf="false"
+            isAbstract="false">
+            <classMoniker
+              Id="f4a3de1b-47cb-4d26-8388-bd2d204bc9c9"
+              LastKnownName="Bank"
+              LastKnownLocation="Övningsuppgift Lektion 3 OOAD.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="efa47ad5-057e-4bac-85b2-30b6735b4a64"
+                  name="User"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false"
+                  isNavigableOwned="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="9d35cdf1-1652-4671-bef2-05b3955ade3c"
+                  name="Bank"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false" />
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+        </targetEnds>
+        <ownedAttributesInternal>
+          <property
+            Id="05fe4728-8405-4d00-b836-47fe60fa66b3"
+            name="Role"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false">
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="71366ea8-252d-41b0-bf8e-abcbf4b5f66d"
+                name="TextTemplateBindings"
+                profile="TextTemplateBindings">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="fe4d7a5f-e303-483b-8841-621c8188d539">
+                    <propertyInstance
+                      Id="d4ea36af-45c6-4a2d-94cb-749398861b51"
+                      name="Alias"
+                      value="Customer|Admin|Supplier" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="e87a6809-7c6e-483a-b2b3-33d2d678eb11">
+                    <propertyInstance
+                      Id="8fdba6b7-92e3-426e-ad8e-61de5512df74"
+                      name="TemplateFilePath" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="39f88e87-11b1-4875-9a98-139eb2c9144a">
+                    <propertyInstance
+                      Id="4a84c35f-2f2b-49f7-afe4-245f0cd52632"
+                      name="ProjectPath"
+                      value="Customer=..\Övningsuppgift Lektion 3 OOADLib\Övningsuppgift Lektion 3 OOADLib.csproj|Admin=..\Övningsuppgift Lektion 3 OOADLib\Övningsuppgift Lektion 3 OOADLib.csproj|Supplier=..\Övningsuppgift Lektion 3 OOADLib\Övningsuppgift Lektion 3 OOADLib.csproj" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="09a196c5-6fd3-4051-847a-16f63eceb861">
+                    <propertyInstance
+                      Id="b0c38bfe-6156-43a4-b35f-28957cb48731"
+                      name="TargetDirectory"
+                      value="Customer=GeneratedCode\{PackageStructure}|Admin=GeneratedCode\{PackageStructure}|Supplier=GeneratedCode\{PackageStructure}" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="229d3ca4-c5e1-4ac8-b21b-37ff5279c626">
+                    <propertyInstance
+                      Id="366022df-cf88-44c7-9a9d-e6532e381c0f"
+                      name="TargetName"
+                      value="Customer={Name}|Admin={Name}|Supplier={Name}" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="02497470-e366-4ccb-9269-2630c1d93826">
+                    <propertyInstance
+                      Id="73306426-69ef-49b4-bdde-06064483b4ae"
+                      name="Overwrite"
+                      value="Customer=True|Admin=True|Supplier=True" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="433996af-bc31-4c4c-b02f-896b926030c7">
+                    <propertyInstance
+                      Id="42b4633b-35f6-4115-9119-eb886cb79095"
+                      name="Parameters" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <type_NamedElement>
+              <undefinedTypeMoniker
+                Id="10b8229a-a53c-4d78-9037-390144672322"
+                LastKnownName="Enum"
+                LastKnownLocation="Övningsuppgift Lektion 3 OOAD.uml" />
+            </type_NamedElement>
+          </property>
+          <property
+            Id="33797ae2-f3e5-471f-9185-0bda0b017906"
+            name="BankDetails"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false">
+            <type_NamedElement>
+              <classMoniker
+                Id="f4a3de1b-47cb-4d26-8388-bd2d204bc9c9"
+                LastKnownName="Bank"
+                LastKnownLocation="Övningsuppgift Lektion 3 OOAD.uml" />
+            </type_NamedElement>
+          </property>
+          <property
+            Id="10b987ad-f35d-472b-a8e8-6f48242f667f"
+            name="Email"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false">
+            <type_NamedElement>
+              <primitiveTypeMoniker
+                Id="59259974-6d55-42c6-b7bd-763d77ac8ef9"
+                LastKnownName="String"
+                LastKnownLocation="Övningsuppgift Lektion 3 OOAD.uml" />
+            </type_NamedElement>
+          </property>
+          <property
+            Id="f674a44e-d43c-4d6b-b222-aa9730595ee3"
+            name="Address"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false">
+            <type_NamedElement>
+              <primitiveTypeMoniker
+                Id="59259974-6d55-42c6-b7bd-763d77ac8ef9"
+                LastKnownName="String"
+                LastKnownLocation="Övningsuppgift Lektion 3 OOAD.uml" />
+            </type_NamedElement>
+          </property>
+        </ownedAttributesInternal>
+      </class>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <class
+        Id="f4a3de1b-47cb-4d26-8388-bd2d204bc9c9"
+        name="Bank"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false">
+        <generalsInternal>
+          <generalization
+            Id="a50d271d-5b0d-4d88-9d9c-84e55ba7579c"
+            isSubstitutable="false">
+            <classMoniker
+              Id="8f7a3090-6e09-4efb-9e0a-f6bd657fde95"
+              LastKnownName="EntityBase"
+              LastKnownLocation="Övningsuppgift Lektion 3 OOAD.uml" />
+          </generalization>
+        </generalsInternal>
+        <ownedAttributesInternal>
+          <property
+            Id="078b3149-a8cc-42ea-8756-a73316072a7b"
+            name="AccountNumber"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false">
+            <type_NamedElement>
+              <primitiveTypeMoniker
+                Id="59259974-6d55-42c6-b7bd-763d77ac8ef9"
+                LastKnownName="String"
+                LastKnownLocation="Övningsuppgift Lektion 3 OOAD.uml" />
+            </type_NamedElement>
+          </property>
+          <property
+            Id="2435a2bd-a228-4176-875c-da40d6683be1"
+            name="Balance"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false">
+            <type_NamedElement>
+              <undefinedTypeMoniker
+                Id="98db60ff-d2a7-4a3c-9036-274854840344"
+                LastKnownName="Decimal"
+                LastKnownLocation="Övningsuppgift Lektion 3 OOAD.uml" />
+            </type_NamedElement>
+          </property>
+        </ownedAttributesInternal>
+      </class>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <class
+        Id="d64d4297-77e1-4b2c-8bc9-ed9ac1ebec22"
+        name="Auction"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false">
+        <suppliersInternal>
+          <dependency
+            Id="17b62c3d-83cf-4670-a3f7-a020a0ef002a">
+            <classMoniker
+              Id="933d5b16-2773-468c-b03a-26ee02d80ea6"
+              LastKnownName="Product"
+              LastKnownLocation="Övningsuppgift Lektion 3 OOAD.uml" />
+          </dependency>
+        </suppliersInternal>
+        <ownedAttributesInternal>
+          <property
+            Id="dc2b40bb-98b7-4c6d-a9d9-17fbd4c82aa7"
+            name="BidWinner"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false">
+            <type_NamedElement>
+              <classMoniker
+                Id="3aefb253-c3f6-4bb5-8a1d-c71891cb8b09"
+                LastKnownName="User"
+                LastKnownLocation="Övningsuppgift Lektion 3 OOAD.uml" />
+            </type_NamedElement>
+          </property>
+          <property
+            Id="fa78465e-c34a-4275-86d3-8c6f555e8bee"
+            name="Product"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false">
+            <type_NamedElement>
+              <classMoniker
+                Id="933d5b16-2773-468c-b03a-26ee02d80ea6"
+                LastKnownName="Product"
+                LastKnownLocation="Övningsuppgift Lektion 3 OOAD.uml" />
+            </type_NamedElement>
+          </property>
+          <property
+            Id="32334cab-3557-4a8c-91d5-dce322ddb39e"
+            name="Bid"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false">
+            <type_NamedElement>
+              <undefinedTypeMoniker
+                Id="be63c89e-cad7-4d7f-9f9c-dd52bf256116"
+                LastKnownName="List&lt;Bid&gt;"
+                LastKnownLocation="Övningsuppgift Lektion 3 OOAD.uml" />
+            </type_NamedElement>
+          </property>
+          <property
+            Id="743c9d3f-1735-4eed-ad90-bdb47c81075c"
+            name="Expired"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false">
+            <type_NamedElement>
+              <undefinedTypeMoniker
+                Id="3db22191-34ba-4deb-a868-182e387dc719"
+                LastKnownName="DateTime"
+                LastKnownLocation="Övningsuppgift Lektion 3 OOAD.uml" />
+            </type_NamedElement>
+          </property>
+          <property
+            Id="5a0c520b-425e-47e4-81a5-b96c85640387"
+            name="Start"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false">
+            <type_NamedElement>
+              <undefinedTypeMoniker
+                Id="3db22191-34ba-4deb-a868-182e387dc719"
+                LastKnownName="DateTime"
+                LastKnownLocation="Övningsuppgift Lektion 3 OOAD.uml" />
+            </type_NamedElement>
+          </property>
+        </ownedAttributesInternal>
+      </class>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <class
+        Id="8f7a3090-6e09-4efb-9e0a-f6bd657fde95"
+        name="EntityBase"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false">
+        <ownedAttributesInternal>
+          <property
+            Id="fa823b5b-ecae-4d5f-8942-63192846df8a"
+            name="Id"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false">
+            <type_NamedElement>
+              <primitiveTypeMoniker
+                Id="220a3521-e091-4221-bae9-3ef9018e845c"
+                LastKnownName="Integer"
+                LastKnownLocation="Övningsuppgift Lektion 3 OOAD.uml" />
+            </type_NamedElement>
+          </property>
+          <property
+            Id="6c528c89-7437-4470-ab41-4a79683da0f5"
+            name="Name"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false">
+            <type_NamedElement>
+              <primitiveTypeMoniker
+                Id="59259974-6d55-42c6-b7bd-763d77ac8ef9"
+                LastKnownName="String"
+                LastKnownLocation="Övningsuppgift Lektion 3 OOAD.uml" />
+            </type_NamedElement>
+          </property>
+        </ownedAttributesInternal>
+      </class>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <class
+        Id="e89452cd-6780-4edd-9d6a-ee3be99f2fad"
+        name="Bid"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false">
+        <suppliersInternal>
+          <dependency
+            Id="6e3777c9-d5e2-4630-b3b0-434265146c9c">
+            <classMoniker
+              Id="d64d4297-77e1-4b2c-8bc9-ed9ac1ebec22"
+              LastKnownName="Auction"
+              LastKnownLocation="Övningsuppgift Lektion 3 OOAD.uml" />
+          </dependency>
+        </suppliersInternal>
+        <ownedAttributesInternal>
+          <property
+            Id="1f80855e-cbeb-4929-927d-ddca2b7d91f3"
+            name="Amount"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false">
+            <type_NamedElement>
+              <undefinedTypeMoniker
+                Id="98db60ff-d2a7-4a3c-9036-274854840344"
+                LastKnownName="Decimal"
+                LastKnownLocation="Övningsuppgift Lektion 3 OOAD.uml" />
+            </type_NamedElement>
+          </property>
+          <property
+            Id="ee67ebcd-e50d-4ba9-a741-a1e700b7bfa7"
+            name="User"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false">
+            <type_NamedElement>
+              <classMoniker
+                Id="3aefb253-c3f6-4bb5-8a1d-c71891cb8b09"
+                LastKnownName="User"
+                LastKnownLocation="Övningsuppgift Lektion 3 OOAD.uml" />
+            </type_NamedElement>
+          </property>
+        </ownedAttributesInternal>
+      </class>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <undefinedType
+        Id="7d82fd7f-1302-4d9d-9f4e-d3dc3edd4532"
+        name="List&lt;&gt;" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <undefinedType
+        Id="be63c89e-cad7-4d7f-9f9c-dd52bf256116"
+        name="List&lt;Bid&gt;" />
     </packageHasNamedElement>
   </packagedElements>
   <primitiveType
