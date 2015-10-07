@@ -1,0 +1,226 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<useCaseModelRoot xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm4="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm5="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/ModelStore" xmlns:dm9="http://schemas.microsoft.com/dsltools/SimpleShapesModel" xmlns:dm10="http://schemas.microsoft.com/VisualStudio/TeamArchitect/SequenceDesigner" xmlns:dm11="http://schemas.microsoft.com/dsltools/LogicalClassDesigner" dslVersion="1.0.0.0" Id="285a6aed-c40e-4059-8619-a7e14660902a" name="UMLUseCaseDiagram1" linkedPackageId="6cf68a6a-ac07-4775-8434-7a9e72d6c820" xmlns="http://schemas.microsoft.com/dsltools/UseCaseModel">
+  <profileInstances>
+    <packageHasProfileInstances Id="0e52389c-1695-42bc-9405-5d8111cff1b5">
+      <profileInstance Id="abc68418-fb8e-4116-b3ea-e0934dd6ecf4" name="StandardProfileL2">
+        <elementDefinition Id="e34d544e-0fea-4ed6-ac5e-1b74119ac791" />
+      </profileInstance>
+      <elementDefinition Id="0caec977-1f8c-4ba3-a7db-8cc9ad9cc73b" />
+    </packageHasProfileInstances>
+    <packageHasProfileInstances Id="29242a5c-a3ef-4a5d-a62d-3686799a9629">
+      <profileInstance Id="07287907-690f-4af9-94bf-0b7fb60b82fa" name="StandardProfileL3">
+        <elementDefinition Id="532ea607-fb19-44b8-8502-3351b05452be" />
+      </profileInstance>
+      <elementDefinition Id="29349502-908c-4fda-9054-c48619c59ed0" />
+    </packageHasProfileInstances>
+  </profileInstances>
+  <packagedElements>
+    <useCaseModelRootHasTypes>
+      <actor Id="4319e3e6-0292-4e7b-b950-c3f5302e8f8b" name="Customer" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="f9fab8cd-b321-4ec0-9060-21482e90bc2f" />
+        <targetEnds>
+          <association Id="98fb3a05-a67f-495a-a91b-5de787b97e90" isDerived="false" sourceEndRoleName="Customer" targetEndRoleName="Manage Purchase" isLeaf="false" isAbstract="false">
+            <useCaseMoniker Id="a062fcc8-99f9-45cd-bd13-9413e201682f" LastKnownName="Manage Purchase" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="e8a4cec9-98b2-47f7-9c91-beddeaad5210" name="Customer" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="00ded65b-7d44-4435-a9e4-12ad0bc60d7e" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="6366fd61-65f3-4008-a1d2-e6c0c19015b2" name="Manage Purchase" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="13daffd0-0c69-491a-bb6b-6303b86aebc1" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="bec1739a-5540-46ec-832d-0647166af909" />
+          </association>
+        </targetEnds>
+      </actor>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <actor Id="cca9d267-95e7-4ae1-87be-f93f246b88c7" name="Supplier" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="9de12630-5f7c-42cc-bf8d-a078663b6855" />
+        <targetEnds>
+          <association Id="6f3271b0-4676-40f9-a3e0-0297d37cae64" isDerived="false" sourceEndRoleName="Supplier" targetEndRoleName="Manage Payment" isLeaf="false" isAbstract="false">
+            <useCaseMoniker Id="f7971dac-933e-45d0-9477-841f43feaceb" LastKnownName="Receive Payment" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="627b87b0-863e-4d81-9bab-2b1a75920eab" name="Supplier" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="6a820ed7-a0e0-46d0-9451-d0218bbdbd9c" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="fab3a838-0720-4a73-a99a-4829fc6252ab" name="Manage Payment" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="ec10d323-56e0-4fba-8542-6cd235881e36" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="e8f303d7-90af-4890-8090-7a40b7c935d7" />
+          </association>
+        </targetEnds>
+      </actor>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <actor Id="9254f0f5-022b-46ac-b9dc-fbf95b131aa4" name="Nackademiska Auktions-främjandet" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="1b91eac7-766b-46a1-8d20-b78d8e19e16a" />
+        <targetEnds>
+          <association Id="de969898-1bbb-484f-85c1-905f54ea8735" isDerived="false" sourceEndRoleName="Nackademiska Auktions-främjandet" targetEndRoleName="Manage Auction" isLeaf="false" isAbstract="false">
+            <useCaseMoniker Id="292cba46-8f66-4fe6-83d5-37bfb14885f2" LastKnownName="Manage Auction" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="880eb7e1-b4d7-45f4-a36f-7bf92206e737" name="Nackademiska Auktions-främjandet" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="a087d461-ff59-4a48-9296-628d79d7332d" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="914deb7a-49b6-48cc-ab01-a5d4754bfa7e" name="Manage Auction" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="9ec04f80-d373-446a-8694-9a45f3594eb1" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="aaacd9f0-7f1f-4caf-aab8-3acdd6532e97" />
+          </association>
+          <association Id="68cda1a8-cc69-4dda-941a-dce24c1bed42" isDerived="false" sourceEndRoleName="Nackademiska Auktions-främjandet" targetEndRoleName="Manage Payment" isLeaf="false" isAbstract="false">
+            <useCaseMoniker Id="f7971dac-933e-45d0-9477-841f43feaceb" LastKnownName="Receive Payment" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="6828d752-cd7a-48f6-8bde-9c5f87819ef4" name="Nackademiska Auktions-främjandet" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="60a938e9-0116-44ec-a20e-a446456cca6d" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="d2e6415c-f726-4657-ba7c-e01b13df9c1b" name="Manage Payment" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="076c2f40-23a3-4c58-9e5e-767ecae88dda" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="1621d975-5c59-4a1c-a242-55b356d863af" />
+          </association>
+        </targetEnds>
+      </actor>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <subsystem Id="d7eb3f94-d6fb-4d6a-8cea-d375eaa91512" name="Web Showroom" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="94f9ad09-71e3-46c2-a3b1-4b48bf934138" />
+      </subsystem>
+    </useCaseModelRootHasTypes>
+    <packageHasNamedElement>
+      <useCase Id="9dc5c5b2-54f7-428e-91ab-3e07ba69f68a" name="Add Product to Shop" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="5e6fbe2b-6d3b-414f-b560-1cbb91514fdf" />
+        <subjects>
+          <subsystemMoniker Id="d7eb3f94-d6fb-4d6a-8cea-d375eaa91512" LastKnownName="Web Showroom" />
+        </subjects>
+      </useCase>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase Id="fd276af8-6bc5-448b-91b9-b2f0cd342e5f" name="Buyout Product" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="55ee239a-82c0-4488-9477-66375d62f1a7" />
+        <subjects>
+          <subsystemMoniker Id="d7eb3f94-d6fb-4d6a-8cea-d375eaa91512" LastKnownName="Web Showroom" />
+        </subjects>
+      </useCase>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase Id="292cba46-8f66-4fe6-83d5-37bfb14885f2" name="Manage Auction" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="b9d9612b-a457-4bef-b5eb-72b62520c089" />
+        <targetEnds>
+          <association Id="f016480d-8090-4cc3-8976-b30e915a053c" isDerived="false" sourceEndRoleName="Manage Auction" targetEndRoleName="Edit Product" isLeaf="false" isAbstract="false">
+            <useCaseMoniker Id="e98ac72d-b471-426b-81c9-24e7291cccac" LastKnownName="Edit Product" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="440459b2-43fc-446b-a571-8073b27e297c" name="Manage Auction" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="ec8f236a-8ec0-412d-afac-131d6a9d3b9f" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="1f95b220-48bc-4712-97ba-8eae46d47b0a" name="Edit Product" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="9c17c49d-0b5c-4acd-8179-b83443dfe2d5" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="7f22add4-3481-40fb-b408-dcaad1eee8eb" />
+          </association>
+          <association Id="0a87bd05-1dec-4629-8e98-0569b07db1b5" isDerived="false" sourceEndRoleName="Manage Auction" targetEndRoleName="Add Product to Shop" isLeaf="false" isAbstract="false">
+            <useCaseMoniker Id="9dc5c5b2-54f7-428e-91ab-3e07ba69f68a" LastKnownName="Add Product to Shop" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="5287f76c-3e9e-43ba-b713-a26a00a191d1" name="Manage Auction" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="a34f3997-7292-4894-82f6-b224bfa7ab79" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="726c24d2-3fc8-4819-bf3a-70a6aeb90058" name="Add Product to Shop" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="18b36252-91a7-4bec-8306-5fb7c5851ef6" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="d2dd0f6e-c319-4125-b485-81ac5c48def8" />
+          </association>
+        </targetEnds>
+        <subjects>
+          <subsystemMoniker Id="d7eb3f94-d6fb-4d6a-8cea-d375eaa91512" LastKnownName="Web Showroom" />
+        </subjects>
+      </useCase>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase Id="e98ac72d-b471-426b-81c9-24e7291cccac" name="Edit Product" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="5e46c0fb-d601-44c7-8211-e508550d5690" />
+        <subjects>
+          <subsystemMoniker Id="d7eb3f94-d6fb-4d6a-8cea-d375eaa91512" LastKnownName="Web Showroom" />
+        </subjects>
+      </useCase>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase Id="d9be40a9-4702-4d01-9545-c3fdc8548a7e" name="Bid Product" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="1b2f361c-8837-4bb2-bb6d-5faa92520b97" />
+        <subjects>
+          <subsystemMoniker Id="d7eb3f94-d6fb-4d6a-8cea-d375eaa91512" LastKnownName="Web Showroom" />
+        </subjects>
+      </useCase>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase Id="a062fcc8-99f9-45cd-bd13-9413e201682f" name="Manage Purchase" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="5ce65af8-f91b-410d-9a57-2e1e0b8c21d6" />
+        <targetEnds>
+          <association Id="866186d4-41e0-4c7a-adfb-a533a7efaa83" isDerived="false" sourceEndRoleName="Manage Purchase" targetEndRoleName="Bid Product" isLeaf="false" isAbstract="false">
+            <useCaseMoniker Id="d9be40a9-4702-4d01-9545-c3fdc8548a7e" LastKnownName="Bid Product" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="94cba971-0e1d-4339-94fd-1869cbb90c1c" name="Manage Purchase" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="542dd019-aea4-4207-be0e-178ed78493a7" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="60d2cb57-16cd-48e9-9dc1-b90c86238402" name="Bid Product" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="0734557d-624e-4ee4-b906-2dd5f5ec78e3" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="6704d4d9-12c3-434b-980e-3ac2340a74eb" />
+          </association>
+        </targetEnds>
+        <extendedCases>
+          <extend Id="fe54e374-2780-455b-9af1-d77ecae30ae8">
+            <useCaseMoniker Id="fd276af8-6bc5-448b-91b9-b2f0cd342e5f" LastKnownName="Buyout Product" />
+            <elementDefinition Id="ea4401bd-9265-41b3-ae07-91ff4b154891" />
+          </extend>
+        </extendedCases>
+        <subjects>
+          <subsystemMoniker Id="d7eb3f94-d6fb-4d6a-8cea-d375eaa91512" LastKnownName="Web Showroom" />
+        </subjects>
+      </useCase>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase Id="f7971dac-933e-45d0-9477-841f43feaceb" name="Receive Payment" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="f8ab8be4-3da5-471a-94c5-4383fa7e61ce" />
+        <subjects>
+          <subsystemMoniker Id="d7eb3f94-d6fb-4d6a-8cea-d375eaa91512" LastKnownName="Web Showroom" />
+        </subjects>
+      </useCase>
+    </packageHasNamedElement>
+  </packagedElements>
+  <package Id="6cf68a6a-ac07-4775-8434-7a9e72d6c820" name="Övningsuppgift Lektion 3 OOAD">
+    <elementDefinition Id="33624387-e923-41c2-86c3-13e8018dbe63" />
+  </package>
+</useCaseModelRoot>

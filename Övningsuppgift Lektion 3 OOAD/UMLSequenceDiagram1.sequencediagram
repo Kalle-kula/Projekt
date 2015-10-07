@@ -1,0 +1,666 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<SequenceDesignerModel xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm4="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm5="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/ModelStore" xmlns:dm9="http://schemas.microsoft.com/dsltools/SimpleShapesModel" xmlns:dm10="http://schemas.microsoft.com/dsltools/UseCaseModel" xmlns:dm11="http://schemas.microsoft.com/dsltools/LogicalClassDesigner" dslVersion="1.0.0.0" Id="e033511a-30e1-4c6d-b9a6-c0da84c20573" name="Sequence1" linkedPackageId="10c8ac0f-3cec-4f77-a50b-71d88f9cd3ea" xmlns="http://schemas.microsoft.com/VisualStudio/TeamArchitect/SequenceDesigner">
+  <profileInstances>
+    <packageHasProfileInstances Id="13f1605d-e33c-42ac-b507-3784d41319a1">
+      <profileInstance Id="d695a472-7286-4e52-876d-a1e34c3f2dce" name="StandardProfileL2">
+        <elementDefinition Id="e34d544e-0fea-4ed6-ac5e-1b74119ac791" />
+      </profileInstance>
+      <elementDefinition Id="0caec977-1f8c-4ba3-a7db-8cc9ad9cc73b" />
+    </packageHasProfileInstances>
+    <packageHasProfileInstances Id="183763fb-b7f7-475d-bf73-d0021b625d2c">
+      <profileInstance Id="d953d013-cdc5-4283-9fc7-d3b4c572bb96" name="StandardProfileL3">
+        <elementDefinition Id="532ea607-fb19-44b8-8502-3351b05452be" />
+      </profileInstance>
+      <elementDefinition Id="29349502-908c-4fda-9054-c48619c59ed0" />
+    </packageHasProfileInstances>
+  </profileInstances>
+  <packagedElements>
+    <packageHasNamedElement>
+      <interaction Id="bfb2fa39-ef9b-4f4e-a7ea-edcc9fa91643" name="Sequence1" collapseFragmentsFlag="false" isActiveClass="false" isAbstract="false" isLeaf="false" isReentrant="false">
+        <elementDefinition Id="775b3a24-2542-48cd-9d64-de6ee7e1e88b" />
+        <fragments>
+          <behaviorExecutionSpecification Id="b8576695-b5ac-4ed1-bd42-6a36e3477150" name="BehaviorExecutionSpecification11">
+            <elementDefinition Id="2438988c-ea08-4e57-8667-31b6d675efc9" />
+            <coveredLifelines>
+              <lifelineMoniker Id="44479429-4b3b-43fb-b5b6-fa37c7b9a8a0" LastKnownName="Bid Product" />
+            </coveredLifelines>
+            <finish>
+              <executionOccurrenceSpecificationMoniker Id="1921ccbc-5f5b-4b2e-b18f-cc3c27927758" LastKnownName="ExecutionOccurrenceSpecification22" />
+            </finish>
+            <start>
+              <executionOccurrenceSpecificationMoniker Id="985bda00-0d49-42b2-9363-36e7891c0c4a" LastKnownName="ExecutionOccurrenceSpecification21" />
+            </start>
+            <nestedOccurrences>
+              <messageOccurrenceSpecificationMoniker Id="3f84c276-0690-4617-9b7f-f481def5bf65" LastKnownName="MessageOccurrenceSpecification30" />
+              <messageOccurrenceSpecificationMoniker Id="77d6b18c-89b5-469d-974f-db70e777892b" LastKnownName="MessageOccurrenceSpecification35" />
+              <messageOccurrenceSpecificationMoniker Id="476abdd7-f25b-4c8a-99a4-75a29cf65632" LastKnownName="MessageOccurrenceSpecification31" />
+            </nestedOccurrences>
+          </behaviorExecutionSpecification>
+          <executionOccurrenceSpecification Id="985bda00-0d49-42b2-9363-36e7891c0c4a" name="ExecutionOccurrenceSpecification21">
+            <elementDefinition Id="a48b3518-e8f5-4731-8553-f0ef41184308" />
+            <event>
+              <executionOccurrenceSpecificationReferencesEvent>
+                <executionEventMoniker Id="3e278f44-3aea-4102-9a22-aca0b6298490" LastKnownName="ExecutionEvent" />
+              </executionOccurrenceSpecificationReferencesEvent>
+            </event>
+            <covered>
+              <lifelineMoniker Id="44479429-4b3b-43fb-b5b6-fa37c7b9a8a0" LastKnownName="Bid Product" />
+            </covered>
+          </executionOccurrenceSpecification>
+          <messageOccurrenceSpecification Id="0bc05178-bb9c-475b-8056-2e2beaef965e" name="MessageOccurrenceSpecification29">
+            <elementDefinition Id="47fe4308-99a9-4970-a275-1dc7dcd41695" />
+            <covered>
+              <lifelineMoniker Id="0f2df621-4826-4a1e-92d7-5d8c916511d2" LastKnownName="Customer" />
+            </covered>
+          </messageOccurrenceSpecification>
+          <messageOccurrenceSpecification Id="3f84c276-0690-4617-9b7f-f481def5bf65" name="MessageOccurrenceSpecification30">
+            <elementDefinition Id="01455832-682f-4925-adb7-51d202b068ec" />
+            <covered>
+              <lifelineMoniker Id="44479429-4b3b-43fb-b5b6-fa37c7b9a8a0" LastKnownName="Bid Product" />
+            </covered>
+          </messageOccurrenceSpecification>
+          <behaviorExecutionSpecification Id="7f646645-1062-468a-bcdf-bba2264ed910" name="BehaviorExecutionSpecification13">
+            <elementDefinition Id="4bcc466d-0642-473f-9f4d-476912043495" />
+            <coveredLifelines>
+              <lifelineMoniker Id="04939323-f63b-4f95-ba3b-3d6324e1d815" LastKnownName="Auction End" />
+            </coveredLifelines>
+            <finish>
+              <executionOccurrenceSpecificationMoniker Id="da77657b-d3be-4809-a1ec-4215c933fd46" LastKnownName="ExecutionOccurrenceSpecification26" />
+            </finish>
+            <start>
+              <executionOccurrenceSpecificationMoniker Id="d89d5dce-9758-45e0-8d44-cc0d8c10478f" LastKnownName="ExecutionOccurrenceSpecification25" />
+            </start>
+            <nestedOccurrences>
+              <messageOccurrenceSpecificationMoniker Id="68b03a83-0f5f-4ad6-9b12-e10f861c7a77" LastKnownName="MessageOccurrenceSpecification36" />
+            </nestedOccurrences>
+          </behaviorExecutionSpecification>
+          <executionOccurrenceSpecification Id="d89d5dce-9758-45e0-8d44-cc0d8c10478f" name="ExecutionOccurrenceSpecification25">
+            <elementDefinition Id="7f881ecd-45fe-4c6d-91d0-e622290d6b18" />
+            <event>
+              <executionOccurrenceSpecificationReferencesEvent>
+                <executionEventMoniker Id="e7bf06b7-bffb-4c0e-a828-74f575c7bbac" LastKnownName="ExecutionEvent" />
+              </executionOccurrenceSpecificationReferencesEvent>
+            </event>
+            <covered>
+              <lifelineMoniker Id="04939323-f63b-4f95-ba3b-3d6324e1d815" LastKnownName="Auction End" />
+            </covered>
+          </executionOccurrenceSpecification>
+          <messageOccurrenceSpecification Id="77d6b18c-89b5-469d-974f-db70e777892b" name="MessageOccurrenceSpecification35">
+            <elementDefinition Id="d62f740f-9dac-4fca-915b-4c96c4e7af1d" />
+            <covered>
+              <lifelineMoniker Id="44479429-4b3b-43fb-b5b6-fa37c7b9a8a0" LastKnownName="Bid Product" />
+            </covered>
+          </messageOccurrenceSpecification>
+          <messageOccurrenceSpecification Id="68b03a83-0f5f-4ad6-9b12-e10f861c7a77" name="MessageOccurrenceSpecification36">
+            <elementDefinition Id="d2822cc4-6684-4de5-82af-7c54e0e45ad0" />
+            <covered>
+              <lifelineMoniker Id="04939323-f63b-4f95-ba3b-3d6324e1d815" LastKnownName="Auction End" />
+            </covered>
+          </messageOccurrenceSpecification>
+          <messageOccurrenceSpecification Id="476abdd7-f25b-4c8a-99a4-75a29cf65632" name="MessageOccurrenceSpecification31">
+            <elementDefinition Id="6654e244-3b53-46cc-b487-18416554aa02" />
+            <covered>
+              <lifelineMoniker Id="44479429-4b3b-43fb-b5b6-fa37c7b9a8a0" LastKnownName="Bid Product" />
+            </covered>
+          </messageOccurrenceSpecification>
+          <messageOccurrenceSpecification Id="dc89fe41-426c-4939-857a-a073e9132ca8" name="MessageOccurrenceSpecification32">
+            <elementDefinition Id="80f70cb8-f76a-4279-9b84-33428a337fce" />
+            <covered>
+              <lifelineMoniker Id="0f2df621-4826-4a1e-92d7-5d8c916511d2" LastKnownName="Customer" />
+            </covered>
+          </messageOccurrenceSpecification>
+          <executionOccurrenceSpecification Id="1921ccbc-5f5b-4b2e-b18f-cc3c27927758" name="ExecutionOccurrenceSpecification22">
+            <elementDefinition Id="f8f74b02-1d76-4066-98ca-2edae10d9703" />
+            <event>
+              <executionOccurrenceSpecificationReferencesEvent>
+                <executionEventMoniker Id="8f346334-2c95-475e-bf7c-5173ccde00ce" LastKnownName="ExecutionEvent" />
+              </executionOccurrenceSpecificationReferencesEvent>
+            </event>
+            <covered>
+              <lifelineMoniker Id="44479429-4b3b-43fb-b5b6-fa37c7b9a8a0" LastKnownName="Bid Product" />
+            </covered>
+          </executionOccurrenceSpecification>
+          <behaviorExecutionSpecification Id="a378331c-f091-43f5-b1ac-8457bc4d1c73" name="BehaviorExecutionSpecification12">
+            <elementDefinition Id="87daf513-b0da-4ebf-b9c7-ef6cf44be898" />
+            <coveredLifelines>
+              <lifelineMoniker Id="75c4ff53-2e4b-4533-8dec-3fd5d302166a" LastKnownName="Buyout Product" />
+            </coveredLifelines>
+            <finish>
+              <executionOccurrenceSpecificationMoniker Id="38e2ef21-8ceb-4343-b2c6-150743f043cb" LastKnownName="ExecutionOccurrenceSpecification24" />
+            </finish>
+            <start>
+              <executionOccurrenceSpecificationMoniker Id="40fb26a1-1ec1-4242-9d52-3e19078ec31e" LastKnownName="ExecutionOccurrenceSpecification23" />
+            </start>
+            <nestedOccurrences>
+              <messageOccurrenceSpecificationMoniker Id="aeab9015-b2ee-415a-8e2f-8335618d132a" LastKnownName="MessageOccurrenceSpecification34" />
+              <messageOccurrenceSpecificationMoniker Id="8c1aa87f-6405-4117-bd42-cc92c89069b4" LastKnownName="MessageOccurrenceSpecification37" />
+            </nestedOccurrences>
+          </behaviorExecutionSpecification>
+          <executionOccurrenceSpecification Id="40fb26a1-1ec1-4242-9d52-3e19078ec31e" name="ExecutionOccurrenceSpecification23">
+            <elementDefinition Id="72f16e19-fa19-4184-92b1-29a4d4b76a70" />
+            <event>
+              <executionOccurrenceSpecificationReferencesEvent>
+                <executionEventMoniker Id="ea8b5426-2c68-4f02-a1a4-dccfd3faf3e0" LastKnownName="ExecutionEvent" />
+              </executionOccurrenceSpecificationReferencesEvent>
+            </event>
+            <covered>
+              <lifelineMoniker Id="75c4ff53-2e4b-4533-8dec-3fd5d302166a" LastKnownName="Buyout Product" />
+            </covered>
+          </executionOccurrenceSpecification>
+          <messageOccurrenceSpecification Id="aeab9015-b2ee-415a-8e2f-8335618d132a" name="MessageOccurrenceSpecification34">
+            <elementDefinition Id="6466d6d6-6aed-4c28-b4b4-ad3c47f11827" />
+            <covered>
+              <lifelineMoniker Id="75c4ff53-2e4b-4533-8dec-3fd5d302166a" LastKnownName="Buyout Product" />
+            </covered>
+          </messageOccurrenceSpecification>
+          <messageOccurrenceSpecification Id="53bb07fd-43bb-4904-8605-9c4688ed9b79" name="MessageOccurrenceSpecification33">
+            <elementDefinition Id="15702d8f-b58e-4059-b59b-20f985c0322e" />
+            <covered>
+              <lifelineMoniker Id="0f2df621-4826-4a1e-92d7-5d8c916511d2" LastKnownName="Customer" />
+            </covered>
+          </messageOccurrenceSpecification>
+          <executionOccurrenceSpecification Id="da77657b-d3be-4809-a1ec-4215c933fd46" name="ExecutionOccurrenceSpecification26">
+            <elementDefinition Id="12bc8fd4-f5da-4019-8b73-2d625c463dc8" />
+            <event>
+              <executionOccurrenceSpecificationReferencesEvent>
+                <executionEventMoniker Id="f0756fcf-1e8c-4d16-8450-ac26cb0ece20" LastKnownName="ExecutionEvent" />
+              </executionOccurrenceSpecificationReferencesEvent>
+            </event>
+            <covered>
+              <lifelineMoniker Id="04939323-f63b-4f95-ba3b-3d6324e1d815" LastKnownName="Auction End" />
+            </covered>
+          </executionOccurrenceSpecification>
+          <behaviorExecutionSpecification Id="d6e653d1-2d3d-46c0-b54e-5c06c2020d24" name="BehaviorExecutionSpecification14">
+            <elementDefinition Id="897fc40d-0bf7-446e-8889-fb40896a4a69" />
+            <coveredLifelines>
+              <lifelineMoniker Id="04939323-f63b-4f95-ba3b-3d6324e1d815" LastKnownName="Auction End" />
+            </coveredLifelines>
+            <finish>
+              <executionOccurrenceSpecificationMoniker Id="ad97dc76-1674-4204-99cc-4ae74c085f15" LastKnownName="ExecutionOccurrenceSpecification28" />
+            </finish>
+            <start>
+              <executionOccurrenceSpecificationMoniker Id="f447a0b6-dda4-482a-a840-212b29b2d6c9" LastKnownName="ExecutionOccurrenceSpecification27" />
+            </start>
+            <nestedOccurrences>
+              <messageOccurrenceSpecificationMoniker Id="478a6a46-c2e1-4845-8ea5-f231794c5979" LastKnownName="MessageOccurrenceSpecification38" />
+            </nestedOccurrences>
+          </behaviorExecutionSpecification>
+          <executionOccurrenceSpecification Id="f447a0b6-dda4-482a-a840-212b29b2d6c9" name="ExecutionOccurrenceSpecification27">
+            <elementDefinition Id="ed23fd68-b82a-4d10-9c9b-b0ae42409a3f" />
+            <event>
+              <executionOccurrenceSpecificationReferencesEvent>
+                <executionEventMoniker Id="013d4948-fa08-4bb9-9ac4-ba9af197995f" LastKnownName="ExecutionEvent" />
+              </executionOccurrenceSpecificationReferencesEvent>
+            </event>
+            <covered>
+              <lifelineMoniker Id="04939323-f63b-4f95-ba3b-3d6324e1d815" LastKnownName="Auction End" />
+            </covered>
+          </executionOccurrenceSpecification>
+          <messageOccurrenceSpecification Id="8c1aa87f-6405-4117-bd42-cc92c89069b4" name="MessageOccurrenceSpecification37">
+            <elementDefinition Id="d7ebfc14-ac04-4b5e-9623-b6b4b453ccf1" />
+            <covered>
+              <lifelineMoniker Id="75c4ff53-2e4b-4533-8dec-3fd5d302166a" LastKnownName="Buyout Product" />
+            </covered>
+          </messageOccurrenceSpecification>
+          <messageOccurrenceSpecification Id="478a6a46-c2e1-4845-8ea5-f231794c5979" name="MessageOccurrenceSpecification38">
+            <elementDefinition Id="be3f7a9b-b3d9-4a09-8cf0-2f853b8b1418" />
+            <covered>
+              <lifelineMoniker Id="04939323-f63b-4f95-ba3b-3d6324e1d815" LastKnownName="Auction End" />
+            </covered>
+          </messageOccurrenceSpecification>
+          <executionOccurrenceSpecification Id="38e2ef21-8ceb-4343-b2c6-150743f043cb" name="ExecutionOccurrenceSpecification24">
+            <elementDefinition Id="3ae34fca-ac88-453b-a1cd-9662f770e067" />
+            <event>
+              <executionOccurrenceSpecificationReferencesEvent>
+                <executionEventMoniker Id="83786c41-fd63-4b09-aded-fe24bc53acbd" LastKnownName="ExecutionEvent" />
+              </executionOccurrenceSpecificationReferencesEvent>
+            </event>
+            <covered>
+              <lifelineMoniker Id="75c4ff53-2e4b-4533-8dec-3fd5d302166a" LastKnownName="Buyout Product" />
+            </covered>
+          </executionOccurrenceSpecification>
+          <executionOccurrenceSpecification Id="ad97dc76-1674-4204-99cc-4ae74c085f15" name="ExecutionOccurrenceSpecification28">
+            <elementDefinition Id="f58a6b14-e1af-4198-b020-442c10a65c3c" />
+            <event>
+              <executionOccurrenceSpecificationReferencesEvent>
+                <executionEventMoniker Id="54c17fe5-98be-4723-8ee8-a91e0d8008a0" LastKnownName="ExecutionEvent" />
+              </executionOccurrenceSpecificationReferencesEvent>
+            </event>
+            <covered>
+              <lifelineMoniker Id="04939323-f63b-4f95-ba3b-3d6324e1d815" LastKnownName="Auction End" />
+            </covered>
+          </executionOccurrenceSpecification>
+          <behaviorExecutionSpecification Id="4cfefe55-430f-41ec-a585-c64585812dbc" name="BehaviorExecutionSpecification17">
+            <elementDefinition Id="39c2bde2-42d5-499c-975e-abdf494952a0" />
+            <coveredLifelines>
+              <lifelineMoniker Id="5e6b5fd2-de1f-4a68-8e61-deb9e8525ebb" LastKnownName="Nackademiska Auktions-främjandet" />
+            </coveredLifelines>
+            <finish>
+              <executionOccurrenceSpecificationMoniker Id="ed75684a-1207-44eb-ac05-38f15adc48bd" LastKnownName="ExecutionOccurrenceSpecification34" />
+            </finish>
+            <start>
+              <executionOccurrenceSpecificationMoniker Id="4201f9ff-a039-4ca8-b28a-2a5566a33982" LastKnownName="ExecutionOccurrenceSpecification33" />
+            </start>
+            <nestedOccurrences>
+              <messageOccurrenceSpecificationMoniker Id="722b6d41-68c3-4eed-b62c-585cd3cdfb25" LastKnownName="MessageOccurrenceSpecification49" />
+              <messageOccurrenceSpecificationMoniker Id="f9bde0d5-259f-4a03-bcd9-f09a59230f2d" LastKnownName="MessageOccurrenceSpecification52" />
+              <messageOccurrenceSpecificationMoniker Id="4671b485-b0fe-469b-8ca8-6a7a7e3d6436" LastKnownName="MessageOccurrenceSpecification50" />
+            </nestedOccurrences>
+          </behaviorExecutionSpecification>
+          <executionOccurrenceSpecification Id="4201f9ff-a039-4ca8-b28a-2a5566a33982" name="ExecutionOccurrenceSpecification33">
+            <elementDefinition Id="d5f18abd-d2be-4067-8a28-cfe4899c9fe3" />
+            <event>
+              <executionOccurrenceSpecificationReferencesEvent>
+                <executionEventMoniker Id="1503c62a-7740-44ca-9ca1-0d3c298cda04" LastKnownName="ExecutionEvent" />
+              </executionOccurrenceSpecificationReferencesEvent>
+            </event>
+            <covered>
+              <lifelineMoniker Id="5e6b5fd2-de1f-4a68-8e61-deb9e8525ebb" LastKnownName="Nackademiska Auktions-främjandet" />
+            </covered>
+          </executionOccurrenceSpecification>
+          <messageOccurrenceSpecification Id="722b6d41-68c3-4eed-b62c-585cd3cdfb25" name="MessageOccurrenceSpecification49">
+            <elementDefinition Id="fe533b1c-f992-40c7-94d4-6ae6e69c0a87" />
+            <covered>
+              <lifelineMoniker Id="5e6b5fd2-de1f-4a68-8e61-deb9e8525ebb" LastKnownName="Nackademiska Auktions-främjandet" />
+            </covered>
+          </messageOccurrenceSpecification>
+          <messageOccurrenceSpecification Id="a6c5c503-93bc-494d-b638-3641586cc90e" name="MessageOccurrenceSpecification48">
+            <elementDefinition Id="fe4a0855-8fc5-40fa-89b9-550775540edd" />
+            <covered>
+              <lifelineMoniker Id="04939323-f63b-4f95-ba3b-3d6324e1d815" LastKnownName="Auction End" />
+            </covered>
+          </messageOccurrenceSpecification>
+          <behaviorExecutionSpecification Id="61d9e9d3-d208-4adf-ba5e-ce8596088861" name="BehaviorExecutionSpecification19">
+            <elementDefinition Id="e011a924-ebba-4660-a94a-4dda4f51ed4d" />
+            <coveredLifelines>
+              <lifelineMoniker Id="71179a2b-67e5-4565-966c-aad32b665e49" LastKnownName="Supplier" />
+            </coveredLifelines>
+            <finish>
+              <executionOccurrenceSpecificationMoniker Id="54715dc5-f8e2-4267-89f5-de610b67a5b8" LastKnownName="ExecutionOccurrenceSpecification38" />
+            </finish>
+            <start>
+              <executionOccurrenceSpecificationMoniker Id="1a65fc49-faac-4e4f-aa71-97883c88e67c" LastKnownName="ExecutionOccurrenceSpecification37" />
+            </start>
+            <nestedOccurrences>
+              <messageOccurrenceSpecificationMoniker Id="302df78f-a897-4275-8ca1-97cece25b6e7" LastKnownName="MessageOccurrenceSpecification53" />
+            </nestedOccurrences>
+          </behaviorExecutionSpecification>
+          <executionOccurrenceSpecification Id="1a65fc49-faac-4e4f-aa71-97883c88e67c" name="ExecutionOccurrenceSpecification37">
+            <elementDefinition Id="2dc1e9f3-3834-4667-8bed-2c17a47a39bf" />
+            <event>
+              <executionOccurrenceSpecificationReferencesEvent>
+                <executionEventMoniker Id="5d3ec7bb-3046-439b-ac98-15f03d536624" LastKnownName="ExecutionEvent" />
+              </executionOccurrenceSpecificationReferencesEvent>
+            </event>
+            <covered>
+              <lifelineMoniker Id="71179a2b-67e5-4565-966c-aad32b665e49" LastKnownName="Supplier" />
+            </covered>
+          </executionOccurrenceSpecification>
+          <messageOccurrenceSpecification Id="f9bde0d5-259f-4a03-bcd9-f09a59230f2d" name="MessageOccurrenceSpecification52">
+            <elementDefinition Id="3e7890f5-3e39-431a-895a-16206a622ca0" />
+            <covered>
+              <lifelineMoniker Id="5e6b5fd2-de1f-4a68-8e61-deb9e8525ebb" LastKnownName="Nackademiska Auktions-främjandet" />
+            </covered>
+          </messageOccurrenceSpecification>
+          <messageOccurrenceSpecification Id="302df78f-a897-4275-8ca1-97cece25b6e7" name="MessageOccurrenceSpecification53">
+            <elementDefinition Id="feb355fa-6ece-4591-a1d8-01f14f19cf70" />
+            <covered>
+              <lifelineMoniker Id="71179a2b-67e5-4565-966c-aad32b665e49" LastKnownName="Supplier" />
+            </covered>
+          </messageOccurrenceSpecification>
+          <behaviorExecutionSpecification Id="6116dd97-88d7-4da1-a575-9c821d74bd8b" name="BehaviorExecutionSpecification18">
+            <elementDefinition Id="834f18aa-a45a-42a1-aa45-398b4f0d9531" />
+            <coveredLifelines>
+              <lifelineMoniker Id="0f2df621-4826-4a1e-92d7-5d8c916511d2" LastKnownName="Customer" />
+            </coveredLifelines>
+            <finish>
+              <executionOccurrenceSpecificationMoniker Id="acf91271-d457-4435-aa5e-14f29988bd7b" LastKnownName="ExecutionOccurrenceSpecification36" />
+            </finish>
+            <start>
+              <executionOccurrenceSpecificationMoniker Id="8d697ef3-f238-4654-9771-918ef38ec4d1" LastKnownName="ExecutionOccurrenceSpecification35" />
+            </start>
+            <nestedOccurrences>
+              <messageOccurrenceSpecificationMoniker Id="33ba2136-bed1-47c3-8aba-33ad31fbc945" LastKnownName="MessageOccurrenceSpecification51" />
+            </nestedOccurrences>
+          </behaviorExecutionSpecification>
+          <executionOccurrenceSpecification Id="8d697ef3-f238-4654-9771-918ef38ec4d1" name="ExecutionOccurrenceSpecification35">
+            <elementDefinition Id="65dbd8c8-7e16-47c0-9213-d2c72f5a7b51" />
+            <event>
+              <executionOccurrenceSpecificationReferencesEvent>
+                <executionEventMoniker Id="f216d493-5e7d-4d83-9982-04280368d793" LastKnownName="ExecutionEvent" />
+              </executionOccurrenceSpecificationReferencesEvent>
+            </event>
+            <covered>
+              <lifelineMoniker Id="0f2df621-4826-4a1e-92d7-5d8c916511d2" LastKnownName="Customer" />
+            </covered>
+          </executionOccurrenceSpecification>
+          <messageOccurrenceSpecification Id="33ba2136-bed1-47c3-8aba-33ad31fbc945" name="MessageOccurrenceSpecification51">
+            <elementDefinition Id="96c36300-1ff4-421c-8b7f-f6de06a3be9a" />
+            <covered>
+              <lifelineMoniker Id="0f2df621-4826-4a1e-92d7-5d8c916511d2" LastKnownName="Customer" />
+            </covered>
+          </messageOccurrenceSpecification>
+          <messageOccurrenceSpecification Id="4671b485-b0fe-469b-8ca8-6a7a7e3d6436" name="MessageOccurrenceSpecification50">
+            <elementDefinition Id="fa5f0fc8-f040-4139-8a2c-f64d95ff7ddd" />
+            <covered>
+              <lifelineMoniker Id="5e6b5fd2-de1f-4a68-8e61-deb9e8525ebb" LastKnownName="Nackademiska Auktions-främjandet" />
+            </covered>
+          </messageOccurrenceSpecification>
+          <executionOccurrenceSpecification Id="54715dc5-f8e2-4267-89f5-de610b67a5b8" name="ExecutionOccurrenceSpecification38">
+            <elementDefinition Id="1b4497c3-ee9d-4924-9d79-b4581f6a15ee" />
+            <event>
+              <executionOccurrenceSpecificationReferencesEvent>
+                <executionEventMoniker Id="2b1b59c4-2c48-4d27-bef9-eea894075f48" LastKnownName="ExecutionEvent" />
+              </executionOccurrenceSpecificationReferencesEvent>
+            </event>
+            <covered>
+              <lifelineMoniker Id="71179a2b-67e5-4565-966c-aad32b665e49" LastKnownName="Supplier" />
+            </covered>
+          </executionOccurrenceSpecification>
+          <executionOccurrenceSpecification Id="ed75684a-1207-44eb-ac05-38f15adc48bd" name="ExecutionOccurrenceSpecification34">
+            <elementDefinition Id="2cf29134-66ab-4380-be56-fc75b1a9e8c8" />
+            <event>
+              <executionOccurrenceSpecificationReferencesEvent>
+                <executionEventMoniker Id="82f575f6-d7dd-4cdc-9539-ab3853ecabae" LastKnownName="ExecutionEvent" />
+              </executionOccurrenceSpecificationReferencesEvent>
+            </event>
+            <covered>
+              <lifelineMoniker Id="5e6b5fd2-de1f-4a68-8e61-deb9e8525ebb" LastKnownName="Nackademiska Auktions-främjandet" />
+            </covered>
+          </executionOccurrenceSpecification>
+          <executionOccurrenceSpecification Id="acf91271-d457-4435-aa5e-14f29988bd7b" name="ExecutionOccurrenceSpecification36">
+            <elementDefinition Id="1dd0636d-6ce5-4272-a5c9-0f8fedb0113b" />
+            <event>
+              <executionOccurrenceSpecificationReferencesEvent>
+                <executionEventMoniker Id="f5f30ea2-1a37-4aed-935d-03ee2cf7f73b" LastKnownName="ExecutionEvent" />
+              </executionOccurrenceSpecificationReferencesEvent>
+            </event>
+            <covered>
+              <lifelineMoniker Id="0f2df621-4826-4a1e-92d7-5d8c916511d2" LastKnownName="Customer" />
+            </covered>
+          </executionOccurrenceSpecification>
+        </fragments>
+        <lifelines>
+          <lifeline Id="0f2df621-4826-4a1e-92d7-5d8c916511d2" name="Customer" isActor="true" lifelineDisplayName="Customer">
+            <elementDefinition Id="fe1488dc-ee04-4776-8eb0-3882a7c59e5d" />
+            <represents>
+              <propertyMoniker Id="29651991-380a-473d-bc14-70a9c89c8879" />
+            </represents>
+            <topLevelOccurrences>
+              <messageOccurrenceSpecificationMoniker Id="0bc05178-bb9c-475b-8056-2e2beaef965e" LastKnownName="MessageOccurrenceSpecification29" />
+              <messageOccurrenceSpecificationMoniker Id="dc89fe41-426c-4939-857a-a073e9132ca8" LastKnownName="MessageOccurrenceSpecification32" />
+              <messageOccurrenceSpecificationMoniker Id="53bb07fd-43bb-4904-8605-9c4688ed9b79" LastKnownName="MessageOccurrenceSpecification33" />
+              <executionOccurrenceSpecificationMoniker Id="8d697ef3-f238-4654-9771-918ef38ec4d1" LastKnownName="ExecutionOccurrenceSpecification35" />
+              <executionOccurrenceSpecificationMoniker Id="acf91271-d457-4435-aa5e-14f29988bd7b" LastKnownName="ExecutionOccurrenceSpecification36" />
+            </topLevelOccurrences>
+          </lifeline>
+          <lifeline Id="44479429-4b3b-43fb-b5b6-fa37c7b9a8a0" name="Bid Product" isActor="false" lifelineDisplayName="Bid Product">
+            <elementDefinition Id="551c49ce-6b97-42ad-8e7e-96da1df8b9b0" />
+            <represents>
+              <propertyMoniker Id="567b81db-a8e2-43b7-861a-73b202d252b8" />
+            </represents>
+            <topLevelOccurrences>
+              <executionOccurrenceSpecificationMoniker Id="985bda00-0d49-42b2-9363-36e7891c0c4a" LastKnownName="ExecutionOccurrenceSpecification21" />
+              <executionOccurrenceSpecificationMoniker Id="1921ccbc-5f5b-4b2e-b18f-cc3c27927758" LastKnownName="ExecutionOccurrenceSpecification22" />
+            </topLevelOccurrences>
+          </lifeline>
+          <lifeline Id="75c4ff53-2e4b-4533-8dec-3fd5d302166a" name="Buyout Product" isActor="false" lifelineDisplayName="Buyout Product">
+            <elementDefinition Id="23701fa3-7a05-4ab4-89ae-9082a4c0a20a" />
+            <represents>
+              <propertyMoniker Id="89a8a86f-e6a0-40c7-b8d8-405770b54239" />
+            </represents>
+            <topLevelOccurrences>
+              <executionOccurrenceSpecificationMoniker Id="40fb26a1-1ec1-4242-9d52-3e19078ec31e" LastKnownName="ExecutionOccurrenceSpecification23" />
+              <executionOccurrenceSpecificationMoniker Id="38e2ef21-8ceb-4343-b2c6-150743f043cb" LastKnownName="ExecutionOccurrenceSpecification24" />
+            </topLevelOccurrences>
+          </lifeline>
+          <lifeline Id="04939323-f63b-4f95-ba3b-3d6324e1d815" name="Auction End" isActor="false" lifelineDisplayName="Auction End">
+            <elementDefinition Id="37fac45b-c059-48cd-889e-818982668419" />
+            <topLevelOccurrences>
+              <executionOccurrenceSpecificationMoniker Id="d89d5dce-9758-45e0-8d44-cc0d8c10478f" LastKnownName="ExecutionOccurrenceSpecification25" />
+              <executionOccurrenceSpecificationMoniker Id="da77657b-d3be-4809-a1ec-4215c933fd46" LastKnownName="ExecutionOccurrenceSpecification26" />
+              <executionOccurrenceSpecificationMoniker Id="f447a0b6-dda4-482a-a840-212b29b2d6c9" LastKnownName="ExecutionOccurrenceSpecification27" />
+              <executionOccurrenceSpecificationMoniker Id="ad97dc76-1674-4204-99cc-4ae74c085f15" LastKnownName="ExecutionOccurrenceSpecification28" />
+              <messageOccurrenceSpecificationMoniker Id="a6c5c503-93bc-494d-b638-3641586cc90e" LastKnownName="MessageOccurrenceSpecification48" />
+            </topLevelOccurrences>
+          </lifeline>
+          <lifeline Id="5e6b5fd2-de1f-4a68-8e61-deb9e8525ebb" name="Nackademiska Auktions-främjandet" isActor="true" lifelineDisplayName="Nackademiska Auktions-främjandet">
+            <elementDefinition Id="e00b2624-57cc-430c-b07f-7c528568cabb" />
+            <represents>
+              <propertyMoniker Id="14632c63-d609-4c8e-b6bf-6a8245d2a645" />
+            </represents>
+            <topLevelOccurrences>
+              <executionOccurrenceSpecificationMoniker Id="4201f9ff-a039-4ca8-b28a-2a5566a33982" LastKnownName="ExecutionOccurrenceSpecification33" />
+              <executionOccurrenceSpecificationMoniker Id="ed75684a-1207-44eb-ac05-38f15adc48bd" LastKnownName="ExecutionOccurrenceSpecification34" />
+            </topLevelOccurrences>
+          </lifeline>
+          <lifeline Id="71179a2b-67e5-4565-966c-aad32b665e49" name="Supplier" isActor="true" lifelineDisplayName="Supplier">
+            <elementDefinition Id="525eb190-89d8-4998-94d8-4d7cdef0f3f9" />
+            <represents>
+              <propertyMoniker Id="4b73e22d-1f36-4757-86f4-c826749f4727" />
+            </represents>
+            <topLevelOccurrences>
+              <executionOccurrenceSpecificationMoniker Id="1a65fc49-faac-4e4f-aa71-97883c88e67c" LastKnownName="ExecutionOccurrenceSpecification37" />
+              <executionOccurrenceSpecificationMoniker Id="54715dc5-f8e2-4267-89f5-de610b67a5b8" LastKnownName="ExecutionOccurrenceSpecification38" />
+            </topLevelOccurrences>
+          </lifeline>
+        </lifelines>
+        <messages>
+          <message Id="16dcd127-6165-46fa-b9ff-79cfd973a871" name="Bids" messageKind="Complete" messageSort="SynchCall" createSelfMessage="false">
+            <elementDefinition Id="758b3abc-1da0-4285-b401-dca622242b41" />
+            <sendEvent>
+              <messageOccurrenceSpecificationMoniker Id="0bc05178-bb9c-475b-8056-2e2beaef965e" LastKnownName="MessageOccurrenceSpecification29" />
+            </sendEvent>
+            <receiveEvent>
+              <messageOccurrenceSpecificationMoniker Id="3f84c276-0690-4617-9b7f-f481def5bf65" LastKnownName="MessageOccurrenceSpecification30" />
+            </receiveEvent>
+          </message>
+          <message Id="e548f653-f7be-4f55-bd75-14e18cfaa308" name="Auction won" messageKind="Complete" messageSort="AsynchCall" createSelfMessage="false">
+            <elementDefinition Id="ee6fd6b6-c7e0-40ba-ab5b-bdd75cf8555a" />
+            <sendEvent>
+              <messageOccurrenceSpecificationMoniker Id="77d6b18c-89b5-469d-974f-db70e777892b" LastKnownName="MessageOccurrenceSpecification35" />
+            </sendEvent>
+            <receiveEvent>
+              <messageOccurrenceSpecificationMoniker Id="68b03a83-0f5f-4ad6-9b12-e10f861c7a77" LastKnownName="MessageOccurrenceSpecification36" />
+            </receiveEvent>
+          </message>
+          <message Id="1dbdb47b-39e4-4a25-9272-3b4aa4ebd547" name="OverBid" messageKind="Complete" messageSort="Reply" createSelfMessage="false">
+            <elementDefinition Id="b450c48a-1dcb-4663-b16f-442378d0c858" />
+            <sendEvent>
+              <messageOccurrenceSpecificationMoniker Id="476abdd7-f25b-4c8a-99a4-75a29cf65632" LastKnownName="MessageOccurrenceSpecification31" />
+            </sendEvent>
+            <receiveEvent>
+              <messageOccurrenceSpecificationMoniker Id="dc89fe41-426c-4939-857a-a073e9132ca8" LastKnownName="MessageOccurrenceSpecification32" />
+            </receiveEvent>
+          </message>
+          <message Id="5fbbc2d2-b03a-47ce-827e-3b5ad56bc137" name="Buyout Product" messageKind="Complete" messageSort="AsynchCall" createSelfMessage="false">
+            <elementDefinition Id="49278ecc-d969-4a0f-9389-d6347c4ac389" />
+            <sendEvent>
+              <messageOccurrenceSpecificationMoniker Id="53bb07fd-43bb-4904-8605-9c4688ed9b79" LastKnownName="MessageOccurrenceSpecification33" />
+            </sendEvent>
+            <receiveEvent>
+              <messageOccurrenceSpecificationMoniker Id="aeab9015-b2ee-415a-8e2f-8335618d132a" LastKnownName="MessageOccurrenceSpecification34" />
+            </receiveEvent>
+          </message>
+          <message Id="f9c1d064-8451-4942-8899-dbc2f556344c" name="Auction won" messageKind="Complete" messageSort="AsynchCall" createSelfMessage="false">
+            <elementDefinition Id="283f5657-f526-419a-a420-5a70cb6d9028" />
+            <sendEvent>
+              <messageOccurrenceSpecificationMoniker Id="8c1aa87f-6405-4117-bd42-cc92c89069b4" LastKnownName="MessageOccurrenceSpecification37" />
+            </sendEvent>
+            <receiveEvent>
+              <messageOccurrenceSpecificationMoniker Id="478a6a46-c2e1-4845-8ea5-f231794c5979" LastKnownName="MessageOccurrenceSpecification38" />
+            </receiveEvent>
+          </message>
+          <message Id="0dd50c83-a126-4d82-a6cb-47f7eb66578b" name="Provision received" messageKind="Complete" messageSort="AsynchCall" createSelfMessage="false">
+            <elementDefinition Id="7147871f-75e0-4271-b7c6-bcf45231f289" />
+            <sendEvent>
+              <messageOccurrenceSpecificationMoniker Id="a6c5c503-93bc-494d-b638-3641586cc90e" LastKnownName="MessageOccurrenceSpecification48" />
+            </sendEvent>
+            <receiveEvent>
+              <messageOccurrenceSpecificationMoniker Id="722b6d41-68c3-4eed-b62c-585cd3cdfb25" LastKnownName="MessageOccurrenceSpecification49" />
+            </receiveEvent>
+          </message>
+          <message Id="67755c4b-19a6-4a66-9378-3e0901bbd670" name="Paymemt received" messageKind="Complete" messageSort="AsynchCall" createSelfMessage="false">
+            <elementDefinition Id="f4728b5b-4151-4ef5-9386-abab626ea662" />
+            <sendEvent>
+              <messageOccurrenceSpecificationMoniker Id="f9bde0d5-259f-4a03-bcd9-f09a59230f2d" LastKnownName="MessageOccurrenceSpecification52" />
+            </sendEvent>
+            <receiveEvent>
+              <messageOccurrenceSpecificationMoniker Id="302df78f-a897-4275-8ca1-97cece25b6e7" LastKnownName="MessageOccurrenceSpecification53" />
+            </receiveEvent>
+          </message>
+          <message Id="86165101-5015-4850-8580-964686e18bda" name="Receives product" messageKind="Complete" messageSort="AsynchCall" createSelfMessage="false">
+            <elementDefinition Id="3eb12b66-ed04-4658-aacc-4db46811fa8e" />
+            <sendEvent>
+              <messageOccurrenceSpecificationMoniker Id="4671b485-b0fe-469b-8ca8-6a7a7e3d6436" LastKnownName="MessageOccurrenceSpecification50" />
+            </sendEvent>
+            <receiveEvent>
+              <messageOccurrenceSpecificationMoniker Id="33ba2136-bed1-47c3-8aba-33ad31fbc945" LastKnownName="MessageOccurrenceSpecification51" />
+            </receiveEvent>
+          </message>
+        </messages>
+        <ownedAttributesInternal>
+          <property Id="c3df6008-1f2e-4948-8c8e-9b023a7a6670" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="2bad23d5-fc98-42e6-b29d-96411c54a004" />
+            <type_NamedElement>
+              <referencedTypeMoniker Id="c41db788-cadb-4f57-b31e-e325c86544c3" LastKnownName="Manage Purchase" />
+            </type_NamedElement>
+          </property>
+          <property Id="567b81db-a8e2-43b7-861a-73b202d252b8" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="2476eee2-d0b4-46e9-ba3e-1303e2cd8ff4" />
+            <type_NamedElement>
+              <referencedTypeMoniker Id="edab351a-7294-4e09-ae47-0749ccfff692" LastKnownName="Bid Product" />
+            </type_NamedElement>
+          </property>
+          <property Id="89a8a86f-e6a0-40c7-b8d8-405770b54239" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="1b4aa014-8df6-43ab-b91f-6c8284363d6f" />
+            <type_NamedElement>
+              <referencedTypeMoniker Id="5ec4ca3d-4652-4fc1-b382-d549cb579d51" LastKnownName="Buyout Product" />
+            </type_NamedElement>
+          </property>
+          <property Id="4b73e22d-1f36-4757-86f4-c826749f4727" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="ffac57e1-6387-4092-91ca-7a6265e7fb55" />
+            <type_NamedElement>
+              <referencedTypeMoniker Id="e10937ea-8059-40bc-894a-3dfa6e8785cc" LastKnownName="Supplier" />
+            </type_NamedElement>
+          </property>
+          <property Id="14632c63-d609-4c8e-b6bf-6a8245d2a645" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="3dd4fdfd-0757-40d5-870b-8b0bd2493938" />
+            <type_NamedElement>
+              <referencedTypeMoniker Id="d0db6a90-f7c2-4ccf-b493-72197d40e431" LastKnownName="Nackademiska Auktions-främjandet" />
+            </type_NamedElement>
+          </property>
+          <property Id="29651991-380a-473d-bc14-70a9c89c8879" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="1e39825d-6208-4c3b-870f-ab129cffc87f" />
+            <type_NamedElement>
+              <referencedTypeMoniker Id="c67e234b-3959-49e9-9e12-e405280f3501" LastKnownName="Customer" />
+            </type_NamedElement>
+          </property>
+        </ownedAttributesInternal>
+      </interaction>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <referencedType Id="c41db788-cadb-4f57-b31e-e325c86544c3" name="Manage Purchase" isAbstract="false" isLeaf="false" cachedFullName="Övningsuppgift Lektion 3 OOAD::Manage Purchase">
+        <elementDefinition Id="5ce65af8-f91b-410d-9a57-2e1e0b8c21d6" />
+      </referencedType>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <referencedType Id="edab351a-7294-4e09-ae47-0749ccfff692" name="Bid Product" isAbstract="false" isLeaf="false" cachedFullName="Övningsuppgift Lektion 3 OOAD::Bid Product">
+        <elementDefinition Id="1b2f361c-8837-4bb2-bb6d-5faa92520b97" />
+      </referencedType>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <referencedType Id="5ec4ca3d-4652-4fc1-b382-d549cb579d51" name="Buyout Product" isAbstract="false" isLeaf="false" cachedFullName="Övningsuppgift Lektion 3 OOAD::Buyout Product">
+        <elementDefinition Id="55ee239a-82c0-4488-9477-66375d62f1a7" />
+      </referencedType>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <referencedType Id="e10937ea-8059-40bc-894a-3dfa6e8785cc" name="Supplier" isAbstract="false" isLeaf="false" cachedFullName="Övningsuppgift Lektion 3 OOAD::Supplier">
+        <elementDefinition Id="9de12630-5f7c-42cc-bf8d-a078663b6855" />
+      </referencedType>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <referencedType Id="d0db6a90-f7c2-4ccf-b493-72197d40e431" name="Nackademiska Auktions-främjandet" isAbstract="false" isLeaf="false" cachedFullName="Övningsuppgift Lektion 3 OOAD::Nackademiska Auktions-främjandet">
+        <elementDefinition Id="1b91eac7-766b-46a1-8d20-b78d8e19e16a" />
+      </referencedType>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <referencedType Id="c67e234b-3959-49e9-9e12-e405280f3501" name="Customer" isAbstract="false" isLeaf="false" cachedFullName="Övningsuppgift Lektion 3 OOAD::Customer">
+        <elementDefinition Id="f9fab8cd-b321-4ec0-9060-21482e90bc2f" />
+      </referencedType>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <executionEvent Id="3e278f44-3aea-4102-9a22-aca0b6298490" name="ExecutionEvent">
+        <elementDefinition Id="c90017be-01d6-4936-a815-a78a4af2c9d2" />
+      </executionEvent>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <executionEvent Id="8f346334-2c95-475e-bf7c-5173ccde00ce" name="ExecutionEvent">
+        <elementDefinition Id="92b5e98a-9fcf-40ca-86e8-d3756f19c6e0" />
+      </executionEvent>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <executionEvent Id="ea8b5426-2c68-4f02-a1a4-dccfd3faf3e0" name="ExecutionEvent">
+        <elementDefinition Id="a7b21e6d-3224-4691-988e-98aa9ca8d372" />
+      </executionEvent>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <executionEvent Id="83786c41-fd63-4b09-aded-fe24bc53acbd" name="ExecutionEvent">
+        <elementDefinition Id="c9062698-9374-4722-80c9-561f200dec12" />
+      </executionEvent>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <executionEvent Id="e7bf06b7-bffb-4c0e-a828-74f575c7bbac" name="ExecutionEvent">
+        <elementDefinition Id="f31b4091-d627-4438-9796-198899241186" />
+      </executionEvent>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <executionEvent Id="f0756fcf-1e8c-4d16-8450-ac26cb0ece20" name="ExecutionEvent">
+        <elementDefinition Id="7aed1a58-c473-4984-ac1e-49671fbcea56" />
+      </executionEvent>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <executionEvent Id="013d4948-fa08-4bb9-9ac4-ba9af197995f" name="ExecutionEvent">
+        <elementDefinition Id="e6420c78-9c54-422c-a7e7-d6098b15e889" />
+      </executionEvent>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <executionEvent Id="54c17fe5-98be-4723-8ee8-a91e0d8008a0" name="ExecutionEvent">
+        <elementDefinition Id="44aeb640-186c-42a8-b436-21c6da5f28ec" />
+      </executionEvent>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <executionEvent Id="1503c62a-7740-44ca-9ca1-0d3c298cda04" name="ExecutionEvent">
+        <elementDefinition Id="a45e5ca2-5c75-4e7f-bc77-db6dfe299147" />
+      </executionEvent>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <executionEvent Id="82f575f6-d7dd-4cdc-9539-ab3853ecabae" name="ExecutionEvent">
+        <elementDefinition Id="b02e403e-a07d-49d8-b2e9-4820ffda121e" />
+      </executionEvent>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <executionEvent Id="f216d493-5e7d-4d83-9982-04280368d793" name="ExecutionEvent">
+        <elementDefinition Id="f0d57ac3-7c17-4a6a-8934-5f7b09eeef93" />
+      </executionEvent>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <executionEvent Id="f5f30ea2-1a37-4aed-935d-03ee2cf7f73b" name="ExecutionEvent">
+        <elementDefinition Id="0d523958-0830-410c-977d-63c2159db344" />
+      </executionEvent>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <executionEvent Id="5d3ec7bb-3046-439b-ac98-15f03d536624" name="ExecutionEvent">
+        <elementDefinition Id="a9c86841-3d70-408d-8207-ed6001315e38" />
+      </executionEvent>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <executionEvent Id="2b1b59c4-2c48-4d27-bef9-eea894075f48" name="ExecutionEvent">
+        <elementDefinition Id="7b5c96da-18d2-45a4-8b6a-d954b1d61b1f" />
+      </executionEvent>
+    </packageHasNamedElement>
+  </packagedElements>
+  <package Id="10c8ac0f-3cec-4f77-a50b-71d88f9cd3ea" name="Övningsuppgift Lektion 3 OOAD">
+    <elementDefinition Id="33624387-e923-41c2-86c3-13e8018dbe63" />
+  </package>
+</SequenceDesignerModel>

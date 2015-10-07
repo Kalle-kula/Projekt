@@ -1,0 +1,18 @@
+Kravlista:
+product:
+add
+edit
+
+Product type/price:
+Antique 
+modern 
+massproduced 
+buyout 50%
+owner
+
+Provision:
+Antique 20%
+modern 10%
+massproduced 0%
+
+

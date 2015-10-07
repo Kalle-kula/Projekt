@@ -1,0 +1,2147 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<modelStoreModel xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm4="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm5="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/SimpleShapesModel" xmlns:dm9="http://schemas.microsoft.com/dsltools/UseCaseModel" xmlns:dm10="http://schemas.microsoft.com/dsltools/LogicalClassDesigner"
+  dslVersion="1.0.0.0"
+  Id="33624387-e923-41c2-86c3-13e8018dbe63"
+  name="Övningsuppgift Lektion 3 OOAD" xmlns="http://schemas.microsoft.com/dsltools/ModelStore">
+  <profileInstances>
+    <packageHasProfileInstances
+      Id="0caec977-1f8c-4ba3-a7db-8cc9ad9cc73b">
+      <profileInstance
+        Id="e34d544e-0fea-4ed6-ac5e-1b74119ac791"
+        name="StandardProfileL2" />
+    </packageHasProfileInstances>
+    <packageHasProfileInstances
+      Id="29349502-908c-4fda-9054-c48619c59ed0">
+      <profileInstance
+        Id="532ea607-fb19-44b8-8502-3351b05452be"
+        name="StandardProfileL3" />
+    </packageHasProfileInstances>
+  </profileInstances>
+  <packagedElements>
+    <packageHasNamedElement>
+      <actor
+        Id="f9fab8cd-b321-4ec0-9060-21482e90bc2f"
+        name="Customer"
+        isAbstract="false"
+        isLeaf="false">
+        <targetEnds>
+          <association
+            Id="bec1739a-5540-46ec-832d-0647166af909"
+            isDerived="false"
+            sourceEndRoleName="Customer"
+            targetEndRoleName="Manage Purchase"
+            isLeaf="false"
+            isAbstract="false">
+            <useCaseMoniker
+              Id="5ce65af8-f91b-410d-9a57-2e1e0b8c21d6"
+              LastKnownName="Manage Purchase"
+              LastKnownLocation="Övningsuppgift Lektion 3 OOAD.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="00ded65b-7d44-4435-a9e4-12ad0bc60d7e"
+                  name="Customer"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false"
+                  isNavigableOwned="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="13daffd0-0c69-491a-bb6b-6303b86aebc1"
+                  name="Manage Purchase"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false" />
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+        </targetEnds>
+      </actor>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <actor
+        Id="9de12630-5f7c-42cc-bf8d-a078663b6855"
+        name="Supplier"
+        isAbstract="false"
+        isLeaf="false">
+        <targetEnds>
+          <association
+            Id="e8f303d7-90af-4890-8090-7a40b7c935d7"
+            isDerived="false"
+            sourceEndRoleName="Supplier"
+            targetEndRoleName="Manage Payment"
+            isLeaf="false"
+            isAbstract="false">
+            <useCaseMoniker
+              Id="f8ab8be4-3da5-471a-94c5-4383fa7e61ce"
+              LastKnownName="Receive Payment"
+              LastKnownLocation="Övningsuppgift Lektion 3 OOAD.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="6a820ed7-a0e0-46d0-9451-d0218bbdbd9c"
+                  name="Supplier"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false"
+                  isNavigableOwned="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="ec10d323-56e0-4fba-8542-6cd235881e36"
+                  name="Manage Payment"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false" />
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+        </targetEnds>
+      </actor>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <actor
+        Id="1b91eac7-766b-46a1-8d20-b78d8e19e16a"
+        name="Nackademiska Auktions-främjandet"
+        isAbstract="false"
+        isLeaf="false">
+        <targetEnds>
+          <association
+            Id="aaacd9f0-7f1f-4caf-aab8-3acdd6532e97"
+            isDerived="false"
+            sourceEndRoleName="Nackademiska Auktions-främjandet"
+            targetEndRoleName="Manage Auction"
+            isLeaf="false"
+            isAbstract="false">
+            <useCaseMoniker
+              Id="b9d9612b-a457-4bef-b5eb-72b62520c089"
+              LastKnownName="Manage Auction"
+              LastKnownLocation="Övningsuppgift Lektion 3 OOAD.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="a087d461-ff59-4a48-9296-628d79d7332d"
+                  name="Nackademiska Auktions-främjandet"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false"
+                  isNavigableOwned="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="9ec04f80-d373-446a-8694-9a45f3594eb1"
+                  name="Manage Auction"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false" />
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+          <association
+            Id="1621d975-5c59-4a1c-a242-55b356d863af"
+            isDerived="false"
+            sourceEndRoleName="Nackademiska Auktions-främjandet"
+            targetEndRoleName="Manage Payment"
+            isLeaf="false"
+            isAbstract="false">
+            <useCaseMoniker
+              Id="f8ab8be4-3da5-471a-94c5-4383fa7e61ce"
+              LastKnownName="Receive Payment"
+              LastKnownLocation="Övningsuppgift Lektion 3 OOAD.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="60a938e9-0116-44ec-a20e-a446456cca6d"
+                  name="Nackademiska Auktions-främjandet"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false"
+                  isNavigableOwned="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="076c2f40-23a3-4c58-9e5e-767ecae88dda"
+                  name="Manage Payment"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false" />
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+        </targetEnds>
+      </actor>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <subsystem
+        Id="94f9ad09-71e3-46c2-a3b1-4b48bf934138"
+        name="Web Showroom"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="ff4ef88c-14fe-4103-8f83-970eaf9c37e6"
+        name="Sell"
+        isAbstract="false"
+        isLeaf="false" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="1b99ba97-55d1-40ca-8c76-cb950ce15aaa"
+        name="Buy"
+        isAbstract="false"
+        isLeaf="false" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="d2372b4c-eb99-4459-ae3f-3d1be2515360"
+        name="Product"
+        isAbstract="false"
+        isLeaf="false" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="5e6fbe2b-6d3b-414f-b560-1cbb91514fdf"
+        name="Add Product to Shop"
+        isAbstract="false"
+        isLeaf="false">
+        <subjects>
+          <subsystemMoniker
+            Id="94f9ad09-71e3-46c2-a3b1-4b48bf934138"
+            LastKnownName="Web Showroom"
+            LastKnownLocation="Övningsuppgift Lektion 3 OOAD.uml" />
+        </subjects>
+      </useCase>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="55ee239a-82c0-4488-9477-66375d62f1a7"
+        name="Buyout Product"
+        isAbstract="false"
+        isLeaf="false">
+        <targetEnds>
+          <association
+            Id="de6a9d43-e6ad-4256-abb3-ab0fca69c923"
+            isDerived="false"
+            sourceEndRoleName="Buyout Product"
+            targetEndRoleName="Auction Won"
+            isLeaf="false"
+            isAbstract="false">
+            <useCaseMoniker
+              Id="835e3c85-4cb1-4db3-b89b-e7fef58f4062"
+              LastKnownName="Auction Won"
+              LastKnownLocation="Övningsuppgift Lektion 3 OOAD.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="00242736-9d12-4f65-8d08-f5df83f47450"
+                  name="Buyout Product"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false"
+                  isNavigableOwned="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="ad6ca4ff-5810-4d02-af0e-3a68444f5db8"
+                  name="Auction Won"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false" />
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+        </targetEnds>
+        <subjects>
+          <subsystemMoniker
+            Id="94f9ad09-71e3-46c2-a3b1-4b48bf934138"
+            LastKnownName="Web Showroom"
+            LastKnownLocation="Övningsuppgift Lektion 3 OOAD.uml" />
+        </subjects>
+      </useCase>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="4f232dda-d732-4ff3-82ba-2f5ad874c2e6"
+        name="Sell Antique Product"
+        isAbstract="false"
+        isLeaf="false" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="687eda2f-775e-4000-ad03-536b9521a2ae"
+        name="Sell Mass Product"
+        isAbstract="false"
+        isLeaf="false" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="433fc2b6-9586-4883-8f35-f61e7dd96665"
+        name="Sell Modern Product"
+        isAbstract="false"
+        isLeaf="false" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="3b32c6e7-97a7-42d4-acf1-0c4e4de39ee4"
+        name="Transaktion"
+        isAbstract="false"
+        isLeaf="false" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="b9d9612b-a457-4bef-b5eb-72b62520c089"
+        name="Manage Auction"
+        isAbstract="false"
+        isLeaf="false">
+        <targetEnds>
+          <association
+            Id="7f22add4-3481-40fb-b408-dcaad1eee8eb"
+            isDerived="false"
+            sourceEndRoleName="Manage Auction"
+            targetEndRoleName="Edit Product"
+            isLeaf="false"
+            isAbstract="false">
+            <useCaseMoniker
+              Id="5e46c0fb-d601-44c7-8211-e508550d5690"
+              LastKnownName="Edit Product"
+              LastKnownLocation="Övningsuppgift Lektion 3 OOAD.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="ec8f236a-8ec0-412d-afac-131d6a9d3b9f"
+                  name="Manage Auction"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false"
+                  isNavigableOwned="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="9c17c49d-0b5c-4acd-8179-b83443dfe2d5"
+                  name="Edit Product"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false" />
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+          <association
+            Id="d2dd0f6e-c319-4125-b485-81ac5c48def8"
+            isDerived="false"
+            sourceEndRoleName="Manage Auction"
+            targetEndRoleName="Add Product to Shop"
+            isLeaf="false"
+            isAbstract="false">
+            <useCaseMoniker
+              Id="5e6fbe2b-6d3b-414f-b560-1cbb91514fdf"
+              LastKnownName="Add Product to Shop"
+              LastKnownLocation="Övningsuppgift Lektion 3 OOAD.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="a34f3997-7292-4894-82f6-b224bfa7ab79"
+                  name="Manage Auction"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false"
+                  isNavigableOwned="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="18b36252-91a7-4bec-8306-5fb7c5851ef6"
+                  name="Add Product to Shop"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false" />
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+        </targetEnds>
+        <subjects>
+          <subsystemMoniker
+            Id="94f9ad09-71e3-46c2-a3b1-4b48bf934138"
+            LastKnownName="Web Showroom"
+            LastKnownLocation="Övningsuppgift Lektion 3 OOAD.uml" />
+        </subjects>
+      </useCase>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="5e46c0fb-d601-44c7-8211-e508550d5690"
+        name="Edit Product"
+        isAbstract="false"
+        isLeaf="false">
+        <subjects>
+          <subsystemMoniker
+            Id="94f9ad09-71e3-46c2-a3b1-4b48bf934138"
+            LastKnownName="Web Showroom"
+            LastKnownLocation="Övningsuppgift Lektion 3 OOAD.uml" />
+        </subjects>
+      </useCase>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="1b2f361c-8837-4bb2-bb6d-5faa92520b97"
+        name="Bid Product"
+        isAbstract="false"
+        isLeaf="false">
+        <extendedCases>
+          <extend
+            Id="86e7ef12-2fcd-4eef-9f88-a7b1e7e5317a">
+            <useCaseMoniker
+              Id="835e3c85-4cb1-4db3-b89b-e7fef58f4062"
+              LastKnownName="Auction Won"
+              LastKnownLocation="Övningsuppgift Lektion 3 OOAD.uml" />
+          </extend>
+        </extendedCases>
+        <subjects>
+          <subsystemMoniker
+            Id="94f9ad09-71e3-46c2-a3b1-4b48bf934138"
+            LastKnownName="Web Showroom"
+            LastKnownLocation="Övningsuppgift Lektion 3 OOAD.uml" />
+        </subjects>
+      </useCase>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="5ce65af8-f91b-410d-9a57-2e1e0b8c21d6"
+        name="Manage Purchase"
+        isAbstract="false"
+        isLeaf="false">
+        <targetEnds>
+          <association
+            Id="6704d4d9-12c3-434b-980e-3ac2340a74eb"
+            isDerived="false"
+            sourceEndRoleName="Manage Purchase"
+            targetEndRoleName="Bid Product"
+            isLeaf="false"
+            isAbstract="false">
+            <useCaseMoniker
+              Id="1b2f361c-8837-4bb2-bb6d-5faa92520b97"
+              LastKnownName="Bid Product"
+              LastKnownLocation="Övningsuppgift Lektion 3 OOAD.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="542dd019-aea4-4207-be0e-178ed78493a7"
+                  name="Manage Purchase"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false"
+                  isNavigableOwned="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="0734557d-624e-4ee4-b906-2dd5f5ec78e3"
+                  name="Bid Product"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false" />
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+        </targetEnds>
+        <extendedCases>
+          <extend
+            Id="ea4401bd-9265-41b3-ae07-91ff4b154891">
+            <useCaseMoniker
+              Id="55ee239a-82c0-4488-9477-66375d62f1a7"
+              LastKnownName="Buyout Product"
+              LastKnownLocation="Övningsuppgift Lektion 3 OOAD.uml" />
+          </extend>
+        </extendedCases>
+        <subjects>
+          <subsystemMoniker
+            Id="94f9ad09-71e3-46c2-a3b1-4b48bf934138"
+            LastKnownName="Web Showroom"
+            LastKnownLocation="Övningsuppgift Lektion 3 OOAD.uml" />
+        </subjects>
+      </useCase>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="f8ab8be4-3da5-471a-94c5-4383fa7e61ce"
+        name="Receive Payment"
+        isAbstract="false"
+        isLeaf="false">
+        <subjects>
+          <subsystemMoniker
+            Id="94f9ad09-71e3-46c2-a3b1-4b48bf934138"
+            LastKnownName="Web Showroom"
+            LastKnownLocation="Övningsuppgift Lektion 3 OOAD.uml" />
+        </subjects>
+      </useCase>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="835e3c85-4cb1-4db3-b89b-e7fef58f4062"
+        name="Auction Won"
+        isAbstract="false"
+        isLeaf="false">
+        <targetEnds>
+          <association
+            Id="ca57d6d1-617f-40eb-8db3-5dca48128a2e"
+            isDerived="false"
+            sourceEndRoleName="Auction Won"
+            targetEndRoleName="Manage Payment"
+            isLeaf="false"
+            isAbstract="false">
+            <useCaseMoniker
+              Id="f8ab8be4-3da5-471a-94c5-4383fa7e61ce"
+              LastKnownName="Receive Payment"
+              LastKnownLocation="Övningsuppgift Lektion 3 OOAD.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="eda6cc45-5331-4700-8da5-53814360ae92"
+                  name="Auction Won"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false"
+                  isNavigableOwned="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="17e41fdb-f954-4a28-b86c-84d1a2083dc4"
+                  name="Manage Payment"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false" />
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+        </targetEnds>
+      </useCase>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <class
+        Id="559222e9-2a91-4fc1-a31a-dc77f84180f8"
+        name="Customer"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false">
+        <ownedAttributesInternal>
+          <property
+            Id="9f9f296e-91bc-4c56-a90d-3af187e8d31b"
+            name="Name"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false">
+            <type_NamedElement>
+              <primitiveTypeMoniker
+                Id="59259974-6d55-42c6-b7bd-763d77ac8ef9"
+                LastKnownName="String"
+                LastKnownLocation="Övningsuppgift Lektion 3 OOAD.uml" />
+            </type_NamedElement>
+          </property>
+          <property
+            Id="7aa37283-a2f6-4e26-8bdd-a28999c48ade"
+            name="Address"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false">
+            <type_NamedElement>
+              <primitiveTypeMoniker
+                Id="59259974-6d55-42c6-b7bd-763d77ac8ef9"
+                LastKnownName="String"
+                LastKnownLocation="Övningsuppgift Lektion 3 OOAD.uml" />
+            </type_NamedElement>
+          </property>
+          <property
+            Id="3b79c45e-eddc-4023-b7b8-c1ebdd07191a"
+            name="Email"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false">
+            <type_NamedElement>
+              <primitiveTypeMoniker
+                Id="59259974-6d55-42c6-b7bd-763d77ac8ef9"
+                LastKnownName="String"
+                LastKnownLocation="Övningsuppgift Lektion 3 OOAD.uml" />
+            </type_NamedElement>
+          </property>
+        </ownedAttributesInternal>
+      </class>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <class
+        Id="a5ead140-8ac5-42b1-8f97-506aff7d5806"
+        name="Administrator"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false">
+        <ownedAttributesInternal>
+          <property
+            Id="1485f020-1af1-41fb-a790-313ddc5907f6"
+            name="Name"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false">
+            <type_NamedElement>
+              <primitiveTypeMoniker
+                Id="59259974-6d55-42c6-b7bd-763d77ac8ef9"
+                LastKnownName="String"
+                LastKnownLocation="Övningsuppgift Lektion 3 OOAD.uml" />
+            </type_NamedElement>
+          </property>
+        </ownedAttributesInternal>
+      </class>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <class
+        Id="be896bdc-692b-4502-b29b-14867cdf86f3"
+        name="Supplier"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false">
+        <ownedAttributesInternal>
+          <property
+            Id="2b2fd4eb-22eb-4db2-a252-c71357dfa482"
+            name="Name"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false">
+            <type_NamedElement>
+              <primitiveTypeMoniker
+                Id="59259974-6d55-42c6-b7bd-763d77ac8ef9"
+                LastKnownName="String"
+                LastKnownLocation="Övningsuppgift Lektion 3 OOAD.uml" />
+            </type_NamedElement>
+          </property>
+          <property
+            Id="21ec19d4-2dee-4d93-b1b7-c969665aa534"
+            name="Email"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false">
+            <type_NamedElement>
+              <primitiveTypeMoniker
+                Id="59259974-6d55-42c6-b7bd-763d77ac8ef9"
+                LastKnownName="String"
+                LastKnownLocation="Övningsuppgift Lektion 3 OOAD.uml" />
+            </type_NamedElement>
+          </property>
+          <property
+            Id="d359da45-92ff-4d11-891d-e9adeb1ca702"
+            name="BankDetails"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false">
+            <type_NamedElement>
+              <primitiveTypeMoniker
+                Id="59259974-6d55-42c6-b7bd-763d77ac8ef9"
+                LastKnownName="String"
+                LastKnownLocation="Övningsuppgift Lektion 3 OOAD.uml" />
+            </type_NamedElement>
+          </property>
+        </ownedAttributesInternal>
+      </class>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <class
+        Id="933d5b16-2773-468c-b03a-26ee02d80ea6"
+        name="ProductBase"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false">
+        <ownedAttributesInternal>
+          <property
+            Id="c9ab364a-035a-43e4-b5fd-c5da1bb346fb"
+            name="Name"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false">
+            <type_NamedElement>
+              <primitiveTypeMoniker
+                Id="59259974-6d55-42c6-b7bd-763d77ac8ef9"
+                LastKnownName="String"
+                LastKnownLocation="Övningsuppgift Lektion 3 OOAD.uml" />
+            </type_NamedElement>
+          </property>
+          <property
+            Id="26c9aa02-fd52-45b7-8941-42c725d5f076"
+            name="StartPrice"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false">
+            <type_NamedElement>
+              <undefinedTypeMoniker
+                Id="98db60ff-d2a7-4a3c-9036-274854840344"
+                LastKnownName="Decimal"
+                LastKnownLocation="Övningsuppgift Lektion 3 OOAD.uml" />
+            </type_NamedElement>
+          </property>
+          <property
+            Id="027efde0-b0fb-473d-9838-06a1d277489e"
+            name="Id"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false">
+            <type_NamedElement>
+              <primitiveTypeMoniker
+                Id="220a3521-e091-4221-bae9-3ef9018e845c"
+                LastKnownName="Integer"
+                LastKnownLocation="Övningsuppgift Lektion 3 OOAD.uml" />
+            </type_NamedElement>
+          </property>
+          <property
+            Id="ac931d06-7b91-453c-b009-b361117c07ed"
+            name="Provision"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false">
+            <type_NamedElement>
+              <undefinedTypeMoniker
+                Id="98db60ff-d2a7-4a3c-9036-274854840344"
+                LastKnownName="Decimal"
+                LastKnownLocation="Övningsuppgift Lektion 3 OOAD.uml" />
+            </type_NamedElement>
+          </property>
+          <property
+            Id="5db8c82e-27bd-4926-bad9-d085f406913a"
+            name="Supplier"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false">
+            <type_NamedElement>
+              <primitiveTypeMoniker
+                Id="59259974-6d55-42c6-b7bd-763d77ac8ef9"
+                LastKnownName="String"
+                LastKnownLocation="Övningsuppgift Lektion 3 OOAD.uml" />
+            </type_NamedElement>
+          </property>
+          <property
+            Id="d83e4795-63b8-48be-aa87-b2ae8c671410"
+            name="TimeIntervall"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false">
+            <type_NamedElement>
+              <undefinedTypeMoniker
+                Id="3db22191-34ba-4deb-a868-182e387dc719"
+                LastKnownName="DateTime"
+                LastKnownLocation="Övningsuppgift Lektion 3 OOAD.uml" />
+            </type_NamedElement>
+          </property>
+          <property
+            Id="0bcd9240-c9bf-4b13-a4fc-abb94821ae99"
+            name="BuyoutPrice"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false">
+            <type_NamedElement>
+              <undefinedTypeMoniker
+                Id="98db60ff-d2a7-4a3c-9036-274854840344"
+                LastKnownName="Decimal"
+                LastKnownLocation="Övningsuppgift Lektion 3 OOAD.uml" />
+            </type_NamedElement>
+          </property>
+          <property
+            Id="de386e03-db99-409b-b2ec-b20fd2dfa119"
+            name="Type"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false">
+            <type_NamedElement>
+              <undefinedTypeMoniker
+                Id="10b8229a-a53c-4d78-9037-390144672322"
+                LastKnownName="Enum"
+                LastKnownLocation="Övningsuppgift Lektion 3 OOAD.uml" />
+            </type_NamedElement>
+          </property>
+        </ownedAttributesInternal>
+      </class>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <class
+        Id="43d47da7-71b1-4007-b24a-1602415c16b4"
+        name="MassProduct"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false">
+        <generalsInternal>
+          <generalization
+            Id="19993e97-790e-4a36-b4d3-499d92dc3eaf"
+            isSubstitutable="false">
+            <classMoniker
+              Id="933d5b16-2773-468c-b03a-26ee02d80ea6"
+              LastKnownName="ProductBase"
+              LastKnownLocation="Övningsuppgift Lektion 3 OOAD.uml" />
+          </generalization>
+        </generalsInternal>
+        <ownedAttributesInternal>
+          <property
+            Id="df341e02-9128-4cc9-9f13-c5778a63d5a9"
+            name="Designer"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false" />
+        </ownedAttributesInternal>
+      </class>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <class
+        Id="c7b757fb-6807-4b66-be96-9d56feb77e8b"
+        name="AntiqueProduct"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false">
+        <generalsInternal>
+          <generalization
+            Id="dd10646e-4184-4348-a17a-9ac0d7a26814"
+            isSubstitutable="false">
+            <classMoniker
+              Id="933d5b16-2773-468c-b03a-26ee02d80ea6"
+              LastKnownName="ProductBase"
+              LastKnownLocation="Övningsuppgift Lektion 3 OOAD.uml" />
+          </generalization>
+        </generalsInternal>
+        <ownedAttributesInternal>
+          <property
+            Id="0e669172-a4bd-4fa9-9aa3-b7f53b8170ff"
+            name="TimeEpoch"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false" />
+        </ownedAttributesInternal>
+      </class>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <class
+        Id="ee849187-d0bf-42ef-8306-e5f246064eeb"
+        name="ModernProduct"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false">
+        <generalsInternal>
+          <generalization
+            Id="9b4ea560-cbbf-4468-a1f9-d012fe2c177c"
+            isSubstitutable="false">
+            <classMoniker
+              Id="933d5b16-2773-468c-b03a-26ee02d80ea6"
+              LastKnownName="ProductBase"
+              LastKnownLocation="Övningsuppgift Lektion 3 OOAD.uml" />
+          </generalization>
+        </generalsInternal>
+        <ownedAttributesInternal>
+          <property
+            Id="fec83394-c705-4241-8068-ab0b3d9a2f07"
+            name="Designer"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false" />
+        </ownedAttributesInternal>
+      </class>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <interaction
+        Id="775b3a24-2542-48cd-9d64-de6ee7e1e88b"
+        name="Sequence1"
+        collapseFragmentsFlag="false"
+        isActiveClass="false"
+        isAbstract="false"
+        isLeaf="false"
+        isReentrant="false">
+        <fragments>
+          <behaviorExecutionSpecification
+            Id="2438988c-ea08-4e57-8667-31b6d675efc9"
+            name="BehaviorExecutionSpecification11">
+            <coveredLifelines>
+              <lifelineMoniker
+                Id="551c49ce-6b97-42ad-8e7e-96da1df8b9b0"
+                LastKnownName="Bid Product"
+                LastKnownLocation="Övningsuppgift Lektion 3 OOAD.uml" />
+            </coveredLifelines>
+            <finish>
+              <executionOccurrenceSpecificationMoniker
+                Id="f8f74b02-1d76-4066-98ca-2edae10d9703"
+                LastKnownName="ExecutionOccurrenceSpecification22"
+                LastKnownLocation="Övningsuppgift Lektion 3 OOAD.uml" />
+            </finish>
+            <start>
+              <executionOccurrenceSpecificationMoniker
+                Id="a48b3518-e8f5-4731-8553-f0ef41184308"
+                LastKnownName="ExecutionOccurrenceSpecification21"
+                LastKnownLocation="Övningsuppgift Lektion 3 OOAD.uml" />
+            </start>
+            <nestedOccurrences>
+              <messageOccurrenceSpecificationMoniker
+                Id="01455832-682f-4925-adb7-51d202b068ec"
+                LastKnownName="MessageOccurrenceSpecification30"
+                LastKnownLocation="Övningsuppgift Lektion 3 OOAD.uml" />
+              <messageOccurrenceSpecificationMoniker
+                Id="d62f740f-9dac-4fca-915b-4c96c4e7af1d"
+                LastKnownName="MessageOccurrenceSpecification35"
+                LastKnownLocation="Övningsuppgift Lektion 3 OOAD.uml" />
+              <messageOccurrenceSpecificationMoniker
+                Id="6654e244-3b53-46cc-b487-18416554aa02"
+                LastKnownName="MessageOccurrenceSpecification31"
+                LastKnownLocation="Övningsuppgift Lektion 3 OOAD.uml" />
+            </nestedOccurrences>
+          </behaviorExecutionSpecification>
+          <executionOccurrenceSpecification
+            Id="a48b3518-e8f5-4731-8553-f0ef41184308"
+            name="ExecutionOccurrenceSpecification21">
+            <event>
+              <executionOccurrenceSpecificationReferencesEvent>
+                <executionEventMoniker
+                  Id="c90017be-01d6-4936-a815-a78a4af2c9d2"
+                  LastKnownName="ExecutionEvent"
+                  LastKnownLocation="Övningsuppgift Lektion 3 OOAD.uml" />
+              </executionOccurrenceSpecificationReferencesEvent>
+            </event>
+            <covered>
+              <lifelineMoniker
+                Id="551c49ce-6b97-42ad-8e7e-96da1df8b9b0"
+                LastKnownName="Bid Product"
+                LastKnownLocation="Övningsuppgift Lektion 3 OOAD.uml" />
+            </covered>
+          </executionOccurrenceSpecification>
+          <messageOccurrenceSpecification
+            Id="47fe4308-99a9-4970-a275-1dc7dcd41695"
+            name="MessageOccurrenceSpecification29">
+            <covered>
+              <lifelineMoniker
+                Id="fe1488dc-ee04-4776-8eb0-3882a7c59e5d"
+                LastKnownName="Customer"
+                LastKnownLocation="Övningsuppgift Lektion 3 OOAD.uml" />
+            </covered>
+          </messageOccurrenceSpecification>
+          <messageOccurrenceSpecification
+            Id="01455832-682f-4925-adb7-51d202b068ec"
+            name="MessageOccurrenceSpecification30">
+            <covered>
+              <lifelineMoniker
+                Id="551c49ce-6b97-42ad-8e7e-96da1df8b9b0"
+                LastKnownName="Bid Product"
+                LastKnownLocation="Övningsuppgift Lektion 3 OOAD.uml" />
+            </covered>
+          </messageOccurrenceSpecification>
+          <behaviorExecutionSpecification
+            Id="4bcc466d-0642-473f-9f4d-476912043495"
+            name="BehaviorExecutionSpecification13">
+            <coveredLifelines>
+              <lifelineMoniker
+                Id="37fac45b-c059-48cd-889e-818982668419"
+                LastKnownName="Auction End"
+                LastKnownLocation="Övningsuppgift Lektion 3 OOAD.uml" />
+            </coveredLifelines>
+            <finish>
+              <executionOccurrenceSpecificationMoniker
+                Id="12bc8fd4-f5da-4019-8b73-2d625c463dc8"
+                LastKnownName="ExecutionOccurrenceSpecification26"
+                LastKnownLocation="Övningsuppgift Lektion 3 OOAD.uml" />
+            </finish>
+            <start>
+              <executionOccurrenceSpecificationMoniker
+                Id="7f881ecd-45fe-4c6d-91d0-e622290d6b18"
+                LastKnownName="ExecutionOccurrenceSpecification25"
+                LastKnownLocation="Övningsuppgift Lektion 3 OOAD.uml" />
+            </start>
+            <nestedOccurrences>
+              <messageOccurrenceSpecificationMoniker
+                Id="d2822cc4-6684-4de5-82af-7c54e0e45ad0"
+                LastKnownName="MessageOccurrenceSpecification36"
+                LastKnownLocation="Övningsuppgift Lektion 3 OOAD.uml" />
+            </nestedOccurrences>
+          </behaviorExecutionSpecification>
+          <executionOccurrenceSpecification
+            Id="7f881ecd-45fe-4c6d-91d0-e622290d6b18"
+            name="ExecutionOccurrenceSpecification25">
+            <event>
+              <executionOccurrenceSpecificationReferencesEvent>
+                <executionEventMoniker
+                  Id="f31b4091-d627-4438-9796-198899241186"
+                  LastKnownName="ExecutionEvent"
+                  LastKnownLocation="Övningsuppgift Lektion 3 OOAD.uml" />
+              </executionOccurrenceSpecificationReferencesEvent>
+            </event>
+            <covered>
+              <lifelineMoniker
+                Id="37fac45b-c059-48cd-889e-818982668419"
+                LastKnownName="Auction End"
+                LastKnownLocation="Övningsuppgift Lektion 3 OOAD.uml" />
+            </covered>
+          </executionOccurrenceSpecification>
+          <messageOccurrenceSpecification
+            Id="d62f740f-9dac-4fca-915b-4c96c4e7af1d"
+            name="MessageOccurrenceSpecification35">
+            <covered>
+              <lifelineMoniker
+                Id="551c49ce-6b97-42ad-8e7e-96da1df8b9b0"
+                LastKnownName="Bid Product"
+                LastKnownLocation="Övningsuppgift Lektion 3 OOAD.uml" />
+            </covered>
+          </messageOccurrenceSpecification>
+          <messageOccurrenceSpecification
+            Id="d2822cc4-6684-4de5-82af-7c54e0e45ad0"
+            name="MessageOccurrenceSpecification36">
+            <covered>
+              <lifelineMoniker
+                Id="37fac45b-c059-48cd-889e-818982668419"
+                LastKnownName="Auction End"
+                LastKnownLocation="Övningsuppgift Lektion 3 OOAD.uml" />
+            </covered>
+          </messageOccurrenceSpecification>
+          <messageOccurrenceSpecification
+            Id="6654e244-3b53-46cc-b487-18416554aa02"
+            name="MessageOccurrenceSpecification31">
+            <covered>
+              <lifelineMoniker
+                Id="551c49ce-6b97-42ad-8e7e-96da1df8b9b0"
+                LastKnownName="Bid Product"
+                LastKnownLocation="Övningsuppgift Lektion 3 OOAD.uml" />
+            </covered>
+          </messageOccurrenceSpecification>
+          <messageOccurrenceSpecification
+            Id="80f70cb8-f76a-4279-9b84-33428a337fce"
+            name="MessageOccurrenceSpecification32">
+            <covered>
+              <lifelineMoniker
+                Id="fe1488dc-ee04-4776-8eb0-3882a7c59e5d"
+                LastKnownName="Customer"
+                LastKnownLocation="Övningsuppgift Lektion 3 OOAD.uml" />
+            </covered>
+          </messageOccurrenceSpecification>
+          <executionOccurrenceSpecification
+            Id="f8f74b02-1d76-4066-98ca-2edae10d9703"
+            name="ExecutionOccurrenceSpecification22">
+            <event>
+              <executionOccurrenceSpecificationReferencesEvent>
+                <executionEventMoniker
+                  Id="92b5e98a-9fcf-40ca-86e8-d3756f19c6e0"
+                  LastKnownName="ExecutionEvent"
+                  LastKnownLocation="Övningsuppgift Lektion 3 OOAD.uml" />
+              </executionOccurrenceSpecificationReferencesEvent>
+            </event>
+            <covered>
+              <lifelineMoniker
+                Id="551c49ce-6b97-42ad-8e7e-96da1df8b9b0"
+                LastKnownName="Bid Product"
+                LastKnownLocation="Övningsuppgift Lektion 3 OOAD.uml" />
+            </covered>
+          </executionOccurrenceSpecification>
+          <behaviorExecutionSpecification
+            Id="87daf513-b0da-4ebf-b9c7-ef6cf44be898"
+            name="BehaviorExecutionSpecification12">
+            <coveredLifelines>
+              <lifelineMoniker
+                Id="23701fa3-7a05-4ab4-89ae-9082a4c0a20a"
+                LastKnownName="Buyout Product"
+                LastKnownLocation="Övningsuppgift Lektion 3 OOAD.uml" />
+            </coveredLifelines>
+            <finish>
+              <executionOccurrenceSpecificationMoniker
+                Id="3ae34fca-ac88-453b-a1cd-9662f770e067"
+                LastKnownName="ExecutionOccurrenceSpecification24"
+                LastKnownLocation="Övningsuppgift Lektion 3 OOAD.uml" />
+            </finish>
+            <start>
+              <executionOccurrenceSpecificationMoniker
+                Id="72f16e19-fa19-4184-92b1-29a4d4b76a70"
+                LastKnownName="ExecutionOccurrenceSpecification23"
+                LastKnownLocation="Övningsuppgift Lektion 3 OOAD.uml" />
+            </start>
+            <nestedOccurrences>
+              <messageOccurrenceSpecificationMoniker
+                Id="6466d6d6-6aed-4c28-b4b4-ad3c47f11827"
+                LastKnownName="MessageOccurrenceSpecification34"
+                LastKnownLocation="Övningsuppgift Lektion 3 OOAD.uml" />
+              <messageOccurrenceSpecificationMoniker
+                Id="d7ebfc14-ac04-4b5e-9623-b6b4b453ccf1"
+                LastKnownName="MessageOccurrenceSpecification37"
+                LastKnownLocation="Övningsuppgift Lektion 3 OOAD.uml" />
+            </nestedOccurrences>
+          </behaviorExecutionSpecification>
+          <executionOccurrenceSpecification
+            Id="72f16e19-fa19-4184-92b1-29a4d4b76a70"
+            name="ExecutionOccurrenceSpecification23">
+            <event>
+              <executionOccurrenceSpecificationReferencesEvent>
+                <executionEventMoniker
+                  Id="a7b21e6d-3224-4691-988e-98aa9ca8d372"
+                  LastKnownName="ExecutionEvent"
+                  LastKnownLocation="Övningsuppgift Lektion 3 OOAD.uml" />
+              </executionOccurrenceSpecificationReferencesEvent>
+            </event>
+            <covered>
+              <lifelineMoniker
+                Id="23701fa3-7a05-4ab4-89ae-9082a4c0a20a"
+                LastKnownName="Buyout Product"
+                LastKnownLocation="Övningsuppgift Lektion 3 OOAD.uml" />
+            </covered>
+          </executionOccurrenceSpecification>
+          <messageOccurrenceSpecification
+            Id="6466d6d6-6aed-4c28-b4b4-ad3c47f11827"
+            name="MessageOccurrenceSpecification34">
+            <covered>
+              <lifelineMoniker
+                Id="23701fa3-7a05-4ab4-89ae-9082a4c0a20a"
+                LastKnownName="Buyout Product"
+                LastKnownLocation="Övningsuppgift Lektion 3 OOAD.uml" />
+            </covered>
+          </messageOccurrenceSpecification>
+          <messageOccurrenceSpecification
+            Id="15702d8f-b58e-4059-b59b-20f985c0322e"
+            name="MessageOccurrenceSpecification33">
+            <covered>
+              <lifelineMoniker
+                Id="fe1488dc-ee04-4776-8eb0-3882a7c59e5d"
+                LastKnownName="Customer"
+                LastKnownLocation="Övningsuppgift Lektion 3 OOAD.uml" />
+            </covered>
+          </messageOccurrenceSpecification>
+          <executionOccurrenceSpecification
+            Id="12bc8fd4-f5da-4019-8b73-2d625c463dc8"
+            name="ExecutionOccurrenceSpecification26">
+            <event>
+              <executionOccurrenceSpecificationReferencesEvent>
+                <executionEventMoniker
+                  Id="7aed1a58-c473-4984-ac1e-49671fbcea56"
+                  LastKnownName="ExecutionEvent"
+                  LastKnownLocation="Övningsuppgift Lektion 3 OOAD.uml" />
+              </executionOccurrenceSpecificationReferencesEvent>
+            </event>
+            <covered>
+              <lifelineMoniker
+                Id="37fac45b-c059-48cd-889e-818982668419"
+                LastKnownName="Auction End"
+                LastKnownLocation="Övningsuppgift Lektion 3 OOAD.uml" />
+            </covered>
+          </executionOccurrenceSpecification>
+          <behaviorExecutionSpecification
+            Id="897fc40d-0bf7-446e-8889-fb40896a4a69"
+            name="BehaviorExecutionSpecification14">
+            <coveredLifelines>
+              <lifelineMoniker
+                Id="37fac45b-c059-48cd-889e-818982668419"
+                LastKnownName="Auction End"
+                LastKnownLocation="Övningsuppgift Lektion 3 OOAD.uml" />
+            </coveredLifelines>
+            <finish>
+              <executionOccurrenceSpecificationMoniker
+                Id="f58a6b14-e1af-4198-b020-442c10a65c3c"
+                LastKnownName="ExecutionOccurrenceSpecification28"
+                LastKnownLocation="Övningsuppgift Lektion 3 OOAD.uml" />
+            </finish>
+            <start>
+              <executionOccurrenceSpecificationMoniker
+                Id="ed23fd68-b82a-4d10-9c9b-b0ae42409a3f"
+                LastKnownName="ExecutionOccurrenceSpecification27"
+                LastKnownLocation="Övningsuppgift Lektion 3 OOAD.uml" />
+            </start>
+            <nestedOccurrences>
+              <messageOccurrenceSpecificationMoniker
+                Id="be3f7a9b-b3d9-4a09-8cf0-2f853b8b1418"
+                LastKnownName="MessageOccurrenceSpecification38"
+                LastKnownLocation="Övningsuppgift Lektion 3 OOAD.uml" />
+            </nestedOccurrences>
+          </behaviorExecutionSpecification>
+          <executionOccurrenceSpecification
+            Id="ed23fd68-b82a-4d10-9c9b-b0ae42409a3f"
+            name="ExecutionOccurrenceSpecification27">
+            <event>
+              <executionOccurrenceSpecificationReferencesEvent>
+                <executionEventMoniker
+                  Id="e6420c78-9c54-422c-a7e7-d6098b15e889"
+                  LastKnownName="ExecutionEvent"
+                  LastKnownLocation="Övningsuppgift Lektion 3 OOAD.uml" />
+              </executionOccurrenceSpecificationReferencesEvent>
+            </event>
+            <covered>
+              <lifelineMoniker
+                Id="37fac45b-c059-48cd-889e-818982668419"
+                LastKnownName="Auction End"
+                LastKnownLocation="Övningsuppgift Lektion 3 OOAD.uml" />
+            </covered>
+          </executionOccurrenceSpecification>
+          <messageOccurrenceSpecification
+            Id="d7ebfc14-ac04-4b5e-9623-b6b4b453ccf1"
+            name="MessageOccurrenceSpecification37">
+            <covered>
+              <lifelineMoniker
+                Id="23701fa3-7a05-4ab4-89ae-9082a4c0a20a"
+                LastKnownName="Buyout Product"
+                LastKnownLocation="Övningsuppgift Lektion 3 OOAD.uml" />
+            </covered>
+          </messageOccurrenceSpecification>
+          <messageOccurrenceSpecification
+            Id="be3f7a9b-b3d9-4a09-8cf0-2f853b8b1418"
+            name="MessageOccurrenceSpecification38">
+            <covered>
+              <lifelineMoniker
+                Id="37fac45b-c059-48cd-889e-818982668419"
+                LastKnownName="Auction End"
+                LastKnownLocation="Övningsuppgift Lektion 3 OOAD.uml" />
+            </covered>
+          </messageOccurrenceSpecification>
+          <executionOccurrenceSpecification
+            Id="3ae34fca-ac88-453b-a1cd-9662f770e067"
+            name="ExecutionOccurrenceSpecification24">
+            <event>
+              <executionOccurrenceSpecificationReferencesEvent>
+                <executionEventMoniker
+                  Id="c9062698-9374-4722-80c9-561f200dec12"
+                  LastKnownName="ExecutionEvent"
+                  LastKnownLocation="Övningsuppgift Lektion 3 OOAD.uml" />
+              </executionOccurrenceSpecificationReferencesEvent>
+            </event>
+            <covered>
+              <lifelineMoniker
+                Id="23701fa3-7a05-4ab4-89ae-9082a4c0a20a"
+                LastKnownName="Buyout Product"
+                LastKnownLocation="Övningsuppgift Lektion 3 OOAD.uml" />
+            </covered>
+          </executionOccurrenceSpecification>
+          <executionOccurrenceSpecification
+            Id="f58a6b14-e1af-4198-b020-442c10a65c3c"
+            name="ExecutionOccurrenceSpecification28">
+            <event>
+              <executionOccurrenceSpecificationReferencesEvent>
+                <executionEventMoniker
+                  Id="44aeb640-186c-42a8-b436-21c6da5f28ec"
+                  LastKnownName="ExecutionEvent"
+                  LastKnownLocation="Övningsuppgift Lektion 3 OOAD.uml" />
+              </executionOccurrenceSpecificationReferencesEvent>
+            </event>
+            <covered>
+              <lifelineMoniker
+                Id="37fac45b-c059-48cd-889e-818982668419"
+                LastKnownName="Auction End"
+                LastKnownLocation="Övningsuppgift Lektion 3 OOAD.uml" />
+            </covered>
+          </executionOccurrenceSpecification>
+          <behaviorExecutionSpecification
+            Id="39c2bde2-42d5-499c-975e-abdf494952a0"
+            name="BehaviorExecutionSpecification17">
+            <coveredLifelines>
+              <lifelineMoniker
+                Id="e00b2624-57cc-430c-b07f-7c528568cabb"
+                LastKnownName="Nackademiska Auktions-främjandet"
+                LastKnownLocation="Övningsuppgift Lektion 3 OOAD.uml" />
+            </coveredLifelines>
+            <finish>
+              <executionOccurrenceSpecificationMoniker
+                Id="2cf29134-66ab-4380-be56-fc75b1a9e8c8"
+                LastKnownName="ExecutionOccurrenceSpecification34"
+                LastKnownLocation="Övningsuppgift Lektion 3 OOAD.uml" />
+            </finish>
+            <start>
+              <executionOccurrenceSpecificationMoniker
+                Id="d5f18abd-d2be-4067-8a28-cfe4899c9fe3"
+                LastKnownName="ExecutionOccurrenceSpecification33"
+                LastKnownLocation="Övningsuppgift Lektion 3 OOAD.uml" />
+            </start>
+            <nestedOccurrences>
+              <messageOccurrenceSpecificationMoniker
+                Id="fe533b1c-f992-40c7-94d4-6ae6e69c0a87"
+                LastKnownName="MessageOccurrenceSpecification49"
+                LastKnownLocation="Övningsuppgift Lektion 3 OOAD.uml" />
+              <messageOccurrenceSpecificationMoniker
+                Id="3e7890f5-3e39-431a-895a-16206a622ca0"
+                LastKnownName="MessageOccurrenceSpecification52"
+                LastKnownLocation="Övningsuppgift Lektion 3 OOAD.uml" />
+              <messageOccurrenceSpecificationMoniker
+                Id="fa5f0fc8-f040-4139-8a2c-f64d95ff7ddd"
+                LastKnownName="MessageOccurrenceSpecification50"
+                LastKnownLocation="Övningsuppgift Lektion 3 OOAD.uml" />
+            </nestedOccurrences>
+          </behaviorExecutionSpecification>
+          <executionOccurrenceSpecification
+            Id="d5f18abd-d2be-4067-8a28-cfe4899c9fe3"
+            name="ExecutionOccurrenceSpecification33">
+            <event>
+              <executionOccurrenceSpecificationReferencesEvent>
+                <executionEventMoniker
+                  Id="a45e5ca2-5c75-4e7f-bc77-db6dfe299147"
+                  LastKnownName="ExecutionEvent"
+                  LastKnownLocation="Övningsuppgift Lektion 3 OOAD.uml" />
+              </executionOccurrenceSpecificationReferencesEvent>
+            </event>
+            <covered>
+              <lifelineMoniker
+                Id="e00b2624-57cc-430c-b07f-7c528568cabb"
+                LastKnownName="Nackademiska Auktions-främjandet"
+                LastKnownLocation="Övningsuppgift Lektion 3 OOAD.uml" />
+            </covered>
+          </executionOccurrenceSpecification>
+          <messageOccurrenceSpecification
+            Id="fe533b1c-f992-40c7-94d4-6ae6e69c0a87"
+            name="MessageOccurrenceSpecification49">
+            <covered>
+              <lifelineMoniker
+                Id="e00b2624-57cc-430c-b07f-7c528568cabb"
+                LastKnownName="Nackademiska Auktions-främjandet"
+                LastKnownLocation="Övningsuppgift Lektion 3 OOAD.uml" />
+            </covered>
+          </messageOccurrenceSpecification>
+          <messageOccurrenceSpecification
+            Id="fe4a0855-8fc5-40fa-89b9-550775540edd"
+            name="MessageOccurrenceSpecification48">
+            <covered>
+              <lifelineMoniker
+                Id="37fac45b-c059-48cd-889e-818982668419"
+                LastKnownName="Auction End"
+                LastKnownLocation="Övningsuppgift Lektion 3 OOAD.uml" />
+            </covered>
+          </messageOccurrenceSpecification>
+          <behaviorExecutionSpecification
+            Id="e011a924-ebba-4660-a94a-4dda4f51ed4d"
+            name="BehaviorExecutionSpecification19">
+            <coveredLifelines>
+              <lifelineMoniker
+                Id="525eb190-89d8-4998-94d8-4d7cdef0f3f9"
+                LastKnownName="Supplier"
+                LastKnownLocation="Övningsuppgift Lektion 3 OOAD.uml" />
+            </coveredLifelines>
+            <finish>
+              <executionOccurrenceSpecificationMoniker
+                Id="1b4497c3-ee9d-4924-9d79-b4581f6a15ee"
+                LastKnownName="ExecutionOccurrenceSpecification38"
+                LastKnownLocation="Övningsuppgift Lektion 3 OOAD.uml" />
+            </finish>
+            <start>
+              <executionOccurrenceSpecificationMoniker
+                Id="2dc1e9f3-3834-4667-8bed-2c17a47a39bf"
+                LastKnownName="ExecutionOccurrenceSpecification37"
+                LastKnownLocation="Övningsuppgift Lektion 3 OOAD.uml" />
+            </start>
+            <nestedOccurrences>
+              <messageOccurrenceSpecificationMoniker
+                Id="feb355fa-6ece-4591-a1d8-01f14f19cf70"
+                LastKnownName="MessageOccurrenceSpecification53"
+                LastKnownLocation="Övningsuppgift Lektion 3 OOAD.uml" />
+            </nestedOccurrences>
+          </behaviorExecutionSpecification>
+          <executionOccurrenceSpecification
+            Id="2dc1e9f3-3834-4667-8bed-2c17a47a39bf"
+            name="ExecutionOccurrenceSpecification37">
+            <event>
+              <executionOccurrenceSpecificationReferencesEvent>
+                <executionEventMoniker
+                  Id="a9c86841-3d70-408d-8207-ed6001315e38"
+                  LastKnownName="ExecutionEvent"
+                  LastKnownLocation="Övningsuppgift Lektion 3 OOAD.uml" />
+              </executionOccurrenceSpecificationReferencesEvent>
+            </event>
+            <covered>
+              <lifelineMoniker
+                Id="525eb190-89d8-4998-94d8-4d7cdef0f3f9"
+                LastKnownName="Supplier"
+                LastKnownLocation="Övningsuppgift Lektion 3 OOAD.uml" />
+            </covered>
+          </executionOccurrenceSpecification>
+          <messageOccurrenceSpecification
+            Id="3e7890f5-3e39-431a-895a-16206a622ca0"
+            name="MessageOccurrenceSpecification52">
+            <covered>
+              <lifelineMoniker
+                Id="e00b2624-57cc-430c-b07f-7c528568cabb"
+                LastKnownName="Nackademiska Auktions-främjandet"
+                LastKnownLocation="Övningsuppgift Lektion 3 OOAD.uml" />
+            </covered>
+          </messageOccurrenceSpecification>
+          <messageOccurrenceSpecification
+            Id="feb355fa-6ece-4591-a1d8-01f14f19cf70"
+            name="MessageOccurrenceSpecification53">
+            <covered>
+              <lifelineMoniker
+                Id="525eb190-89d8-4998-94d8-4d7cdef0f3f9"
+                LastKnownName="Supplier"
+                LastKnownLocation="Övningsuppgift Lektion 3 OOAD.uml" />
+            </covered>
+          </messageOccurrenceSpecification>
+          <behaviorExecutionSpecification
+            Id="834f18aa-a45a-42a1-aa45-398b4f0d9531"
+            name="BehaviorExecutionSpecification18">
+            <coveredLifelines>
+              <lifelineMoniker
+                Id="fe1488dc-ee04-4776-8eb0-3882a7c59e5d"
+                LastKnownName="Customer"
+                LastKnownLocation="Övningsuppgift Lektion 3 OOAD.uml" />
+            </coveredLifelines>
+            <finish>
+              <executionOccurrenceSpecificationMoniker
+                Id="1dd0636d-6ce5-4272-a5c9-0f8fedb0113b"
+                LastKnownName="ExecutionOccurrenceSpecification36"
+                LastKnownLocation="Övningsuppgift Lektion 3 OOAD.uml" />
+            </finish>
+            <start>
+              <executionOccurrenceSpecificationMoniker
+                Id="65dbd8c8-7e16-47c0-9213-d2c72f5a7b51"
+                LastKnownName="ExecutionOccurrenceSpecification35"
+                LastKnownLocation="Övningsuppgift Lektion 3 OOAD.uml" />
+            </start>
+            <nestedOccurrences>
+              <messageOccurrenceSpecificationMoniker
+                Id="96c36300-1ff4-421c-8b7f-f6de06a3be9a"
+                LastKnownName="MessageOccurrenceSpecification51"
+                LastKnownLocation="Övningsuppgift Lektion 3 OOAD.uml" />
+            </nestedOccurrences>
+          </behaviorExecutionSpecification>
+          <executionOccurrenceSpecification
+            Id="65dbd8c8-7e16-47c0-9213-d2c72f5a7b51"
+            name="ExecutionOccurrenceSpecification35">
+            <event>
+              <executionOccurrenceSpecificationReferencesEvent>
+                <executionEventMoniker
+                  Id="f0d57ac3-7c17-4a6a-8934-5f7b09eeef93"
+                  LastKnownName="ExecutionEvent"
+                  LastKnownLocation="Övningsuppgift Lektion 3 OOAD.uml" />
+              </executionOccurrenceSpecificationReferencesEvent>
+            </event>
+            <covered>
+              <lifelineMoniker
+                Id="fe1488dc-ee04-4776-8eb0-3882a7c59e5d"
+                LastKnownName="Customer"
+                LastKnownLocation="Övningsuppgift Lektion 3 OOAD.uml" />
+            </covered>
+          </executionOccurrenceSpecification>
+          <messageOccurrenceSpecification
+            Id="96c36300-1ff4-421c-8b7f-f6de06a3be9a"
+            name="MessageOccurrenceSpecification51">
+            <covered>
+              <lifelineMoniker
+                Id="fe1488dc-ee04-4776-8eb0-3882a7c59e5d"
+                LastKnownName="Customer"
+                LastKnownLocation="Övningsuppgift Lektion 3 OOAD.uml" />
+            </covered>
+          </messageOccurrenceSpecification>
+          <messageOccurrenceSpecification
+            Id="fa5f0fc8-f040-4139-8a2c-f64d95ff7ddd"
+            name="MessageOccurrenceSpecification50">
+            <covered>
+              <lifelineMoniker
+                Id="e00b2624-57cc-430c-b07f-7c528568cabb"
+                LastKnownName="Nackademiska Auktions-främjandet"
+                LastKnownLocation="Övningsuppgift Lektion 3 OOAD.uml" />
+            </covered>
+          </messageOccurrenceSpecification>
+          <executionOccurrenceSpecification
+            Id="1b4497c3-ee9d-4924-9d79-b4581f6a15ee"
+            name="ExecutionOccurrenceSpecification38">
+            <event>
+              <executionOccurrenceSpecificationReferencesEvent>
+                <executionEventMoniker
+                  Id="7b5c96da-18d2-45a4-8b6a-d954b1d61b1f"
+                  LastKnownName="ExecutionEvent"
+                  LastKnownLocation="Övningsuppgift Lektion 3 OOAD.uml" />
+              </executionOccurrenceSpecificationReferencesEvent>
+            </event>
+            <covered>
+              <lifelineMoniker
+                Id="525eb190-89d8-4998-94d8-4d7cdef0f3f9"
+                LastKnownName="Supplier"
+                LastKnownLocation="Övningsuppgift Lektion 3 OOAD.uml" />
+            </covered>
+          </executionOccurrenceSpecification>
+          <executionOccurrenceSpecification
+            Id="2cf29134-66ab-4380-be56-fc75b1a9e8c8"
+            name="ExecutionOccurrenceSpecification34">
+            <event>
+              <executionOccurrenceSpecificationReferencesEvent>
+                <executionEventMoniker
+                  Id="b02e403e-a07d-49d8-b2e9-4820ffda121e"
+                  LastKnownName="ExecutionEvent"
+                  LastKnownLocation="Övningsuppgift Lektion 3 OOAD.uml" />
+              </executionOccurrenceSpecificationReferencesEvent>
+            </event>
+            <covered>
+              <lifelineMoniker
+                Id="e00b2624-57cc-430c-b07f-7c528568cabb"
+                LastKnownName="Nackademiska Auktions-främjandet"
+                LastKnownLocation="Övningsuppgift Lektion 3 OOAD.uml" />
+            </covered>
+          </executionOccurrenceSpecification>
+          <executionOccurrenceSpecification
+            Id="1dd0636d-6ce5-4272-a5c9-0f8fedb0113b"
+            name="ExecutionOccurrenceSpecification36">
+            <event>
+              <executionOccurrenceSpecificationReferencesEvent>
+                <executionEventMoniker
+                  Id="0d523958-0830-410c-977d-63c2159db344"
+                  LastKnownName="ExecutionEvent"
+                  LastKnownLocation="Övningsuppgift Lektion 3 OOAD.uml" />
+              </executionOccurrenceSpecificationReferencesEvent>
+            </event>
+            <covered>
+              <lifelineMoniker
+                Id="fe1488dc-ee04-4776-8eb0-3882a7c59e5d"
+                LastKnownName="Customer"
+                LastKnownLocation="Övningsuppgift Lektion 3 OOAD.uml" />
+            </covered>
+          </executionOccurrenceSpecification>
+        </fragments>
+        <lifelines>
+          <lifeline
+            Id="fe1488dc-ee04-4776-8eb0-3882a7c59e5d"
+            name="Customer"
+            isActor="true"
+            lifelineDisplayName="Customer">
+            <represents>
+              <propertyMoniker
+                Id="1e39825d-6208-4c3b-870f-ab129cffc87f"
+                LastKnownLocation="Övningsuppgift Lektion 3 OOAD.uml" />
+            </represents>
+            <topLevelOccurrences>
+              <messageOccurrenceSpecificationMoniker
+                Id="47fe4308-99a9-4970-a275-1dc7dcd41695"
+                LastKnownName="MessageOccurrenceSpecification29"
+                LastKnownLocation="Övningsuppgift Lektion 3 OOAD.uml" />
+              <messageOccurrenceSpecificationMoniker
+                Id="80f70cb8-f76a-4279-9b84-33428a337fce"
+                LastKnownName="MessageOccurrenceSpecification32"
+                LastKnownLocation="Övningsuppgift Lektion 3 OOAD.uml" />
+              <messageOccurrenceSpecificationMoniker
+                Id="15702d8f-b58e-4059-b59b-20f985c0322e"
+                LastKnownName="MessageOccurrenceSpecification33"
+                LastKnownLocation="Övningsuppgift Lektion 3 OOAD.uml" />
+              <executionOccurrenceSpecificationMoniker
+                Id="65dbd8c8-7e16-47c0-9213-d2c72f5a7b51"
+                LastKnownName="ExecutionOccurrenceSpecification35"
+                LastKnownLocation="Övningsuppgift Lektion 3 OOAD.uml" />
+              <executionOccurrenceSpecificationMoniker
+                Id="1dd0636d-6ce5-4272-a5c9-0f8fedb0113b"
+                LastKnownName="ExecutionOccurrenceSpecification36"
+                LastKnownLocation="Övningsuppgift Lektion 3 OOAD.uml" />
+            </topLevelOccurrences>
+          </lifeline>
+          <lifeline
+            Id="551c49ce-6b97-42ad-8e7e-96da1df8b9b0"
+            name="Bid Product"
+            isActor="false"
+            lifelineDisplayName="Bid Product">
+            <represents>
+              <propertyMoniker
+                Id="2476eee2-d0b4-46e9-ba3e-1303e2cd8ff4"
+                LastKnownLocation="Övningsuppgift Lektion 3 OOAD.uml" />
+            </represents>
+            <topLevelOccurrences>
+              <executionOccurrenceSpecificationMoniker
+                Id="a48b3518-e8f5-4731-8553-f0ef41184308"
+                LastKnownName="ExecutionOccurrenceSpecification21"
+                LastKnownLocation="Övningsuppgift Lektion 3 OOAD.uml" />
+              <executionOccurrenceSpecificationMoniker
+                Id="f8f74b02-1d76-4066-98ca-2edae10d9703"
+                LastKnownName="ExecutionOccurrenceSpecification22"
+                LastKnownLocation="Övningsuppgift Lektion 3 OOAD.uml" />
+            </topLevelOccurrences>
+          </lifeline>
+          <lifeline
+            Id="23701fa3-7a05-4ab4-89ae-9082a4c0a20a"
+            name="Buyout Product"
+            isActor="false"
+            lifelineDisplayName="Buyout Product">
+            <represents>
+              <propertyMoniker
+                Id="1b4aa014-8df6-43ab-b91f-6c8284363d6f"
+                LastKnownLocation="Övningsuppgift Lektion 3 OOAD.uml" />
+            </represents>
+            <topLevelOccurrences>
+              <executionOccurrenceSpecificationMoniker
+                Id="72f16e19-fa19-4184-92b1-29a4d4b76a70"
+                LastKnownName="ExecutionOccurrenceSpecification23"
+                LastKnownLocation="Övningsuppgift Lektion 3 OOAD.uml" />
+              <executionOccurrenceSpecificationMoniker
+                Id="3ae34fca-ac88-453b-a1cd-9662f770e067"
+                LastKnownName="ExecutionOccurrenceSpecification24"
+                LastKnownLocation="Övningsuppgift Lektion 3 OOAD.uml" />
+            </topLevelOccurrences>
+          </lifeline>
+          <lifeline
+            Id="37fac45b-c059-48cd-889e-818982668419"
+            name="Auction End"
+            isActor="false"
+            lifelineDisplayName="Auction End">
+            <topLevelOccurrences>
+              <executionOccurrenceSpecificationMoniker
+                Id="7f881ecd-45fe-4c6d-91d0-e622290d6b18"
+                LastKnownName="ExecutionOccurrenceSpecification25"
+                LastKnownLocation="Övningsuppgift Lektion 3 OOAD.uml" />
+              <executionOccurrenceSpecificationMoniker
+                Id="12bc8fd4-f5da-4019-8b73-2d625c463dc8"
+                LastKnownName="ExecutionOccurrenceSpecification26"
+                LastKnownLocation="Övningsuppgift Lektion 3 OOAD.uml" />
+              <executionOccurrenceSpecificationMoniker
+                Id="ed23fd68-b82a-4d10-9c9b-b0ae42409a3f"
+                LastKnownName="ExecutionOccurrenceSpecification27"
+                LastKnownLocation="Övningsuppgift Lektion 3 OOAD.uml" />
+              <executionOccurrenceSpecificationMoniker
+                Id="f58a6b14-e1af-4198-b020-442c10a65c3c"
+                LastKnownName="ExecutionOccurrenceSpecification28"
+                LastKnownLocation="Övningsuppgift Lektion 3 OOAD.uml" />
+              <messageOccurrenceSpecificationMoniker
+                Id="fe4a0855-8fc5-40fa-89b9-550775540edd"
+                LastKnownName="MessageOccurrenceSpecification48"
+                LastKnownLocation="Övningsuppgift Lektion 3 OOAD.uml" />
+            </topLevelOccurrences>
+          </lifeline>
+          <lifeline
+            Id="e00b2624-57cc-430c-b07f-7c528568cabb"
+            name="Nackademiska Auktions-främjandet"
+            isActor="true"
+            lifelineDisplayName="Nackademiska Auktions-främjandet">
+            <represents>
+              <propertyMoniker
+                Id="3dd4fdfd-0757-40d5-870b-8b0bd2493938"
+                LastKnownLocation="Övningsuppgift Lektion 3 OOAD.uml" />
+            </represents>
+            <topLevelOccurrences>
+              <executionOccurrenceSpecificationMoniker
+                Id="d5f18abd-d2be-4067-8a28-cfe4899c9fe3"
+                LastKnownName="ExecutionOccurrenceSpecification33"
+                LastKnownLocation="Övningsuppgift Lektion 3 OOAD.uml" />
+              <executionOccurrenceSpecificationMoniker
+                Id="2cf29134-66ab-4380-be56-fc75b1a9e8c8"
+                LastKnownName="ExecutionOccurrenceSpecification34"
+                LastKnownLocation="Övningsuppgift Lektion 3 OOAD.uml" />
+            </topLevelOccurrences>
+          </lifeline>
+          <lifeline
+            Id="525eb190-89d8-4998-94d8-4d7cdef0f3f9"
+            name="Supplier"
+            isActor="true"
+            lifelineDisplayName="Supplier">
+            <represents>
+              <propertyMoniker
+                Id="ffac57e1-6387-4092-91ca-7a6265e7fb55"
+                LastKnownLocation="Övningsuppgift Lektion 3 OOAD.uml" />
+            </represents>
+            <topLevelOccurrences>
+              <executionOccurrenceSpecificationMoniker
+                Id="2dc1e9f3-3834-4667-8bed-2c17a47a39bf"
+                LastKnownName="ExecutionOccurrenceSpecification37"
+                LastKnownLocation="Övningsuppgift Lektion 3 OOAD.uml" />
+              <executionOccurrenceSpecificationMoniker
+                Id="1b4497c3-ee9d-4924-9d79-b4581f6a15ee"
+                LastKnownName="ExecutionOccurrenceSpecification38"
+                LastKnownLocation="Övningsuppgift Lektion 3 OOAD.uml" />
+            </topLevelOccurrences>
+          </lifeline>
+        </lifelines>
+        <messages>
+          <message
+            Id="758b3abc-1da0-4285-b401-dca622242b41"
+            name="Bids"
+            messageKind="Complete"
+            messageSort="SynchCall"
+            createSelfMessage="false">
+            <sendEvent>
+              <messageOccurrenceSpecificationMoniker
+                Id="47fe4308-99a9-4970-a275-1dc7dcd41695"
+                LastKnownName="MessageOccurrenceSpecification29"
+                LastKnownLocation="Övningsuppgift Lektion 3 OOAD.uml" />
+            </sendEvent>
+            <receiveEvent>
+              <messageOccurrenceSpecificationMoniker
+                Id="01455832-682f-4925-adb7-51d202b068ec"
+                LastKnownName="MessageOccurrenceSpecification30"
+                LastKnownLocation="Övningsuppgift Lektion 3 OOAD.uml" />
+            </receiveEvent>
+          </message>
+          <message
+            Id="ee6fd6b6-c7e0-40ba-ab5b-bdd75cf8555a"
+            name="Auction won"
+            messageKind="Complete"
+            messageSort="AsynchCall"
+            createSelfMessage="false">
+            <sendEvent>
+              <messageOccurrenceSpecificationMoniker
+                Id="d62f740f-9dac-4fca-915b-4c96c4e7af1d"
+                LastKnownName="MessageOccurrenceSpecification35"
+                LastKnownLocation="Övningsuppgift Lektion 3 OOAD.uml" />
+            </sendEvent>
+            <receiveEvent>
+              <messageOccurrenceSpecificationMoniker
+                Id="d2822cc4-6684-4de5-82af-7c54e0e45ad0"
+                LastKnownName="MessageOccurrenceSpecification36"
+                LastKnownLocation="Övningsuppgift Lektion 3 OOAD.uml" />
+            </receiveEvent>
+          </message>
+          <message
+            Id="b450c48a-1dcb-4663-b16f-442378d0c858"
+            name="OverBid"
+            messageKind="Complete"
+            messageSort="Reply"
+            createSelfMessage="false">
+            <sendEvent>
+              <messageOccurrenceSpecificationMoniker
+                Id="6654e244-3b53-46cc-b487-18416554aa02"
+                LastKnownName="MessageOccurrenceSpecification31"
+                LastKnownLocation="Övningsuppgift Lektion 3 OOAD.uml" />
+            </sendEvent>
+            <receiveEvent>
+              <messageOccurrenceSpecificationMoniker
+                Id="80f70cb8-f76a-4279-9b84-33428a337fce"
+                LastKnownName="MessageOccurrenceSpecification32"
+                LastKnownLocation="Övningsuppgift Lektion 3 OOAD.uml" />
+            </receiveEvent>
+          </message>
+          <message
+            Id="49278ecc-d969-4a0f-9389-d6347c4ac389"
+            name="Buyout Product"
+            messageKind="Complete"
+            messageSort="AsynchCall"
+            createSelfMessage="false">
+            <sendEvent>
+              <messageOccurrenceSpecificationMoniker
+                Id="15702d8f-b58e-4059-b59b-20f985c0322e"
+                LastKnownName="MessageOccurrenceSpecification33"
+                LastKnownLocation="Övningsuppgift Lektion 3 OOAD.uml" />
+            </sendEvent>
+            <receiveEvent>
+              <messageOccurrenceSpecificationMoniker
+                Id="6466d6d6-6aed-4c28-b4b4-ad3c47f11827"
+                LastKnownName="MessageOccurrenceSpecification34"
+                LastKnownLocation="Övningsuppgift Lektion 3 OOAD.uml" />
+            </receiveEvent>
+          </message>
+          <message
+            Id="283f5657-f526-419a-a420-5a70cb6d9028"
+            name="Auction won"
+            messageKind="Complete"
+            messageSort="AsynchCall"
+            createSelfMessage="false">
+            <sendEvent>
+              <messageOccurrenceSpecificationMoniker
+                Id="d7ebfc14-ac04-4b5e-9623-b6b4b453ccf1"
+                LastKnownName="MessageOccurrenceSpecification37"
+                LastKnownLocation="Övningsuppgift Lektion 3 OOAD.uml" />
+            </sendEvent>
+            <receiveEvent>
+              <messageOccurrenceSpecificationMoniker
+                Id="be3f7a9b-b3d9-4a09-8cf0-2f853b8b1418"
+                LastKnownName="MessageOccurrenceSpecification38"
+                LastKnownLocation="Övningsuppgift Lektion 3 OOAD.uml" />
+            </receiveEvent>
+          </message>
+          <message
+            Id="7147871f-75e0-4271-b7c6-bcf45231f289"
+            name="Provision received"
+            messageKind="Complete"
+            messageSort="AsynchCall"
+            createSelfMessage="false">
+            <sendEvent>
+              <messageOccurrenceSpecificationMoniker
+                Id="fe4a0855-8fc5-40fa-89b9-550775540edd"
+                LastKnownName="MessageOccurrenceSpecification48"
+                LastKnownLocation="Övningsuppgift Lektion 3 OOAD.uml" />
+            </sendEvent>
+            <receiveEvent>
+              <messageOccurrenceSpecificationMoniker
+                Id="fe533b1c-f992-40c7-94d4-6ae6e69c0a87"
+                LastKnownName="MessageOccurrenceSpecification49"
+                LastKnownLocation="Övningsuppgift Lektion 3 OOAD.uml" />
+            </receiveEvent>
+          </message>
+          <message
+            Id="f4728b5b-4151-4ef5-9386-abab626ea662"
+            name="Paymemt received"
+            messageKind="Complete"
+            messageSort="AsynchCall"
+            createSelfMessage="false">
+            <sendEvent>
+              <messageOccurrenceSpecificationMoniker
+                Id="3e7890f5-3e39-431a-895a-16206a622ca0"
+                LastKnownName="MessageOccurrenceSpecification52"
+                LastKnownLocation="Övningsuppgift Lektion 3 OOAD.uml" />
+            </sendEvent>
+            <receiveEvent>
+              <messageOccurrenceSpecificationMoniker
+                Id="feb355fa-6ece-4591-a1d8-01f14f19cf70"
+                LastKnownName="MessageOccurrenceSpecification53"
+                LastKnownLocation="Övningsuppgift Lektion 3 OOAD.uml" />
+            </receiveEvent>
+          </message>
+          <message
+            Id="3eb12b66-ed04-4658-aacc-4db46811fa8e"
+            name="Receives product"
+            messageKind="Complete"
+            messageSort="AsynchCall"
+            createSelfMessage="false">
+            <sendEvent>
+              <messageOccurrenceSpecificationMoniker
+                Id="fa5f0fc8-f040-4139-8a2c-f64d95ff7ddd"
+                LastKnownName="MessageOccurrenceSpecification50"
+                LastKnownLocation="Övningsuppgift Lektion 3 OOAD.uml" />
+            </sendEvent>
+            <receiveEvent>
+              <messageOccurrenceSpecificationMoniker
+                Id="96c36300-1ff4-421c-8b7f-f6de06a3be9a"
+                LastKnownName="MessageOccurrenceSpecification51"
+                LastKnownLocation="Övningsuppgift Lektion 3 OOAD.uml" />
+            </receiveEvent>
+          </message>
+        </messages>
+        <ownedAttributesInternal>
+          <property
+            Id="2bad23d5-fc98-42e6-b29d-96411c54a004"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false">
+            <type_NamedElement>
+              <useCaseMoniker
+                Id="5ce65af8-f91b-410d-9a57-2e1e0b8c21d6"
+                LastKnownName="Manage Purchase"
+                LastKnownLocation="Övningsuppgift Lektion 3 OOAD.uml" />
+            </type_NamedElement>
+          </property>
+          <property
+            Id="2476eee2-d0b4-46e9-ba3e-1303e2cd8ff4"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false">
+            <type_NamedElement>
+              <useCaseMoniker
+                Id="1b2f361c-8837-4bb2-bb6d-5faa92520b97"
+                LastKnownName="Bid Product"
+                LastKnownLocation="Övningsuppgift Lektion 3 OOAD.uml" />
+            </type_NamedElement>
+          </property>
+          <property
+            Id="1b4aa014-8df6-43ab-b91f-6c8284363d6f"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false">
+            <type_NamedElement>
+              <useCaseMoniker
+                Id="55ee239a-82c0-4488-9477-66375d62f1a7"
+                LastKnownName="Buyout Product"
+                LastKnownLocation="Övningsuppgift Lektion 3 OOAD.uml" />
+            </type_NamedElement>
+          </property>
+          <property
+            Id="ffac57e1-6387-4092-91ca-7a6265e7fb55"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false">
+            <type_NamedElement>
+              <actorMoniker
+                Id="9de12630-5f7c-42cc-bf8d-a078663b6855"
+                LastKnownName="Supplier"
+                LastKnownLocation="Övningsuppgift Lektion 3 OOAD.uml" />
+            </type_NamedElement>
+          </property>
+          <property
+            Id="3dd4fdfd-0757-40d5-870b-8b0bd2493938"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false">
+            <type_NamedElement>
+              <actorMoniker
+                Id="1b91eac7-766b-46a1-8d20-b78d8e19e16a"
+                LastKnownName="Nackademiska Auktions-främjandet"
+                LastKnownLocation="Övningsuppgift Lektion 3 OOAD.uml" />
+            </type_NamedElement>
+          </property>
+          <property
+            Id="1e39825d-6208-4c3b-870f-ab129cffc87f"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false">
+            <type_NamedElement>
+              <actorMoniker
+                Id="f9fab8cd-b321-4ec0-9060-21482e90bc2f"
+                LastKnownName="Customer"
+                LastKnownLocation="Övningsuppgift Lektion 3 OOAD.uml" />
+            </type_NamedElement>
+          </property>
+        </ownedAttributesInternal>
+      </interaction>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <executionEvent
+        Id="c90017be-01d6-4936-a815-a78a4af2c9d2"
+        name="ExecutionEvent" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <executionEvent
+        Id="92b5e98a-9fcf-40ca-86e8-d3756f19c6e0"
+        name="ExecutionEvent" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <executionEvent
+        Id="a7b21e6d-3224-4691-988e-98aa9ca8d372"
+        name="ExecutionEvent" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <executionEvent
+        Id="c9062698-9374-4722-80c9-561f200dec12"
+        name="ExecutionEvent" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <executionEvent
+        Id="f31b4091-d627-4438-9796-198899241186"
+        name="ExecutionEvent" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <executionEvent
+        Id="7aed1a58-c473-4984-ac1e-49671fbcea56"
+        name="ExecutionEvent" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <executionEvent
+        Id="e6420c78-9c54-422c-a7e7-d6098b15e889"
+        name="ExecutionEvent" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <executionEvent
+        Id="44aeb640-186c-42a8-b436-21c6da5f28ec"
+        name="ExecutionEvent" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <executionEvent
+        Id="a45e5ca2-5c75-4e7f-bc77-db6dfe299147"
+        name="ExecutionEvent" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <executionEvent
+        Id="b02e403e-a07d-49d8-b2e9-4820ffda121e"
+        name="ExecutionEvent" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <executionEvent
+        Id="f0d57ac3-7c17-4a6a-8934-5f7b09eeef93"
+        name="ExecutionEvent" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <executionEvent
+        Id="0d523958-0830-410c-977d-63c2159db344"
+        name="ExecutionEvent" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <executionEvent
+        Id="a9c86841-3d70-408d-8207-ed6001315e38"
+        name="ExecutionEvent" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <executionEvent
+        Id="7b5c96da-18d2-45a4-8b6a-d954b1d61b1f"
+        name="ExecutionEvent" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <undefinedType
+        Id="10b8229a-a53c-4d78-9037-390144672322"
+        name="Enum" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <undefinedType
+        Id="98db60ff-d2a7-4a3c-9036-274854840344"
+        name="Decimal" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <undefinedType
+        Id="3db22191-34ba-4deb-a868-182e387dc719"
+        name="DateTime" />
+    </packageHasNamedElement>
+  </packagedElements>
+  <primitiveType
+    Id="220a3521-e091-4221-bae9-3ef9018e845c"
+    name="Integer"
+    isAbstract="false"
+    isLeaf="false" />
+  <primitiveType
+    Id="8943dc84-709e-4f62-b15a-a3273aa6f165"
+    name="Boolean"
+    isAbstract="false"
+    isLeaf="false" />
+  <primitiveType
+    Id="59259974-6d55-42c6-b7bd-763d77ac8ef9"
+    name="String"
+    isAbstract="false"
+    isLeaf="false" />
+  <primitiveType
+    Id="3ab42e7d-4969-445a-b209-471f5cb8209c"
+    name="UnlimitedNatural"
+    isAbstract="false"
+    isLeaf="false" />
+</modelStoreModel>
