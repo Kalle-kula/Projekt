@@ -12,20 +12,14 @@
       <childLayers>
         <layer Id="8232123e-aab7-4155-97fe-77ea80d8ebb0" name="Web Server">
           <childLayers>
-            <layer Id="eea47d54-2b1a-42a8-8a83-66c74c9913b2" name="GUI">
-              <childLayers>
-                <layer Id="d02e449e-d89e-4847-a4cd-533c2d7478d6" name="Domain">
-                  <childLayers>
-                    <layer Id="e4fc80b5-045c-4a33-aabe-ef0d5392451f" name="Data" />
-                  </childLayers>
-                </layer>
-              </childLayers>
-            </layer>
-            <layer Id="899f4091-4bd5-43ae-a5b4-b7a34b7d718e" name="LinQ">
-              <childLayers>
-                <layer Id="864ace85-29c1-47d9-b264-edf359928bfb" name="DB" />
-              </childLayers>
-            </layer>
+            <layer Id="eea47d54-2b1a-42a8-8a83-66c74c9913b2" name="Presentation" />
+            <layer Id="d02e449e-d89e-4847-a4cd-533c2d7478d6" name="Domain" />
+            <layer Id="e4fc80b5-045c-4a33-aabe-ef0d5392451f" name="Data" />
+          </childLayers>
+        </layer>
+        <layer Id="899f4091-4bd5-43ae-a5b4-b7a34b7d718e" name="LinQ">
+          <childLayers>
+            <layer Id="864ace85-29c1-47d9-b264-edf359928bfb" name="DB" />
           </childLayers>
         </layer>
       </childLayers>
