@@ -12,7 +12,7 @@ namespace Övningsuppgift_Lektion_3_OOADLib.Services
         Response<Product> Get(string productName);
         Response<Product> GetById(int id);
         Response<Product> GetAll();
-        Response<Product> UpdateProductDetail(string name, decimal startPrice, decimal provision, int supplierId, DateTime timeInterval, decimal buyOutPrice, Enum type, string designer);
+        Response<Product> UpdateProductDetail(int id, string name, decimal startPrice, decimal provision, int supplierId, DateTime timeInterval, decimal buyOutPrice, Enum type, string designer);
         Response<Product> DeleteProduct(int id);
 
     }
