@@ -9,21 +9,9 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 
-public class ProductBase
+public class Product : EntityBase
 {
-	public virtual string Name
-	{
-		get;
-		set;
-	}
-
 	public virtual Decimal StartPrice
-	{
-		get;
-		set;
-	}
-
-	public virtual int Id
 	{
 		get;
 		set;
@@ -35,7 +23,7 @@ public class ProductBase
 		set;
 	}
 
-	public virtual string Supplier
+	public virtual int SupplierId
 	{
 		get;
 		set;
