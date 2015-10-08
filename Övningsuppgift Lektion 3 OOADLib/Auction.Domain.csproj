@@ -66,6 +66,7 @@
     <Compile Include="Services\IPasswordService.cs" />
     <Compile Include="Services\IProductService.cs" />
     <Compile Include="Services\IUserService.cs" />
+    <Compile Include="Services\PasswordHandler.cs" />
     <Compile Include="Services\ProductService.cs" />
     <Compile Include="Services\Response.cs" />
     <Compile Include="Services\UserService.cs" />
