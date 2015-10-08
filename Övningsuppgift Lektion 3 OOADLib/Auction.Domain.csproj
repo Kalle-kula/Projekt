@@ -47,11 +47,30 @@
     <Compile Include="Models\Product.cs" />
     <Compile Include="Models\User.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Repositories\AuctionRepository.cs" />
+    <Compile Include="Repositories\BankRepository.cs" />
+    <Compile Include="Repositories\BidRepository.cs" />
+    <Compile Include="Repositories\IAuctionRepository.cs" />
+    <Compile Include="Repositories\IBankRepository.cs" />
+    <Compile Include="Repositories\IBidRepository.cs" />
+    <Compile Include="Repositories\IProductRepository.cs" />
+    <Compile Include="Repositories\IUserRepository.cs" />
+    <Compile Include="Repositories\ProductRepository.cs" />
+    <Compile Include="Repositories\UserRepository.cs" />
+    <Compile Include="Services\AuctionService.cs" />
+    <Compile Include="Services\BankService.cs" />
+    <Compile Include="Services\BidService.cs" />
+    <Compile Include="Services\IAuctionService.cs" />
+    <Compile Include="Services\IBankService.cs" />
+    <Compile Include="Services\IBidService.cs" />
+    <Compile Include="Services\IPasswordService.cs" />
+    <Compile Include="Services\IProductService.cs" />
+    <Compile Include="Services\IUserService.cs" />
+    <Compile Include="Services\ProductService.cs" />
+    <Compile Include="Services\Response.cs" />
+    <Compile Include="Services\UserService.cs" />
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="Repositories\" />
-    <Folder Include="Services\" />
-  </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.

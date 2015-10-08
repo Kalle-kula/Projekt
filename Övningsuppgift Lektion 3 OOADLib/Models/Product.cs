@@ -9,7 +9,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 
-public class Product : EntityBase
+public class Product : BaseModel
 {
 	public virtual Decimal StartPrice
 	{
@@ -29,7 +29,7 @@ public class Product : EntityBase
 		set;
 	}
 
-	public virtual DateTime TimeIntervall
+	public virtual DateTime TimeInterval
 	{
 		get;
 		set;
@@ -46,6 +46,11 @@ public class Product : EntityBase
 		get;
 		set;
 	}
+    public virtual string ProductDesigner
+    {
+        get;
+        set;
+    }
 
 }
 
