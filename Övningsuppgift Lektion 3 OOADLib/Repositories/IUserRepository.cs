@@ -9,7 +9,9 @@ namespace Övningsuppgift_Lektion_3_OOADLib.Repositories
     interface IUserRepository
     {
         User Get(int id);
+
         User Get(string loginname);
+
         void Save(User user);
     }
 }

@@ -6,9 +6,14 @@ using System.Threading.Tasks;
 
 namespace Övningsuppgift_Lektion_3_OOADLib.Repositories
 {
-    class AuctionRepository : IAuctionRepository
+    public class AuctionRepository : IAuctionRepository
     {
         public List<Auction> All()
+        {
+            throw new NotImplementedException();
+        }
+
+        public void DeleteAuction(int id)
         {
             throw new NotImplementedException();
         }
@@ -28,7 +33,7 @@ namespace Övningsuppgift_Lektion_3_OOADLib.Repositories
             throw new NotImplementedException();
         }
 
-        public void UpdateAuctionDetails(Bank product)
+        public void UpdateAuctionDetail(Auction auction)
         {
             throw new NotImplementedException();
         }

@@ -9,8 +9,12 @@ namespace Övningsuppgift_Lektion_3_OOADLib.Services
     interface IPasswordService
     {
         string HashPassword(string password);
+
         bool ValidatePassword(string password, string correctHash);
+
         bool SlowEquals(byte[] a, byte[] b);
-        byte[] GetPbkdf2bytes(string password, byte[] salt, int iterations, int outputBytes);
+
+        byte[] GetPbkdf2Bytes(string password, byte[] salt, int iterations, int outputBytes);
+
     }
 }

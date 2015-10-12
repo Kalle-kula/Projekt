@@ -8,11 +8,14 @@ namespace Övningsuppgift_Lektion_3_OOADLib.Services
 {
     interface IBidService
     {
-        Response<Bid> CreateBid(decimal amount, int userId);
+        Response<Bid> CreateBid(decimal amount, User objUser);
+        
         Response<Bid> GetById(int id);
-        Response<Bid> GetAll();
-        Response<Bid> UpdateBidDetail(int id, decimal amount);
-        Response<Bid> DeleteBid(int id);
 
+        Response<Bid> GetAll();
+
+        Response<Bid> UpdateBidDetail(int id, decimal amount);
+
+        Response<Bid> DeleteBid(int id);
     }
 }

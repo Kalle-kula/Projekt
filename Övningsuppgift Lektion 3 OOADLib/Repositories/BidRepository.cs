@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Övningsuppgift_Lektion_3_OOADLib.Repositories
 {
-    class BidRepository : IBidRepository
+    public class BidRepository : IBidRepository
     {
         public List<Bid> All()
         {

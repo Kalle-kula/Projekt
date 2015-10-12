@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Övningsuppgift_Lektion_3_OOADLib.Repositories;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -6,36 +7,78 @@ using System.Threading.Tasks;
 
 namespace Övningsuppgift_Lektion_3_OOADLib.Services
 {
-    class BankService : IBankService
+    public class BankService : IBankService
     {
+        IBankRepository _repository; // USE  Constructor(15)  so the service does not depends of any DB. 
+
+        public BankService(IBankRepository repository)
+        {
+            _repository = repository;
+        }
+
         public Response<Bank> CreateBankAccount(string accountNbr, decimal amount)
         {
-            throw new NotImplementedException();
+            var response = new Response<Bank>();
+
+            if (response.Success)
+            {
+                var bank = new Bank();
+                bank.AccountNumber = accountNbr;
+                bank.Balance = amount;
+                _repository.Save(bank);
+                response.Entity = bank;
+            }
+
+            return response;
         }
 
         public Response<Bank> DeleteBankAccount(int id)
         {
-            throw new NotImplementedException();
+            var response = new Response<Bank>();
+
+            if (response.Success)
+            {
+                _repository.DeleteBank(id);
+            }
+
+            return response;
         }
 
         public Response<Bank> Get(string accountNbr)
         {
-            throw new NotImplementedException();
+            var response = new Response<Bank>();
+            response.Entity = _repository.GetByAccountNbr(accountNbr);
+            return response;
         }
 
         public Response<Bank> GetAll()
         {
-            throw new NotImplementedException();
+            var response = new Response<Bank>();
+            response.EntityList = _repository.All();
+            return response;
         }
 
         public Response<Bank> GetById(int id)
         {
-            throw new NotImplementedException();
+            var response = new Response<Bank>();
+            response.Entity = _repository.Get(id);
+            return response;
         }
 
         public Response<Bank> UpdateBankAccount(int id, string accountNbr, decimal amount)
         {
-            throw new NotImplementedException();
+            var response = new Response<Bank>();
+
+            if (response.Success)
+            {
+                var bank = new Bank();
+                bank.Id = id;
+                bank.AccountNumber = accountNbr;
+                bank.Balance = amount;
+                _repository.UpdateBankDetail(bank);
+            }
+
+            return response;
         }
     }
 }

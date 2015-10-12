@@ -11,46 +11,49 @@ using System.Text;
 
 public class Product : BaseModel
 {
-	public virtual Decimal StartPrice
-	{
-		get;
-		set;
-	}
-
-	public virtual Decimal Provision
-	{
-		get;
-		set;
-	}
-
-	public virtual int SupplierId
-	{
-		get;
-		set;
-	}
-
-	public virtual DateTime TimeInterval
-	{
-		get;
-		set;
-	}
-
-	public virtual Decimal BuyoutPrice
-	{
-		get;
-		set;
-	}
-
-	public virtual Enum Type
-	{
-		get;
-		set;
-	}
-    public virtual string ProductDesigner
+    public virtual string Name
     {
         get;
         set;
     }
+
+    public virtual Decimal StartPrice
+    {
+        get;
+        set;
+    }
+
+    public virtual Decimal Provision
+    {
+        get;
+        set;
+    }
+
+    public virtual int SupplierId
+    {
+        get;
+        set;
+    }
+
+    public virtual DateTime TimeIntervall
+    {
+        get;
+        set;
+    }
+
+    public virtual Decimal BuyoutPrice
+    {
+        get;
+        set;
+    }
+
+    public virtual Enum Type
+    {
+        get;
+        set;
+    }
+
+    public virtual string ProductDesigner { set; get; }
 
 }
 

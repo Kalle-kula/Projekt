@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Övningsuppgift_Lektion_3_OOADLib.Repositories
 {
-    class UserRepository : IUserRepository
+    public class UserRepository : IUserRepository
     {
         public User Get(string loginname)
         {

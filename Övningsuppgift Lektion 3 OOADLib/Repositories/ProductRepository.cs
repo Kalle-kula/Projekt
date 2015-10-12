@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Övningsuppgift_Lektion_3_OOADLib.Repositories
 {
-    class ProductRepository : IProductRepository
+    public class ProductRepository : IProductRepository
     {
         public List<Product> All()
         {

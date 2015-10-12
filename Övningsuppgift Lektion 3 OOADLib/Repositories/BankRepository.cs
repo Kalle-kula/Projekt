@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Övningsuppgift_Lektion_3_OOADLib.Repositories
 {
-    class BankRepository : IBankRepository
+    public class BankRepository : IBankRepository
     {
         public List<Bank> All()
         {
@@ -18,7 +18,7 @@ namespace Övningsuppgift_Lektion_3_OOADLib.Repositories
             throw new NotImplementedException();
         }
 
-        public Bank Get(string name)
+        public Bank GetByAccountNbr(string accountNbr)
         {
             throw new NotImplementedException();
         }
@@ -28,14 +28,15 @@ namespace Övningsuppgift_Lektion_3_OOADLib.Repositories
             throw new NotImplementedException();
         }
 
-        public void Save(Auction user)
+        public void Save(Bank user)
         {
             throw new NotImplementedException();
         }
 
-        public void UpdateAuctionDetails(Bank product)
+        public void UpdateBankDetail(Bank product)
         {
             throw new NotImplementedException();
         }
+        
     }
 }

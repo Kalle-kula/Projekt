@@ -6,13 +6,18 @@ using System.Threading.Tasks;
 
 namespace Övningsuppgift_Lektion_3_OOADLib.Repositories
 {
-    interface IAuctionRepository
+    public interface IAuctionRepository
     {
         Auction Get(int id);
+
         Auction Get(string name);
+
         void Save(Auction user);
+
         List<Auction> All();
-        
-        void UpdateAuctionDetails(Bank product);
+
+        void UpdateAuctionDetail(Auction product);
+
+        void DeleteAuction(int id);
     }
 }

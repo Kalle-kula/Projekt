@@ -6,14 +6,21 @@ using System.Threading.Tasks;
 
 namespace Övningsuppgift_Lektion_3_OOADLib.Services
 {
-    interface IProductService
+    public interface IProductService
     {
-        Response<Product> CreateProduct(string name, decimal startPrice, decimal provision, int supplierId, DateTime timeInterval, decimal buyOutPrice, Enum type, string designer);
-        Response<Product> Get(string productName);
-        Response<Product> GetById(int id);
-        Response<Product> GetAll();
-        Response<Product> UpdateProductDetail(int id, string name, decimal startPrice, decimal provision, int supplierId, DateTime timeInterval, decimal buyOutPrice, Enum type, string designer);
-        Response<Product> DeleteProduct(int id);
+        Response<Product> CreateProduct(string name, decimal startPrice, decimal provision,
+            int supplierId, DateTime timeInterval, decimal buyOutPrice, Enum type, string designer);
 
+
+        Response<Product> Get(string productName);
+
+        Response<Product> GetById(int id);
+
+        Response<Product> GetAll();
+
+        Response<Product> UpdateProduct(int id, string name, decimal startPrice, decimal provision,
+            int supplierId, DateTime timeInterval, decimal buyOutPrice, Enum type, string designer);
+
+        Response<Product> DeleteProduct(int id);
     }
 }

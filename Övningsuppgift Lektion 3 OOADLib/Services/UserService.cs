@@ -7,33 +7,39 @@ using System.Threading.Tasks;
 
 namespace Övningsuppgift_Lektion_3_OOADLib.Services
 {
-    class UserService : IUserService
+    public class UserService : IUserService
     {
         private UserRepository _repository;
-        private PasswordHandler _passworHandler;
+        private PasswordHandler _passwordHandler;
+
         public UserService()
         {
-            _passworHandler = new PasswordHandler();
+            _passwordHandler = new PasswordHandler();
             _repository = new UserRepository();
         }
-        public Response<User> CreateUser(string name, string email, string password, string confirmPassword, Bank objBank, Enum type, string address)
+
+        public Response<User> CreateUser(string name, string email, string password, string confirmPassword, Bank objBank, RoleType type, string address)
         {
             var response = new Response<User>();
+
             if (_repository.Get(email) != null) response.Error = ErrorCode.DuplicateEntity;
+
             if (password != confirmPassword || password.Length < 6) response.Error = ErrorCode.InvalidState;
+
             if (response.Success)
             {
-                _passworHandler = new PasswordHandler();
+                _passwordHandler = new PasswordHandler();
                 var user = new User();
                 user.Address = address;
                 user.BankDetails = objBank;
                 user.Email = email;
                 user.Name = name;
                 user.Role = type;
-                user.Password = _passworHandler.HashPassword(password);
+                user.Password = _passwordHandler.HashPassword(password);
                 _repository.Save(user);
                 response.Entity = user;
             }
+
             return response;
         }
 
@@ -47,19 +53,22 @@ namespace Övningsuppgift_Lektion_3_OOADLib.Services
             var response = new Response<User>();
             var user = _repository.Get(email);
 
+
             if (user == null)
             {
                 response.Error = ErrorCode.InvalidLogin;
                 return response;
             }
-            if(!_passworHandler.ValidatePassword(password, user.Password))
+
+            if (!_passwordHandler.ValidatePassword(password, user.Password))
             {
                 response.Error = ErrorCode.InvalidLogin;
                 return response;
             }
+
             response.Entity = user;
+
             return response;
-            
         }
     }
 }
