@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<modelStoreModel xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm4="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm5="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/VisualStudio/TeamArchitect/SequenceDesigner" xmlns:dm9="http://schemas.microsoft.com/dsltools/LogicalClassDesigner"
+<modelStoreModel xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm4="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm5="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/LogicalClassDesigner" xmlns:dm9="http://schemas.microsoft.com/VisualStudio/TeamArchitect/SequenceDesigner"
   dslVersion="1.0.0.0"
   Id="33624387-e923-41c2-86c3-13e8018dbe63"
   name="Övningsuppgift Lektion 3 OOAD" xmlns="http://schemas.microsoft.com/dsltools/ModelStore">
@@ -1412,6 +1412,24 @@
               <undefinedTypeMoniker
                 Id="10b8229a-a53c-4d78-9037-390144672322"
                 LastKnownName="Enum"
+                LastKnownLocation="Övningsuppgift Lektion 3 OOAD.uml" />
+            </type_NamedElement>
+          </property>
+          <property
+            Id="5857cb65-2b28-4872-b061-0de11136707c"
+            name="IsDeleted"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false">
+            <type_NamedElement>
+              <undefinedTypeMoniker
+                Id="ff644a5c-527c-4003-bfbb-872108349528"
+                LastKnownName="bool"
                 LastKnownLocation="Övningsuppgift Lektion 3 OOAD.uml" />
             </type_NamedElement>
           </property>
@@ -3765,6 +3783,24 @@
                 LastKnownLocation="Övningsuppgift Lektion 3 OOAD.uml" />
             </type_NamedElement>
           </property>
+          <property
+            Id="a08b1a7d-46be-4992-bc2a-8afb79c075b1"
+            name="IsDeleted"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false">
+            <type_NamedElement>
+              <undefinedTypeMoniker
+                Id="ff644a5c-527c-4003-bfbb-872108349528"
+                LastKnownName="bool"
+                LastKnownLocation="Övningsuppgift Lektion 3 OOAD.uml" />
+            </type_NamedElement>
+          </property>
         </ownedAttributesInternal>
       </class>
     </packageHasNamedElement>
@@ -4182,6 +4218,24 @@
                 LastKnownLocation="Övningsuppgift Lektion 3 OOAD.uml" />
             </type_NamedElement>
           </property>
+          <property
+            Id="2a0d4dea-6974-4e09-aecf-2c2428e20e9c"
+            name="AuctionId"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false">
+            <type_NamedElement>
+              <undefinedTypeMoniker
+                Id="d458b183-5323-42a1-8511-3f9f3ded0ea0"
+                LastKnownName="int"
+                LastKnownLocation="Övningsuppgift Lektion 3 OOAD.uml" />
+            </type_NamedElement>
+          </property>
         </ownedAttributesInternal>
       </class>
     </packageHasNamedElement>
@@ -4194,6 +4248,21 @@
       <undefinedType
         Id="be63c89e-cad7-4d7f-9f9c-dd52bf256116"
         name="List&lt;Bid&gt;" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <undefinedType
+        Id="d458b183-5323-42a1-8511-3f9f3ded0ea0"
+        name="int" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <undefinedType
+        Id="1db97dd9-18e5-4ec8-8dd3-a948283c73d9"
+        name="bit" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <undefinedType
+        Id="ff644a5c-527c-4003-bfbb-872108349528"
+        name="bool" />
     </packageHasNamedElement>
   </packagedElements>
   <primitiveType

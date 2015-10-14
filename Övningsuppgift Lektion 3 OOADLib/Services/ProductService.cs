@@ -16,7 +16,7 @@ namespace Övningsuppgift_Lektion_3_OOADLib.Services
             _repository = repository;
         }
 
-        public Response<Product> CreateProduct(string name, decimal startPrice, decimal provision, int supplierId, DateTime timeInterval, decimal buyOutPrice, Enum type, string designer)
+        public Response<Product> CreateProduct(string name, decimal startPrice, decimal provision, int supplierId, DateTime timeInterval, decimal buyOutPrice, ProductType type, string designer)
         {
             var response = new Response<Product>();
 
@@ -72,7 +72,7 @@ namespace Övningsuppgift_Lektion_3_OOADLib.Services
             return response;
         }
 
-        public Response<Product> UpdateProduct(int id, string name, decimal startPrice, decimal provision, int supplierId, DateTime timeInterval, decimal buyOutPrice, Enum type, string designer)
+        public Response<Product> UpdateProduct(int id, string name, decimal startPrice, decimal provision, int supplierId, DateTime timeInterval, decimal buyOutPrice, ProductType type, string designer)
         {
             var response = new Response<Product>();
 

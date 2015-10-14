@@ -9,7 +9,7 @@ namespace Övningsuppgift_Lektion_3_OOADLib.Services
     public interface IProductService
     {
         Response<Product> CreateProduct(string name, decimal startPrice, decimal provision,
-            int supplierId, DateTime timeInterval, decimal buyOutPrice, Enum type, string designer);
+            int supplierId, DateTime timeInterval, decimal buyOutPrice, ProductType type, string designer);
 
 
         Response<Product> Get(string productName);
@@ -19,7 +19,7 @@ namespace Övningsuppgift_Lektion_3_OOADLib.Services
         Response<Product> GetAll();
 
         Response<Product> UpdateProduct(int id, string name, decimal startPrice, decimal provision,
-            int supplierId, DateTime timeInterval, decimal buyOutPrice, Enum type, string designer);
+            int supplierId, DateTime timeInterval, decimal buyOutPrice, ProductType type, string designer);
 
         Response<Product> DeleteProduct(int id);
     }

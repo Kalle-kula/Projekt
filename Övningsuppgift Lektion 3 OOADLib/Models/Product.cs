@@ -11,7 +11,7 @@ using System.Text;
 
 public class Product : BaseModel
 {
-    public virtual string Name
+    public virtual string Name      
     {
         get;
         set;
@@ -47,7 +47,7 @@ public class Product : BaseModel
         set;
     }
 
-    public virtual Enum Type
+    public virtual ProductType Type
     {
         get;
         set;
@@ -55,5 +55,12 @@ public class Product : BaseModel
 
     public virtual string ProductDesigner { set; get; }
 
+}
+
+public enum ProductType
+{
+    Antique = 1,
+    Modern = 2,
+    Mass = 3
 }
 

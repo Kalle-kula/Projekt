@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<logicalClassDesignerModel xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm4="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm5="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/ModelStore" xmlns:dm9="http://schemas.microsoft.com/VisualStudio/TeamArchitect/SequenceDesigner" dslVersion="1.0.0.0" Id="b61f23c8-fae5-441a-95e8-c6655149e51a" name="UMLClassDiagram1" linkedPackageId="248a1046-b704-4111-ae00-91fe762f3c72" xmlns="http://schemas.microsoft.com/dsltools/LogicalClassDesigner">
+<logicalClassDesignerModel xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm4="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm5="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/ModelStore" xmlns:dm9="http://schemas.microsoft.com/VisualStudio/TeamArchitect/SequenceDesigner" dslVersion="1.0.0.0" Id="b61f23c8-fae5-441a-95e8-c6655149e51a" name="UMLClassDiagram1" linkedPackageId="248a1046-b704-4111-ae00-91fe762f3c72" xmlns="http://schemas.microsoft.com/dsltools/LogicalClassDesigner">
   <appliedStereotypesInternal>
     <stereotypeInstance Id="384f5854-baf1-4843-8a15-9cb2adb8bc14" name="namespace" profile="CSharpProfile">
       <elementDefinition Id="be8f18cd-29ef-4f09-8642-93d20e26fee0" />
@@ -501,6 +501,12 @@
             <elementDefinition Id="de386e03-db99-409b-b2ec-b20fd2dfa119" />
             <type_NamedElement>
               <referencedTypeMoniker Id="502af786-4652-48e9-8997-d58f91c5da6c" LastKnownName="Enum" />
+            </type_NamedElement>
+          </property>
+          <property Id="ec3496a6-4c9b-4d98-8b75-c9c66d92f7ab" name="IsDeleted" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="5857cb65-2b28-4872-b061-0de11136707c" />
+            <type_NamedElement>
+              <referencedTypeMoniker Id="2cfa99d2-c841-4242-b2b4-c15b8434841d" LastKnownName="bool" />
             </type_NamedElement>
           </property>
         </ownedAttributesInternal>
@@ -1379,6 +1385,12 @@
               <referencedTypeMoniker Id="09253849-0eb9-486f-b4b1-2966755b79d3" LastKnownName="DateTime" />
             </type_NamedElement>
           </property>
+          <property Id="ddbe28c2-41d3-42dd-b157-6cefb389a33b" name="IsDeleted" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="a08b1a7d-46be-4992-bc2a-8afb79c075b1" />
+            <type_NamedElement>
+              <referencedTypeMoniker Id="5826e2a9-a674-40cf-adc8-629b96716d51" LastKnownName="bool" />
+            </type_NamedElement>
+          </property>
         </ownedAttributesInternal>
       </class>
     </logicalClassDesignerModelHasTypes>
@@ -1718,6 +1730,12 @@
               <referencedTypeMoniker Id="52ec0515-a64b-41f4-9818-85adc45cfad9" LastKnownName="User" />
             </type_NamedElement>
           </property>
+          <property Id="71e93be4-95f5-4c85-b836-3f1cc348ede2" name="AuctionId" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="2a0d4dea-6974-4e09-aecf-2c2428e20e9c" />
+            <type_NamedElement>
+              <referencedTypeMoniker Id="3af1c7ad-b151-4536-928b-32e6cebaf547" LastKnownName="int" />
+            </type_NamedElement>
+          </property>
         </ownedAttributesInternal>
       </class>
     </logicalClassDesignerModelHasTypes>
@@ -1754,6 +1772,21 @@
     <packageHasNamedElement>
       <referencedType Id="6397f0fc-88f4-43b2-8cb2-f6990f6fd0a1" name="String" isAbstract="false" isLeaf="false" cachedFullName="String">
         <elementDefinition Id="59259974-6d55-42c6-b7bd-763d77ac8ef9" />
+      </referencedType>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <referencedType Id="3af1c7ad-b151-4536-928b-32e6cebaf547" name="int" isAbstract="false" isLeaf="false" cachedFullName="int">
+        <elementDefinition Id="d458b183-5323-42a1-8511-3f9f3ded0ea0" />
+      </referencedType>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <referencedType Id="2cfa99d2-c841-4242-b2b4-c15b8434841d" name="bool" isAbstract="false" isLeaf="false" cachedFullName="bool">
+        <elementDefinition Id="ff644a5c-527c-4003-bfbb-872108349528" />
+      </referencedType>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <referencedType Id="5826e2a9-a674-40cf-adc8-629b96716d51" name="bool" isAbstract="false" isLeaf="false" cachedFullName="bool">
+        <elementDefinition Id="ff644a5c-527c-4003-bfbb-872108349528" />
       </referencedType>
     </packageHasNamedElement>
   </packagedElements>
