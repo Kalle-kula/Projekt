@@ -1,0 +1,11 @@
+Inlämnat av:
+Kalle Hallert
+Arlen Rios
+Lina Wellerstrand
+
+Vi har byggt projektet tillsammans antingen genom att fysiskt sitta tillsammans efter lektioner och prata med varandra 
+över nätet med hjälp av teamviewer 10 (där alla får tillgång till en och samma dator).
+I.o.m. detta är det svårt att avgöra exakt vem som gjort vad, alla har träffats på plats eller connectat via internet och skrivit tillsammans.
+Då vi haft lite problem med att connecta till github från andra datorer än min (Kalles) så är det jag som gjort alla commits 
+men det betyder inte att jag gjort alla påbyggnader och ändringar i själva koden.
+Mvh.
